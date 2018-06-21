@@ -194,6 +194,7 @@ img.shop-men {
 img.section-one-video {
 	height: 262px;
 	border-bottom: solid black 1px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #s1-ambassador {
 	padding-right: 5px;
@@ -221,7 +222,6 @@ img.section-one-video {
 }
 .s1-ambassador-text:hover {
 	background-color: rgba(255,255,255,.2);
-	color:#E4BFA4;
 }
 .adventure-text {
 	font-size: 39px;
@@ -250,7 +250,6 @@ i#adventure-arrow {
 }
 .shop-women-text:hover {
 	background-color: rgba(255,255,255,.2);
-	color:#E4BFA4;
 }
 i#women-arrow {
     font-size: 12px;
@@ -273,7 +272,6 @@ i#women-arrow {
 }
 .shop-men-text:hover {
 	background-color: rgba(255,255,255,.2);
-	color:#E4BFA4;
 }
 i#men-arrow {
     font-size: 12px;
@@ -298,11 +296,14 @@ div#s1-video {
 	padding-top: 110px;
 	color: white;
 }
+#play-arrow:hover {
+	transform: scale(1.05);
+}
 .mostwanted {
     font-family: graphiksemibold;
     font-size: 31px;
     color: #202020;
-    padding: 5px 0px 5px 15px;
+    padding: 20px 0px 40px 15px;
     display: block;
 }
 .s2-row {
@@ -313,6 +314,7 @@ div#leather-ad {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 265.67px !important;
     border-bottom: solid black 2px;
+    position: absolute;
 }
 img#ianimg {
 	height: 354.24px;
@@ -343,16 +345,57 @@ img#ianimg {
 	font-size: 14px;
 	padding-left: 10px;
 }
+#headwear-add:hover {
+	transform: scale(1.5);
+	transition: ease;
+}
 #headwear-arrow {
     font-size: 14px;
     padding-left: 7px;
 }
+#headwear-arrow:hover {
+	transform: scale(1.5);
+	transition: ease;
+}
 img#accessoriesimg {
-    height: 352.6px;
+    height: 354.4px;
 }
 #accessories-add {
 	font-size: 14px;
 	padding-left: 40px;
+}
+#accessories-add:hover {
+	transform: scale(1.3);
+	transition: ease;
+}
+.gallery {
+	margin-left: 150px;
+}
+
+.gallery-image {
+	height: 100px;
+	opacity: .2;
+	padding: 10px 20px;
+}
+.gallery-image-highlight {
+	border-bottom: solid black;
+	background-color: #E7E7E7;
+	height: 100px;
+	padding: 10px 20px;
+	opacity: 1;
+}
+/*.gallery-image {
+    height: 100px;
+    display: inline;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #E7E7E7;
+    border-bottom: solid black;
+}*/
+
+.main-gallery-image {
+    height: 355.82px;
+    margin-left: 130px;
 }
 #hydro-ad {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -360,9 +403,24 @@ img#accessoriesimg {
     width: 263.11px !important;
     padding-left: 0px;
     margin-left: 20px;
+    position: absolute;
+    left: 285px;
 }
-img#hydrowater {
-    height: 369.82px;
+i#largedrink-arrow {
+    font-size: 20px;
+    margin-left: 210px;
+    color: black;
+    margin-left: 95px;
+}
+#largedrink-arrow:hover {
+	transform: scale(1.5);
+}
+#largedrink-arrow-left {
+    color: black;
+    font-size: 20px;
+}
+#largedrink-arrow-left:hover {
+    transform: scale(1.5);
 }
 .hydro-title {
     font-family: graphikmedium;
@@ -384,10 +442,44 @@ img#hydrowater {
     padding-left: 0px;
     text-align: center;
     border-top: solid black 6px;
+    position: absolute;
+    right: 0px;
 }
 .hydro-bottom-container {
 	background-color: #E7E7E7;
 	padding: 20px;
+}
+button.black {
+    border-radius: 25px;
+    padding: 15px;
+    background-color: #181818;
+}
+button.black:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transform: scale(1.05);
+	transition: ease;
+}
+button.red {
+    border-radius: 25px;
+    padding: 15px;
+    background-color: red;
+    margin: 15px;
+}
+button.red:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transform: scale(1.05);
+	transition: ease;
+}
+button.blue {
+    border-radius: 25px;
+    padding: 15px;
+    background-color: #1A2C4F;
+    margin-right: 30px;
+}
+button.blue:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transform: scale(1.05);
+	transition: ease;
 }
 button.drinkwear {
     background-color: #E7E7E7;
@@ -397,6 +489,11 @@ button.drinkwear {
     font-size: 14px;
     border-radius: 2.5px;
     box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.5);
+}
+button.drinkwear:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transform: scale(1.01);
+	transition: ease;
 }
 #drinkwear-arrow {
 	font-size: 13px;
@@ -413,8 +510,40 @@ button.cart {
     border-radius: 2.5px;
     box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.5);
 }
+button.cart:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transform: scale(1.01);
+	transition: ease;
+}
 i#cart-add {
     font-size: 13px;
     color: black;
     padding-left: 10px;
+}
+#hat1ad {
+	height: 215px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	position: absolute;
+	top: 450px;
+	left: -1px;
+	margin-top: 15px;
+}
+#hat2-ad {
+	position: absolute;
+	top: 1270px;
+    left: 290px;
+    margin-top: 15px;
+}
+#hat2ad {
+	height: 215px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#girlwater-ad {
+	display:none;
+}
+.explore-title {
+	font-family: graphiksemibold;
+    font-size: 31px;
+    color: #202020;
+    display: block;
 }

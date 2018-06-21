@@ -87,7 +87,7 @@
 			<div class="shop-men-text">Shop Men<i class="material-icons" id="men-arrow">&#xe5c8;</i></div>
 		</div>
 		<div class="col-md-4" id="s1-video">
-			<img src="/summer-header/images/IMG_8978.png" alt="Video" class="section-one-video"><i class="material-icons" id="play-arrow">play_arrow</i>
+			<img src="/summer-header/images/IMG_8978.jpg" alt="Video" class="section-one-video"><i class="material-icons" id="play-arrow">play_arrow</i>
 		</div>
 	</div>
 	</div>
@@ -113,26 +113,38 @@
 				</div>
 			</div>
 		<div class="col-md-6" id="water-ad">
-			<img src="/summer-header/images/hydro-flask-stainless-steel-vacuum-insulated-water-bottle-32-oz-wide-mouth-flex-cap-cobalt.jpg" alt="HydroFlask" id="hydrowater">
+			<div class="gallery">
+				<img src="/summer-header/images/hydro-black.jpg" alt="Hydroflask" class="gallery-image">
+				<img src="/summer-header/images/hydro-red.jpg" alt="Hydroflask" class="gallery-image">
+				<img src="/summer-header/images/hydro-flask-stainless-steel-vacuum-insulated-water-bottle-32-oz-wide-mouth-flex-cap-cobalt.jpg" alt="HydroFlask" class="gallery-image gallery-image-highlight">
+				<img src="/summer-header/images/DSC00227.jpg" alt="Hydroflask Ad" class="gallery-image">
+			</div>	
+			<i class="material-icons" id="largedrink-arrow-left">arrow_back</i>
+			<img src="/summer-header/images/hydro-flask-stainless-steel-vacuum-insulated-water-bottle-32-oz-wide-mouth-flex-cap-cobalt.jpg" alt="HydroFlask" class="main-gallery-image" id="main-gallery-image">
+			<i class="material-icons" id="largedrink-arrow">&#xe5c8;</i>
 			<div class="hydro-title">32 oz HydroFlask</div>
 			<div class="hydro-text">Spread the stoke and live the dream as a part of the TGR </br>Ambassador program.</div>
 			<div class="hydro-bottom-container">
+				<button class="black"></button>
+				<button class="red"></button>
+				<button class="blue"></button>
 				<button class="drinkwear">More Drinkwear<i class="material-icons" id="drinkwear-arrow">&#xe5c8;</i></button>
 				<button class="cart">Add to Cart<i class="material-icons" id="cart-add">add</i></button>
 			</div>
 		</div>
-	</div>
-	<div class="s2-row2">
 		<div class="col-md-3" id="hat1-ad">
-		<!--<img src="/summer-header/images/WP9A0791.jpg" alt="Hat Ad">-->
+			<img src="/summer-header/images/WP9A0791.jpg" alt="Hat Ad" id="hat1ad">
 		</div>
 		<div class="col-md-3" id="hat2-ad">
-
+			<img src="/summer-header/images/4045-BK-Lifestyleshot.jpg" alt="Hat Ad" id="hat2ad">
 		</div>
 	</div>
-
-
 <!--End Section Two-->	
+
+<!--Section Three-->
+	<div class="explore-title">Explore</div>
+<!--End Section Three-->
+
 <!--JQuery-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.2/js/swiper.js"></script>
@@ -157,6 +169,45 @@
        		    clickable: true,
      		  },
      		});
+ 
+           $(".gallery-image").click(function(){
+           		var source = $(this).attr("src");
+           		$("#main-gallery-image").attr('src', source);
+           		$(".gallery-image").removeClass("gallery-image-highlight"); 
+           		$(this).addClass( "gallery-image-highlight");
+			});
+
+           $("#largedrink-arrow").click(function(){
+           		var images = jQuery(".gallery-image");
+
+           		for (var i=0; i < images.length; i++) {
+           			var image = $(images[i]);
+           			var nextimage = $(images[i + 1]);
+           			
+           			if (image.attr("src") === $("#main-gallery-image").attr("src")) {
+           				if ((images.length - 1) === i) {
+           					$(images[0]).click();
+           				} else {
+           				console.log(nextimage);
+           					nextimage.click();
+           				}
+           				break;
+           			}
+           		}
+           });
+     		/*var $plansHolders = $('#1, #2').hide();
+			$('#1').show();
+			$('#switch').click(function() {
+  				var href = $(this).attr('href');
+  				$plansHolders.hide();
+  				$(href).show();
+			});*/
+/*
+			$('#2').hide();
+			$('#switch').on('click',
+  			function() {
+    		$('#1, #2').toggle();
+  			});*/
 
        	});
 
