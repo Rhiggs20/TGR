@@ -1,0 +1,91 @@
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.5-c002 1.148022, 2012/07/15-18:06:45        ">
+ <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about=""
+    xmlns:xmp="http://ns.adobe.com/xap/1.0/"
+    xmlns:tiff="http://ns.adobe.com/tiff/1.0/"
+    xmlns:exif="http://ns.adobe.com/exif/1.0/"
+    xmlns:aux="http://ns.adobe.com/exif/1.0/aux/"
+    xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/"
+    xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"
+    xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:crs="http://ns.adobe.com/camera-raw-settings/1.0/"
+   xmp:Rating="0"
+   xmp:ModifyDate="2016-07-13T18:50:22.14"
+   xmp:CreateDate="2016-07-13T18:50:22.14"
+   xmp:MetadataDate="2018-06-21T09:57:10-06:00"
+   tiff:Make="Canon"
+   tiff:Model="Canon EOS 7D"
+   tiff:Orientation="1"
+   exif:ExifVersion="0230"
+   exif:ExposureTime="1/200"
+   exif:ShutterSpeedValue="7643856/1000000"
+   exif:FNumber="56/10"
+   exif:ApertureValue="4970854/1000000"
+   exif:ExposureProgram="2"
+   exif:SensitivityType="2"
+   exif:RecommendedExposureIndex="100"
+   exif:ExposureBiasValue="0/1"
+   exif:MaxApertureValue="3/1"
+   exif:MeteringMode="5"
+   exif:FocalLength="32/1"
+   exif:CustomRendered="0"
+   exif:ExposureMode="0"
+   exif:WhiteBalance="0"
+   exif:SceneCaptureType="0"
+   exif:FocalPlaneXResolution="5184000/907"
+   exif:FocalPlaneYResolution="3456000/595"
+   exif:FocalPlaneResolutionUnit="2"
+   exif:DateTimeOriginal="2016-07-13T18:50:22.14"
+   aux:SerialNumber="1470810117"
+   aux:LensInfo="24/1 70/1 0/0 0/0"
+   aux:Lens="EF24-70mm f/2.8L USM"
+   aux:LensID="230"
+   aux:ImageNumber="0"
+   aux:ApproximateFocusDistance="397/100"
+   aux:FlashCompensation="0/1"
+   aux:Firmware="2.0.5"
+   photoshop:DateCreated="2016-07-13T18:50:22.14"
+   photoshop:SidecarForExtension="CR2"
+   photoshop:EmbeddedXMPDigest="AD0ACF660F79AC49FD004B2DD3BC0461"
+   xmpMM:DocumentID="02C1ED57914BAEECA07E3493DA741DC0"
+   xmpMM:OriginalDocumentID="02C1ED57914BAEECA07E3493DA741DC0"
+   xmpMM:InstanceID="xmp.iid:7627f0a3-13d8-4202-833e-ce03b53e3da1"
+   dc:format="image/x-canon-cr2"
+   crs:RawFileName="IMG_8786.CR2"
+   crs:Version="8.0"
+   crs:UprightVersion="134217728"
+   crs:UprightCenterMode="0"
+   crs:UprightCenterNormX="0.5"
+   crs:UprightCenterNormY="0.5"
+   crs:UprightFocalMode="0"
+   crs:UprightFocalLength35mm="35"
+   crs:UprightPreview="False"
+   crs:UprightTransformCount="0"
+   crs:HasSettings="False"
+   crs:HasCrop="False"
+   crs:AlreadyApplied="False">
+   <exif:ISOSpeedRatings>
+    <rdf:Seq>
+     <rdf:li>100</rdf:li>
+    </rdf:Seq>
+   </exif:ISOSpeedRatings>
+   <exif:Flash
+    exif:Fired="False"
+    exif:Return="0"
+    exif:Mode="2"
+    exif:Function="False"
+    exif:RedEyeMode="False"/>
+   <xmpMM:History>
+    <rdf:Seq>
+     <rdf:li
+      stEvt:action="saved"
+      stEvt:instanceID="xmp.iid:7627f0a3-13d8-4202-833e-ce03b53e3da1"
+      stEvt:when="2018-06-21T09:57:10-06:00"
+      stEvt:softwareAgent="Adobe Photoshop Camera Raw 8.0 (Macintosh)"
+      stEvt:changed="/metadata"/>
+    </rdf:Seq>
+   </xmpMM:History>
+  </rdf:Description>
+ </rdf:RDF>
+</x:xmpmeta>
