@@ -1,4 +1,5 @@
 
+
 /* TABLE OF CONTENTS
 ##1 Fonts 
 ##2 Header
@@ -51,15 +52,15 @@ body {
 }
 @font-face {
 	font-family: nittiblack;
-	src: url("/summer-header/fonts/nitti_black.ttf");
+	src: url("/assets/fonts/nitti_black.ttf");
 }
 /* End Fonts */
 
 /* ##2 Header */
 .hero-image {
-	background-image: url("/summer-header/images/hero.png"); 
+	background-image: url("/summer-header/images/videoreplace.jpg"); 
 	height: 400px;
-	width: 100%;
+	width: 700px;
 	background-position: center;
 	background-size: cover;
 	border-bottom: solid 1px black;
@@ -95,6 +96,46 @@ div.logo {
 }
 .logo span {
 	color: black;
+}
+.shades {
+    position: absolute;
+    top: 100px;
+    left: 800px;
+    color: #5C2B0A;
+    font-family: graphikmedium;
+    font-size: 40px;
+    text-align: center;
+}
+.header-description {
+    position: absolute;
+    top: 240px;
+    left: 790px;
+    text-align: center;
+    color: #5C2B0A;
+    font-family: graphikmedium;
+}
+button.header-button {
+    position: absolute;
+    top: 330px;
+    left: 820px;
+    background-color: white;
+    border: solid 1px;
+    border-radius: 2px;
+    padding: 10px 10px;
+    font-family: graphikregular;
+    color: #5C2B0A;
+}
+i.material-icons.header-wear-arrow {
+    font-size: 12px;
+    margin-left: 10px;
+}
+img.hero-image-two {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 425px;
+    width: 200px;
+    margin-top: 50px;
 }
 
 i {
@@ -212,7 +253,8 @@ a {
 /* Section 1 */
 
 div.section-one-row {
-	margin-top: 10px;
+	margin-top: -30px;
+	margin-left: 30px;
 	width: 100vw;
 	overflow-x: scroll;
 }
@@ -1007,7 +1049,7 @@ button.pro1:hover {
 
 .posts-container {
     position: absolute;
-    top: 2740px;
+    top: 2741px;
 }
 .social-profile {
     border-radius: 100px;

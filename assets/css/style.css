@@ -1,0 +1,1373 @@
+/* TABLE OF CONTENTS
+##1 Fonts 
+##2 Header
+##3 Swiper
+	##Section 1
+		##Section 1, col 1
+		##Section 1, col 2
+		##Section 1, col 3
+##4 Section 2
+	Headwear Ad
+	Accesories Ad
+	Water Bottle Ad
+	Hat1 Ad
+	Hat2 Ad
+##5 Section 3
+	##6 Sidebar
+	##7 Explore Info
+##8 Section 4
+	##9 Scrollable 2
+##16 Section 5
+##21 Section 6
+*/
+/* line 26, ../scss/_home.scss */
+body {
+  overflow-x: hidden;
+}
+
+/* ##1 Fonts */
+@font-face {
+  font-family: graphikblack;
+  src: url("/summer-header/fonts/Graphik-Black.otf");
+}
+@font-face {
+  font-family: graphikmedium;
+  src: url("/summer-header/fonts/Graphik-Medium.otf");
+}
+@font-face {
+  font-family: graphikregular;
+  src: url("/summer-header/fonts/Graphik-Regular.otf");
+}
+@font-face {
+  font-family: brownhillscript;
+  src: url("/summer-header/fonts/Brownhill Script.ttf");
+}
+@font-face {
+  font-family: graphiksemibold;
+  src: url("/summer-header/fonts/Graphik-Semibold.otf");
+}
+@font-face {
+  font-family: nittiblack;
+  src: url("/assets/fonts/nitti_black.ttf");
+}
+/* End Fonts */
+/* ##2 Header */
+/* line 60, ../scss/_home.scss */
+.hero-image {
+  background-image: url("/summer-header/images/videoreplace.jpg");
+  height: 400px;
+  width: 700px;
+  background-position: center;
+  background-size: cover;
+  border-bottom: solid 1px black;
+  position: relative;
+}
+
+/* line 69, ../scss/_home.scss */
+div.col-1 {
+  margin-left: 20px;
+  display: inline;
+  font-size: 22px;
+  margin-top: 20px;
+  color: black;
+}
+
+/* line 76, ../scss/_home.scss */
+div.col-2 {
+  display: inline;
+}
+
+/* line 80, ../scss/_home.scss */
+div.col-3 {
+  display: inline;
+  font-size: 19px;
+}
+
+/* line 85, ../scss/_home.scss */
+div.logo {
+  width: 20%;
+  margin-left: 10px;
+  padding-top: 15px;
+}
+
+/* line 91, ../scss/_home.scss */
+.logo img {
+  width: 50%;
+  padding: 10px;
+  padding-top: 0px;
+  padding-bottom: 18px;
+}
+
+/* line 97, ../scss/_home.scss */
+.logo span {
+  color: black;
+}
+
+/* line 100, ../scss/_home.scss */
+.shades {
+  position: absolute;
+  top: 100px;
+  left: 800px;
+  color: #5C2B0A;
+  font-family: graphikmedium;
+  font-size: 40px;
+  text-align: center;
+}
+
+/* line 109, ../scss/_home.scss */
+.header-description {
+  position: absolute;
+  top: 240px;
+  left: 790px;
+  text-align: center;
+  color: #5C2B0A;
+  font-family: graphikmedium;
+}
+
+/* line 117, ../scss/_home.scss */
+button.header-button {
+  position: absolute;
+  top: 330px;
+  left: 820px;
+  background-color: white;
+  border: solid 1px;
+  border-radius: 2px;
+  padding: 10px 10px;
+  font-family: graphikregular;
+  color: #5C2B0A;
+}
+
+/* line 128, ../scss/_home.scss */
+i.material-icons.header-wear-arrow {
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+/* line 132, ../scss/_home.scss */
+img.hero-image-two {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 425px;
+  width: 200px;
+  margin-top: 50px;
+}
+
+/* line 141, ../scss/_home.scss */
+i {
+  font-size: 24px;
+}
+
+/* line 144, ../scss/_home.scss */
+i.materialicons {
+  font-size: 14px;
+  position: absolute;
+  top: 496px;
+  left: 702px;
+  color: red;
+}
+
+/* line 152, ../scss/_home.scss */
+.cart h1 {
+  font-family: graphikblack;
+  font-size: 13px;
+  color: black;
+  padding-right: 15px;
+  float: right;
+}
+
+/* line 159, ../scss/_home.scss */
+div.cart {
+  width: 15%;
+  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* line 166, ../scss/_home.scss */
+.summer-title {
+  position: absolute;
+  top: 65px;
+  left: 320px;
+  font-family: brownhillscript;
+  color: white;
+  font-size: 120px;
+  line-height: 110px;
+  transform: rotate(-8deg);
+  animation: 3s ease-in-out;
+}
+
+/* line 177, ../scss/_home.scss */
+.summer-title2 {
+  position: absolute;
+  font-family: brownhillscript;
+  color: white;
+  font-size: 120px;
+  transform: rotate(-5deg);
+  margin-left: 65px;
+  animation: 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* line 187, ../scss/_home.scss */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+}
+
+/* line 193, ../scss/_home.scss */
+.fade-in.one {
+  animation-delay: 0.7s;
+}
+
+/* line 196, ../scss/_home.scss */
+.nav-col2 img {
+  height: 20px;
+}
+
+/*button*/
+/* line 200, ../scss/_home.scss */
+.button {
+  width: 100%;
+  float: right;
+  padding-right: 5%;
+  padding-bottom: 3%;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+/* line 210, ../scss/_home.scss */
+.button .btn-video {
+  background-color: white;
+  color: black;
+  font-size: 13px;
+  border-radius: 2px;
+  border: none;
+  padding: 10px;
+  float: right;
+  transition: 0.25s;
+  opacity: 0.9;
+  font-family: graphikmedium;
+}
+
+/* line 222, ../scss/_home.scss */
+.glyphicon {
+  margin-left: 5px;
+}
+
+/* line 225, ../scss/_home.scss */
+.button .btn-video:hover {
+  background-color: #E4BFA4;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* End Header */
+/* ##3 Swiper */
+/* line 232, ../scss/_home.scss */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  margin-top: 10px !important;
+}
+
+/* line 237, ../scss/_home.scss */
+.swiper-wrapper {
+  -webkit-transition-timing-function: linear !important;
+  -o-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+}
+
+/* line 242, ../scss/_home.scss */
+.swiper-slide {
+  text-align: center;
+  font-size: 15px;
+  font-family: graphikmedium;
+  background: #fff;
+}
+
+/* line 248, ../scss/_home.scss */
+a {
+  color: red !important;
+  text-decoration: underline !important;
+}
+
+/* Section 1 */
+/* line 255, ../scss/_home.scss */
+div.section-one-row {
+  margin-top: -30px;
+  margin-left: 30px;
+  width: 100vw;
+  overflow-x: scroll;
+}
+
+/* line 261, ../scss/_home.scss */
+.scrollable {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 178.4vw;
+}
+
+/* line 266, ../scss/_home.scss */
+.element1-pic {
+  width: auto;
+  height: 262px;
+  z-index: 0;
+  position: absolute;
+  border-bottom: solid black 1px;
+}
+
+/* line 273, ../scss/_home.scss */
+.shop-women {
+  height: 124px;
+  margin-bottom: 20px;
+  position: absolute;
+  z-index: 0;
+}
+
+/* line 279, ../scss/_home.scss */
+.shop-men {
+  height: 120px;
+  position: absolute;
+  border-bottom: solid black 1px;
+}
+
+/* line 284, ../scss/_home.scss */
+.section-one-video {
+  height: 262px;
+  border-bottom: solid black 1px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* line 289, ../scss/_home.scss */
+.col-md-4.scroller-element4 {
+  margin-top: 0px;
+}
+
+/* line 292, ../scss/_home.scss */
+.col-md-5.scroller-element1 {
+  padding-right: 5px;
+  width: 571.62px;
+}
+
+/* Section 1, col 1 */
+/* line 297, ../scss/_home.scss */
+.element1-text {
+  z-index: 5;
+  position: relative;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent 0%, black 120%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 550.27px;
+  height: 262px;
+  padding-top: 150px;
+  padding-left: 5px;
+  color: white;
+  font-family: graphikmedium;
+  font-size: 10px;
+  line-height: 1;
+  transition: .2s;
+}
+
+/* line 313, ../scss/_home.scss */
+.element1-text:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: .2s ease;
+}
+
+/* line 317, ../scss/_home.scss */
+.adventure-text {
+  font-size: 39px;
+  width: 40%;
+  line-height: 1;
+  padding-bottom: 10px;
+}
+
+/* line 323, ../scss/_home.scss */
+.material-icons.element1-arrow {
+  font-size: 10px;
+  padding-left: 8px;
+}
+
+/* Section 1, col 2 */
+/* line 328, ../scss/_home.scss */
+.shop-women-text {
+  background: linear-gradient(to bottom, transparent 0%, black 170%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
+  z-index: 3;
+  font-family: graphikregular;
+  padding-top: 65px;
+  padding-bottom: 35px;
+  text-align: center;
+  margin-bottom: 16px;
+  color: white;
+  width: 277px;
+  height: 124px;
+}
+
+/* line 342, ../scss/_home.scss */
+.shop-women-text:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: .2s ease;
+}
+
+/* line 346, ../scss/_home.scss */
+.material-icons.shop-women-arrow {
+  font-size: 12px;
+  padding-left: 4px;
+  color: white;
+}
+
+/* line 351, ../scss/_home.scss */
+.shop-men-text {
+  background: linear-gradient(to bottom, transparent 0%, black 170%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
+  z-index: 3;
+  font-family: graphikregular;
+  padding-top: 48px;
+  padding-bottom: 35px;
+  text-align: center;
+  margin-bottom: 15px;
+  color: white;
+  width: 276px;
+  height: 120px;
+}
+
+/* line 365, ../scss/_home.scss */
+.shop-men-text:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: .2s ease;
+}
+
+/* line 369, ../scss/_home.scss */
+.material-icons.shop-men-arrow {
+  font-size: 12px;
+  padding-left: 4px;
+  color: white;
+}
+
+/* Section 1, col 3 */
+/* line 375, ../scss/_home.scss */
+.col-md-3 {
+  width: 305px !important;
+}
+
+/* line 378, ../scss/_home.scss */
+.element4 {
+  height: 262px;
+  position: absolute;
+}
+
+/* line 382, ../scss/_home.scss */
+.col-md-4.scroller-element4 {
+  width: 335px;
+}
+
+/* line 385, ../scss/_home.scss */
+.material-icons.element4-arrow {
+  position: relative;
+  font-size: 50px;
+  padding-left: 140px;
+  padding-top: 110px;
+  color: white;
+}
+
+/* line 392, ../scss/_home.scss */
+.material-icons.element4-arrow:hover {
+  transform: scale(1.05);
+  transition: .2s ease-in-out;
+}
+
+/* End Swiper */
+/* ##4 Section 2 */
+/* line 399, ../scss/_home.scss */
+.mostwanted {
+  font-family: graphiksemibold;
+  font-size: 31px;
+  color: #202020;
+  padding: 20px 0px 40px 15px;
+  display: block;
+}
+
+/* line 406, ../scss/_home.scss */
+.section2-row {
+  padding-left: 15px;
+}
+
+/* line 409, ../scss/_home.scss */
+.vertical-scroller-area {
+  width: 43vw;
+  margin-left: 5px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: absolute;
+  height: 665px;
+}
+
+/* line 417, ../scss/_home.scss */
+.vertical-scroller {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 1500px;
+}
+
+/* Header Ad */
+/* line 425, ../scss/_home.scss */
+.col-md-3.mostwanted-ad1 {
+  padding-left: 0px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 265.67px !important;
+  border-bottom: solid black 2px;
+  position: absolute;
+}
+
+/* line 432, ../scss/_home.scss */
+.mostwanted-ad1-picture {
+  height: 354.24px;
+}
+
+/* line 435, ../scss/_home.scss */
+.headwear {
+  font-family: nittiblack;
+  color: #ADADAD;
+  text-transform: uppercase;
+  padding-top: 15px;
+  padding-left: 20px;
+}
+
+/* line 442, ../scss/_home.scss */
+.headwear-caption-holder {
+  padding-bottom: 15px;
+}
+
+/* line 445, ../scss/_home.scss */
+.headwear-caption {
+  font-family: graphiksemibold;
+  display: inline;
+  padding-left: 20px;
+}
+
+/* line 450, ../scss/_home.scss */
+.headwear-price {
+  display: inline;
+  padding-left: 9px;
+  font-size: 12px;
+  font-family: graphikmedium;
+  color: #BEBEBE;
+}
+
+/* line 457, ../scss/_home.scss */
+.material-icons.headwear-add {
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+/* line 461, ../scss/_home.scss */
+.material-icons.headwear-add:hover {
+  transform: scale(1.5);
+  transition: .2s ease;
+}
+
+/* line 465, ../scss/_home.scss */
+.material-icons.headwear-arrow {
+  font-size: 14px;
+  padding-left: 4px;
+}
+
+/* line 469, ../scss/_home.scss */
+.material-icons.headwear-arrow:hover {
+  transform: scale(1.5);
+  transition: .2s ease;
+}
+
+/* Accesories Ad */
+/* line 475, ../scss/_home.scss */
+.col-md-3.mostwanted-ad2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-bottom: solid black 2px;
+  width: 263.11px !important;
+  padding-left: 0px;
+  margin-left: 20px;
+  position: absolute;
+  left: 285px;
+}
+
+/* line 484, ../scss/_home.scss */
+.accessoriesimg {
+  height: 354.4px;
+}
+
+/* line 487, ../scss/_home.scss */
+.material-icons.accessories-add {
+  font-size: 14px;
+  padding-left: 40px;
+}
+
+/* line 491, ../scss/_home.scss */
+.material-icons.accessories-add:hover {
+  transform: scale(1.3);
+  transition: .2s ease;
+}
+
+/* line 495, ../scss/_home.scss */
+.col-md-3.socks-ad {
+  position: absolute;
+  margin-top: 20px;
+  position: absolute;
+  top: 900px;
+  left: -15px;
+  border-bottom: solid black 2px;
+  width: 265px !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-left: 15px;
+  padding: 0px;
+}
+
+/* line 507, ../scss/_home.scss */
+.col-md-3.sweatshirt-ad {
+  position: absolute;
+  margin-top: 20px;
+  position: absolute;
+  top: 900px;
+  left: 290px;
+  border-bottom: solid black 2px;
+  width: 265px !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-left: 15px;
+  padding: 0px;
+}
+
+/* line 519, ../scss/_home.scss */
+.email-attention {
+  font-family: graphikmedium;
+  font-size: 30px;
+  color: #202020;
+  position: absolute;
+  top: 1400px;
+  left: 150px;
+}
+
+/* line 527, ../scss/_home.scss */
+.stay-updated {
+  font-family: graphikmedium;
+  font-size: 10px;
+  color: grey;
+  position: absolute;
+  top: 1450px;
+  left: 170px;
+}
+
+/* line 535, ../scss/_home.scss */
+.email-address {
+  font-family: graphikmedium;
+  font-size: 10px;
+  color: grey;
+  position: absolute;
+  top: 1500px;
+  left: 120px;
+  padding: 20px 140px 20px 20px;
+  border: solid grey 1px;
+  border-radius: 3px;
+}
+
+/* line 546, ../scss/_home.scss */
+button.email {
+  position: absolute;
+  top: 1500px;
+  left: 370px;
+  background-color: #202020;
+  padding: 17px 15px;
+  font-family: graphikregular;
+  color: white;
+  font-size: 14px;
+  border-radius: 3px;
+  box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* line 558, ../scss/_home.scss */
+.email:hover {
+  transition: ease .2s;
+  transform: scale(1.1);
+}
+
+/* Water Bottle Ad */
+/* line 565, ../scss/_home.scss */
+.gallery {
+  margin-left: 150px;
+}
+
+/* line 568, ../scss/_home.scss */
+.gallery-image {
+  height: 100px;
+  opacity: .2;
+  padding: 10px 20px;
+}
+
+/* line 573, ../scss/_home.scss */
+.gallery-image-highlight {
+  border-bottom: solid black;
+  background-color: #E7E7E7;
+  height: 100px;
+  padding: 10px 20px;
+  opacity: 1;
+}
+
+/* line 580, ../scss/_home.scss */
+.main-gallery-image {
+  height: 355.82px;
+  margin-left: 130px;
+}
+
+/* line 584, ../scss/_home.scss */
+.material-icons.gallery-arrow {
+  font-size: 20px;
+  margin-left: 210px;
+  color: black;
+  margin-left: 95px;
+}
+
+/* line 590, ../scss/_home.scss */
+.material-icons.gallery-arrow:hover {
+  transform: scale(1.5);
+  transition: .2s ease;
+}
+
+/* line 594, ../scss/_home.scss */
+.material-icons.gallery-arrow-left {
+  color: black;
+  font-size: 20px;
+}
+
+/* line 598, ../scss/_home.scss */
+.material-icons.gallery-arrow-left:hover {
+  transform: scale(1.5);
+  transition: .2s ease;
+}
+
+/* line 602, ../scss/_home.scss */
+.largeAd-title {
+  font-family: graphikmedium;
+  font-size: 40px;
+  color: black;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+/* line 609, ../scss/_home.scss */
+.largeAd-text {
+  font-family: graphikmedium;
+  font-size: 10px;
+  color: #3D3D3D;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+/* line 616, ../scss/_home.scss */
+.col-md-6.water-ad {
+  margin-left: 45px;
+  padding-right: 0px;
+  padding-left: 0px;
+  text-align: center;
+  border-top: solid black 6px;
+  position: absolute;
+  right: 0px;
+}
+
+/* line 625, ../scss/_home.scss */
+.largeAd-bottom-container {
+  background-color: #E7E7E7;
+  padding: 20px;
+}
+
+/* line 629, ../scss/_home.scss */
+button.black {
+  border-radius: 25px;
+  padding: 15px;
+  background-color: #181818;
+}
+
+/* line 634, ../scss/_home.scss */
+button.black:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(1.05);
+  transition: .2s ease;
+}
+
+/* line 639, ../scss/_home.scss */
+button.red {
+  border-radius: 25px;
+  padding: 15px;
+  background-color: red;
+  margin: 15px;
+}
+
+/* line 645, ../scss/_home.scss */
+button.red:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(1.05);
+  transition: .2s ease;
+}
+
+/* line 650, ../scss/_home.scss */
+button.blue {
+  border-radius: 25px;
+  padding: 15px;
+  background-color: #1A2C4F;
+  margin-right: 30px;
+}
+
+/* line 656, ../scss/_home.scss */
+button.blue:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(1.05);
+  transition: .2s ease;
+}
+
+/* line 661, ../scss/_home.scss */
+button.drinkwear {
+  background-color: #E7E7E7;
+  border: solid #3B3B3B 2px;
+  padding: 20px 15px;
+  font-family: graphiksemibold;
+  font-size: 14px;
+  border-radius: 2.5px;
+  box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* line 670, ../scss/_home.scss */
+button.drinkwear:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(1.01);
+  transition: .2s ease;
+}
+
+/* line 675, ../scss/_home.scss */
+.material-icons.drinkwear-arrow {
+  font-size: 13px;
+  padding-left: 10px;
+  color: black;
+}
+
+/* line 680, ../scss/_home.scss */
+button.cart {
+  background-color: #E7E7E7;
+  border: solid #3B3B3B 2px;
+  padding: 20px 30px;
+  margin-left: 15px;
+  font-family: graphiksemibold;
+  font-size: 14px;
+  border-radius: 2.5px;
+  box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* line 690, ../scss/_home.scss */
+button.cart:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(1.01);
+  transition: .2s ease;
+}
+
+/* line 695, ../scss/_home.scss */
+.material-icons.cart-add {
+  font-size: 13px;
+  color: black;
+  padding-left: 10px;
+}
+
+/* Hat1 Ad */
+/* line 702, ../scss/_home.scss */
+.col-md-3.hat1-ad {
+  position: absolute;
+  top: 460px;
+  left: -15px;
+  border-bottom: solid black 2px;
+  width: 280px !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Hat2 Ad */
+/* line 713, ../scss/_home.scss */
+.col-md-3.hat2-ad {
+  position: absolute;
+  margin-top: 20px;
+  position: absolute;
+  top: 440px;
+  left: 289px;
+  border-bottom: solid black 2px;
+  width: 265px !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-left: 15px;
+  padding: 0px;
+}
+
+/* ##5 Section 3 */
+/* line 728, ../scss/_home.scss */
+.explore {
+  position: absolute;
+  top: 1550px;
+  left: 15px;
+  font-size: 30px;
+  font-family: graphikmedium;
+  color: #202020;
+}
+
+/* line 736, ../scss/_home.scss */
+.explore-nav1 {
+  padding-left: 20px;
+  margin: 0 0 10px;
+  display: inline;
+  color: #ADADAD;
+  font-size: 12px;
+  margin: 20px;
+}
+
+/* line 744, ../scss/_home.scss */
+.explore-nav2 {
+  margin: 0 0 10px;
+  display: inline;
+  color: #ADADAD;
+  font-size: 12px;
+  margin: 20px;
+}
+
+/* line 751, ../scss/_home.scss */
+.explore-image {
+  position: absolute;
+  top: 1630px;
+  height: 602.92px;
+  left: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* line 758, ../scss/_home.scss */
+.explore-background {
+  position: absolute;
+  top: 1610px;
+  left: 15px;
+  height: 640px;
+  width: 100%;
+  opacity: .1;
+}
+
+/* ##6 Sidebar */
+/* line 768, ../scss/_home.scss */
+.sidebar {
+  color: #ADADAD;
+  font-family: nittiblack;
+  font-size: 12px;
+  transform: rotate(270deg);
+  border-top: solid #202020 3px;
+  position: absolute;
+  top: 1950px;
+  background-color: white;
+  left: -98px;
+  padding: 10px 30px;
+}
+
+/* line 780, ../scss/_home.scss */
+.sidebar-title {
+  color: #202020;
+  font-family: graphikmedium;
+  font-size: 18px;
+}
+
+/* line 785, ../scss/_home.scss */
+.year {
+  color: #ADADAD;
+  display: inline;
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+/* ##7 Explore Info */
+/* line 794, ../scss/_home.scss */
+.explore-title {
+  position: absolute;
+  top: 1700px;
+  left: 1000px;
+  font-family: brownhillscript;
+  color: black;
+  font-size: 120px;
+  line-height: 110px;
+  transform: rotate(-8deg);
+}
+
+/* line 804, ../scss/_home.scss */
+.explore-title2 {
+  position: absolute;
+  font-family: brownhillscript;
+  color: black;
+  font-size: 120px;
+  transform: rotate(-5deg);
+  margin-left: 65px;
+}
+
+/* line 812, ../scss/_home.scss */
+.explore-info {
+  color: #202020;
+  font-size: 12px;
+  font-family: graphikmedium;
+  position: absolute;
+  top: 2000px;
+  left: 950px;
+  margin: 0px 40px;
+  text-align: center;
+}
+
+/* line 822, ../scss/_home.scss */
+button.lookbook {
+  position: absolute;
+  top: 2150px;
+  left: 1080px;
+  background-color: #202020;
+  padding: 20px 15px;
+  font-family: graphikregular;
+  color: white;
+  font-size: 14px;
+  border-radius: 3px;
+  box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* line 834, ../scss/_home.scss */
+button.lookbook:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(1.01);
+  transition: .2s ease;
+}
+
+/* line 839, ../scss/_home.scss */
+.material-icons.lookbook-arrow {
+  font-size: 13px;
+  padding-left: 10px;
+  color: white;
+}
+
+/* ##8 Section 4 */
+/* line 846, ../scss/_home.scss */
+.meetathletes {
+  position: absolute;
+  top: 2280px;
+  left: 20px;
+  font-size: 30px;
+  font-family: graphikmedium;
+  color: #202020;
+}
+
+/* ##9 Scrollable 2 */
+/* line 856, ../scss/_home.scss */
+.scrollarea {
+  width: 100vw;
+  margin-left: 5px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  top: 2350px;
+  position: absolute;
+}
+
+/* line 864, ../scss/_home.scss */
+.scrollable2 {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 199vw;
+  height: 290px;
+}
+
+/* line 871, ../scss/_home.scss */
+.scroll2-image1 {
+  position: absolute;
+  width: 500px;
+  z-index: 0;
+}
+
+/* line 876, ../scss/_home.scss */
+.scroll2-background {
+  position: relative;
+  z-index: 1;
+  height: 285px;
+  width: 420px;
+  background: linear-gradient(to bottom, transparent 0%, black 170%);
+}
+
+/* line 883, ../scss/_home.scss */
+.scroll2-name {
+  z-index: 2;
+  position: absolute;
+  left: 30px;
+  top: 190px;
+  font-size: 30px;
+  line-height: 30px;
+  font-family: graphikmedium;
+  color: white;
+}
+
+/* line 893, ../scss/_home.scss */
+button.pro1 {
+  z-index: 3;
+  position: absolute;
+  left: 15px;
+  top: 255px;
+  background: none;
+  border: none;
+  color: white;
+  font-family: nittiblack;
+  text-transform: uppercase;
+  width: 150px;
+  font-size: 10px;
+}
+
+/* line 906, ../scss/_home.scss */
+button.pro1:hover {
+  transform: scale(1.05);
+  transition: .2s ease;
+}
+
+/* line 910, ../scss/_home.scss */
+.scroll2-image {
+  width: 420px;
+  z-index: 0;
+  position: absolute;
+  border-top: solid #1A9AED 5px;
+}
+
+/* line 916, ../scss/_home.scss */
+.scroll2-snow {
+  display: inline;
+  position: absolute;
+  top: 255px;
+  left: 390px;
+  font-family: nittiblack;
+  font-size: 10px;
+  color: white;
+  z-index: 3;
+}
+
+/* End Scrollable 2 */
+/* ##16 Section 5 */
+/* line 930, ../scss/_home.scss */
+.social {
+  position: absolute;
+  top: 2670px;
+  left: 15px;
+  font-family: graphikmedium;
+  font-size: 30px;
+  color: #202020;
+}
+
+/* line 938, ../scss/_home.scss */
+.social-nav1 {
+  padding-left: 20px;
+  margin: 0 0 10px;
+  display: inline;
+  color: #ADADAD;
+  font-size: 12px;
+  margin: 20px;
+}
+
+/* line 946, ../scss/_home.scss */
+.social-nav2 {
+  margin: 0 0 10px;
+  display: inline;
+  color: #ADADAD;
+  font-size: 12px;
+  margin: 20px;
+}
+
+/* line 953, ../scss/_home.scss */
+.social-nav3 {
+  margin: 0 0 10px;
+  display: inline;
+  color: #ADADAD;
+  font-size: 12px;
+  margin: 20px;
+}
+
+/* ##21 Section 6 */
+/* line 962, ../scss/_home.scss */
+.footer {
+  position: absolute;
+  top: 3200px;
+  width: 100vw;
+  height: 200px;
+  background-color: #1A1A1A;
+  margin-top: 120px;
+}
+
+/* line 970, ../scss/_home.scss */
+.col-md-4 {
+  margin-top: 30px;
+}
+
+/* line 973, ../scss/_home.scss */
+.phone-number {
+  color: white;
+  top: 20px;
+  position: absolute;
+  font-family: graphikregular;
+  font-size: 12px;
+}
+
+/* line 980, ../scss/_home.scss */
+.phone-number.two {
+  right: 20px;
+}
+
+/* line 983, ../scss/_home.scss */
+.address {
+  position: relative;
+  font-size: 25px;
+  color: white;
+  font-family: graphikmedium;
+  margin-top: 40px;
+}
+
+/* line 990, ../scss/_home.scss */
+.address2 {
+  position: relative;
+  font-size: 25px;
+  color: white;
+  font-family: graphikmedium;
+  margin-top: 40px;
+  text-align: right;
+}
+
+/* line 998, ../scss/_home.scss */
+.footer-logo {
+  height: 50px;
+  margin-left: 150px;
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+/* line 1004, ../scss/_home.scss */
+.instagram {
+  margin-left: 148px;
+  margin-right: 9px;
+}
+
+/* line 1008, ../scss/_home.scss */
+.instagram:hover {
+  transform: scale(1.3);
+  transition: .2s ease;
+}
+
+/* line 1012, ../scss/_home.scss */
+.facebook, .twitter, .vimeo {
+  margin: 0px 9px;
+}
+
+/* line 1015, ../scss/_home.scss */
+.facebook:hover {
+  transform: scale(1.3);
+  transition: .2s ease;
+}
+
+/* line 1019, ../scss/_home.scss */
+.twitter:hover {
+  transform: scale(1.3);
+  transition: .2s ease;
+}
+
+/* line 1023, ../scss/_home.scss */
+.vimeo:hover {
+  transform: scale(1.3);
+  transition: .2s ease;
+}
+
+/* line 1027, ../scss/_home.scss */
+.days-of-week {
+  position: absolute;
+  font-family: nittiblack;
+  color: white;
+  font-size: 10px;
+  text-transform: uppercase;
+  left: 300px;
+  top: 45px;
+  line-height: 20px;
+}
+
+/* line 1037, ../scss/_home.scss */
+.days-of-week-two {
+  position: absolute;
+  font-family: nittiblack;
+  color: white;
+  font-size: 10px;
+  text-transform: uppercase;
+  top: 45px;
+  line-height: 20px;
+  left: 40px;
+  text-align: right;
+}
+
+/* End Section 6 // End Page */
+/* line 1050, ../scss/_home.scss */
+.posts-container {
+  position: absolute;
+  top: 2741px;
+}
+
+/* line 1054, ../scss/_home.scss */
+.social-profile {
+  border-radius: 100px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+/* line 1059, ../scss/_home.scss */
+.social-profile:hover {
+  transform: scale(1.1);
+  transition: .2s ease;
+}
+
+/* line 1063, ../scss/_home.scss */
+.social-name {
+  display: inline;
+  font-family: graphikmedium;
+  margin-left: 5px;
+  color: #404040;
+}
+
+/* line 1069, ../scss/_home.scss */
+.social-posted {
+  display: inline;
+  margin-left: 5px;
+  color: #ADADAD;
+}
+
+/* line 1074, ../scss/_home.scss */
+.social-date {
+  font-family: nittiblack;
+  font-size: 12px;
+  color: #ADADAD;
+  margin-left: 70px;
+  margin-top: -8px;
+}
+
+/* line 1081, ../scss/_home.scss */
+.social-picture {
+  height: 400px;
+  border-radius: 2.5px;
+  margin-top: 10px;
+}
+
+/* line 1086, ../scss/_home.scss */
+.social-picture:hover {
+  transform: scale(1.05);
+  transition: .2s ease;
+}
+
+/* line 1090, ../scss/_home.scss */
+.col-sm-4.socialpost {
+  width: 340px;
+}
