@@ -21,13 +21,70 @@
         <div class="row">
         	<div class="navigation">
 	        	<div class="dropdown">
-		       		<button class="dropbtn">
+		       		<button onclick="myFunction()" class="dropbtn">
 		       			<i class="material-icons">&#xe5c3;</i>
 		       		</button>
-		       		<div class="dropdown-content">
-		       			<a href="#">Women</a>
-		       			<a href="#">Men</a>
-		       			<a href="#">Films</a>
+		       		<div class="dropdown-content" id="myDropdown">
+		       			<div class="close-dropdown"><i class="material-icons dropdown">&#xe5cd;</i></div>
+		       			<img alt="logo" src="assets/images/logo.png" class="dropdown-logo">
+		       			<div class="dropdown-search"><span class="glyphicon glyphicon-search"></span></div>
+		       			<a href="#" class="teton-link">tetongravity.com<i class="material-icons link-arrow">&#xe5c8;</i></a>
+		       			<div class="dropdown-area1">
+		       				<div class="dropdown-headers1">
+				       			<a href="#">Films</a>
+				       			<a href="#">Team</a>
+				       			<a href="#">Lookbook</a>
+				       		</div>
+				       		<div class="dropdown-headers2">
+				       			<a href="#">Contact</a>
+				       			<a href="#" class="sub-categories">Locations</a>
+				       			<a href="#" class="sub-categories">Shipping & Returns</a>
+				       			<a href="#" class="sub-categories">Customer Service</a>
+								<a href="#" class="sub-categories">FAQ</a>
+							</div>
+						</div>
+						<div class="dropdown-area2">
+			       			<a href="#">Men</a>
+			       			<a href="#" class="sub-categories">Graphic Tees</a>
+			       			<a href="#" class="sub-categories">Hoodies & Flannels</a>
+			       			<a href="#" class="sub-categories">Preformance Wear</a>
+			       			<a href="#">Women</a>
+			       			<a href="#" class="sub-categories">Tees & Tanks</a>
+			       			<a href="#" class="sub-categories">Hoodies</a>
+			       			<a href="#" class="sub-categories">Shorts</a>
+							<a href="#" class="sub-categories">Preformance Wear</a>
+						</div>
+						<div class="dropdown-area3">
+			       			<a href="#">Accessories</a>
+			       			<a href="#" class="sub-categories">Stickers</a>
+			       			<a href="#" class="sub-categories">Beverage</a>
+			       			<a href="#" class="sub-categories">Socks</a>
+			       			<a href="#" class="sub-categories">Books</a>
+			       			<a href="#" class="sub-categories">Gift Cards</a>
+			       		</div>
+			       		<div class="dropdown-area4">
+			       			<a href="#">Headwear</a>
+			       			<a href="#" class="sub-categories">Hats/Caps</a>
+			       			<a href="#" class="sub-categories">Beanies</a>
+			       			<a href="#" class="sub-categories">Buffs</a>
+			       			<div class="eyewear">
+				       			<a href="#">Eyewear</a>
+				       			<a href="#" class="sub-categories">Goggles</a>
+				       			<a href="#" class="sub-categories">Sunglasses</a>
+			       			</div>
+			       			<a href="#" class="sale">Sale</a>
+			       		</div>
+			       		<img src="assets/images/a-biker.jpg" alt="Your Profile" class="login-hero">
+			       		<div class="login-hero-overlay"></div>
+			       		<img src="assets/images/a-biker2.jpg" alt="Your Profile" class="login-profile">
+			       		<div class="login-name">John Doe</div>
+			       		<div class="login-shipping">shipping address</div>
+			       		<div class="login-address">1234 Torotown St.</br>City,ST-12345</div>
+			       		<button class="edit-profile">Edit Profile</button>
+			       		<div class="not-you">Not you?</div>
+			       		<div class="not-you-sign">Sign In</div>
+			       		<button class="your-cart"><span class="glyphicon login-cart"></span></button>
+
 		       		</div>
 	       		</div>
 	       	</div>
@@ -71,7 +128,11 @@
 			</div>
 			<div class="col-md-4 scroller-element4">
 				<img src="assets/images/IMG_8978.jpg" alt="hat" class="element4">
-				<!--<div class="element4-text">TGR Blog: Part 1</br>Shadow Mountain</div>-->
+				<div class="element1-text">
+					<div class="adventure-text">TGR Blog: Part 1</br>Shadow Mountain</div>
+					Shadow Mountain- at the base of the Tetons is home to our first adventure. See the Whole Story here.
+					<i class="material-icons element1-arrow">&#xe5c8;</i>
+				</div>
 			</div>
 
 <!--Repeated Section One-->
@@ -114,8 +175,6 @@
 						<div class="headwear">headwear</div>
 						<div class="headwear-caption">Leather Patch 5-Panel
 							<div class="headwear-price">$20</div>
-							<i class="material-icons headwear-add">add</i>
-							<i class="material-icons headwear-arrow">&#xe5c8;</i>
 						</div>
 			   		</div>		
 				</div>
@@ -125,8 +184,6 @@
 						<div class="headwear">accessories</div>
 						<div class="headwear-caption">HydroFlask 32oz
 							<div class="headwear-price">$30</div>
-							<i class="material-icons accessories-add">add</i>
-							<i class="material-icons headwear-arrow">&#xe5c8;</i>
 						</div>
 					</div>
 				</div>
@@ -136,8 +193,6 @@
 						<div class="headwear">apparel</div>
 						<div class="headwear-caption">Ride the Tetons Tee
 							<div class="headwear-price">$20</div>
-							<i class="material-icons headwear-add">add</i>
-							<i class="material-icons headwear-arrow">&#xe5c8;</i>
 						</div>
 			   		</div>		
 				</div>
@@ -147,8 +202,6 @@
 						<div class="headwear">headwear</div>
 						<div class="headwear-caption">Alpine Cap
 							<div class="headwear-price">$20</div>
-							<i class="material-icons headwear-add">add</i>
-							<i class="material-icons headwear-arrow">&#xe5c8;</i>
 						</div>
 			   		</div>		
 				</div>
@@ -158,8 +211,6 @@
 						<div class="headwear">apparel</div>
 						<div class="headwear-caption">Let's Go America Socks
 							<div class="headwear-price">$20</div>
-							<i class="material-icons headwear-add">add</i>
-							<i class="material-icons headwear-arrow">&#xe5c8;</i>
 						</div>
 			   		</div>		
 				</div>
@@ -169,8 +220,6 @@
 						<div class="headwear">headwear</div>
 						<div class="headwear-caption">Alpine Cap
 							<div class="headwear-price">$20</div>
-							<i class="material-icons headwear-add">add</i>
-							<i class="material-icons headwear-arrow">&#xe5c8;</i>
 						</div>
 			   		</div>		
 				</div>
@@ -188,9 +237,7 @@
 				<img src="assets/images/hydro-flask-stainless-steel-vacuum-insulated-water-bottle-32-oz-wide-mouth-flex-cap-cobalt.jpg" alt="HydroFlask" class="gallery-image gallery-image-highlight">
 				<img src="assets/images/DSC00227.jpg" alt="Hydroflask Ad" class="gallery-image">
 			</div>	
-			<i class="material-icons gallery-arrow-left">arrow_back</i>
 			<img src="assets/images/hydro-flask-stainless-steel-vacuum-insulated-water-bottle-32-oz-wide-mouth-flex-cap-cobalt.jpg" alt="HydroFlask" class="main-gallery-image" id="main-gallery-image">
-			<i class="material-icons gallery-arrow">&#xe5c8;</i>
 			<div class="largeAd-title">32 oz HydroFlask</div>
 			<div class="largeAd-text">Spread the stoke and live the dream as a part of the TGR </br>Ambassador program.</div>
 			<div class="largeAd-bottom-container">

@@ -54,6 +54,10 @@ body {
 	font-family: nittiblack;
 	src: url("/assets/fonts/nitti_black.ttf");
 }
+@font-face {
+    font-family: graphikextralight;
+    src: url("/assets/fonts/Graphik-Extralight.otf");
+}
 /* End Fonts */
 
 /* ##2 Header */
@@ -125,6 +129,10 @@ button.header-button {
     padding: 10px 10px;
     font-family: graphikregular;
     color: #5C2B0A;
+}
+button.header-button:hover {
+    transition: ease .2s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 i.material-icons.header-wear-arrow {
     font-size: 12px;
@@ -445,6 +453,10 @@ div.section-one-row {
 .mostwanted-ad1-picture {
 	height: 354.24px;
 }
+.mostwanted-ad1-picture:hover {
+    filter: blur(2px);
+    transition: ease .1s;
+}
 .headwear {
     font-family: nittiblack;
     color: #ADADAD;
@@ -497,6 +509,18 @@ div.section-one-row {
 .accessoriesimg {
     height: 354.4px;
 }
+.accessoriesimg:hover {
+    filter: blur(2px);
+    transition: ease .1s;
+}
+.hat1ad:hover{
+    filter: blur(2px);
+    transition: ease .1s;
+}
+.hat2ad:hover{
+    filter: blur(2px);
+    transition: ease .1s;
+}
 .material-icons.accessories-add {
 	font-size: 14px;
 	padding-left: 40px;
@@ -540,7 +564,7 @@ div.section-one-row {
 .stay-updated {
     font-family: graphikmedium;
     font-size: 10px;
-    color: grey;
+    color: gray;
     position: absolute;
     top: 1450px;
     left: 170px;
@@ -548,12 +572,12 @@ div.section-one-row {
 .email-address {
     font-family: graphikmedium;
     font-size: 10px;
-    color: grey;
+    color: gray;
     position: absolute;
     top: 1500px;
     left: 120px;
     padding: 20px 140px 20px 20px;
-    border: solid grey 1px;
+    border: solid gray 1px;
     border-radius: 3px;
 }
 button.email {
@@ -592,25 +616,6 @@ button.email {
 }
 .main-gallery-image {
     height: 355.82px;
-    margin-left: 130px;
-}
-.material-icons.gallery-arrow {
-    font-size: 20px;
-    margin-left: 210px;
-    color: black;
-    margin-left: 95px;
-}
-.material-icons.gallery-arrow:hover {
-	transform: scale(1.5);
-	transition: .2s ease;
-}
-.material-icons.gallery-arrow-left {
-    color: black;
-    font-size: 20px;
-}
-.material-icons.gallery-arrow-left:hover {
-    transform: scale(1.5);
-    transition: .2s ease;
 }
 .largeAd-title {
     font-family: graphikmedium;
@@ -633,7 +638,8 @@ button.email {
     text-align: center;
     border-top: solid black 6px;
     position: absolute;
-    right: 0px;
+    right: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .largeAd-bottom-container {
 	background-color: #E7E7E7;
