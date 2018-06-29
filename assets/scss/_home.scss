@@ -31,24 +31,24 @@ body {
 
 @font-face {
 	font-family: graphikblack;
-	src: url("/summer-header/fonts/Graphik-Black.otf");
+	src: url("/assets/fonts/Graphik-Black.otf");
 }
 
 @font-face {
 	font-family: graphikmedium;
-	src: url("/summer-header/fonts/Graphik-Medium.otf");
+	src: url("/assets/fonts/Graphik-Medium.otf");
 }
 @font-face {
 	font-family: graphikregular;
-	src: url("/summer-header/fonts/Graphik-Regular.otf");
+	src: url("/assets/fonts/Graphik-Regular.otf");
 }
 @font-face {
 	font-family: brownhillscript;
-	src: url("/summer-header/fonts/Brownhill Script.ttf");
+	src: url("/assets/fonts/Brownhill Script.ttf");
 }
 @font-face {
 	font-family: graphiksemibold;
-	src: url("/summer-header/fonts/Graphik-Semibold.otf");
+	src: url("/assets/fonts/Graphik-Semibold.otf");
 }
 @font-face {
 	font-family: nittiblack;
@@ -58,7 +58,7 @@ body {
 
 /* ##2 Header */
 .hero-image {
-	background-image: url("/summer-header/images/videoreplace.jpg"); 
+	background-image: url("/assets/images/videoreplace.jpg"); 
 	height: 400px;
 	width: 700px;
 	background-position: center;
@@ -93,6 +93,7 @@ div.logo {
 	padding: 10px;
 	padding-top: 0px;
 	padding-bottom: 18px;
+    margin-left: 50px;
 }
 .logo span {
 	color: black;
@@ -222,13 +223,21 @@ div.cart {
 .glyphicon {
 	margin-left: 5px;
 }
-.button .btn-video:hover {
-	background-color:  #E4BFA4;
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+.button {
+    .btn-video:hover {
+    	background-color:  #E4BFA4;
+    	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
 }
+.shopping-cart {
+    position: absolute;
+    top: 20px;
+    right: 95px;
+}
+
 /* End Header */
 
-/* ##3 Swiper */
+/* ##3 Swiper */    /*
 .swiper-container {
     width: 100%;
     height: 100%;
@@ -248,7 +257,7 @@ div.cart {
 a {
 	color: red !important;
 	text-decoration: underline !important;
-}
+}*/
 
 /* Section 1 */
 
@@ -261,7 +270,7 @@ div.section-one-row {
 .scrollable {
 	overflow-x: scroll;
 	overflow-y: hidden;
-	width: 178.4vw;
+	width: 192vw;
 }
 .element1-pic {
     width: auto;
@@ -292,6 +301,10 @@ div.section-one-row {
 .col-md-5.scroller-element1 {
 	padding-right: 5px;
 	width: 571.62px;
+}
+.col-md-5.scroller-element-2 {
+    margin-left: 85px;
+    width: 571px;
 }
 /* Section 1, col 1 */
 .element1-text {
