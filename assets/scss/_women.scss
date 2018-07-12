@@ -1,0 +1,296 @@
+.women-hero-image {
+	background-image: url("/assets/images/women-header.jpg");
+	height: 450px;
+	width: 100vw;
+	img.women-hero-overlay {
+    height: 300px;
+    width: 100%;
+    margin-top: -20px;
+    margin-left: 0px;
+    border-radius: 4px;
+    padding: 0px;
+	}
+	.row.womens-hero {
+		width: 100vw;
+	}
+	.navigation .dropbtn {
+		background: none;
+	}
+	.way-up {
+    color: white;
+    font-family: graphikmedium;
+    font-size: 45px;
+    text-align: center;
+    line-height: 45px;
+    margin-top: 60px;
+	}
+	.women-hero-description {
+    color: white;
+    margin-top: 20px;
+    font-family: graphiklight;
+    text-align: center;
+	}
+	button.women-hero-button {
+    font-family: graphiklight;
+    color: white;
+    border: solid white 1.3px;
+    border-radius: 2px;
+    background: none;
+    margin: 20px 0px 0px 80px;
+    padding: 5px 15px;
+	}
+	button.women-hero-button:hover {
+		transition: .2s ease;
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	}
+	img.hero-img-2 {
+    width: 100%;
+    padding: 0px;
+    border-radius: 4px;
+	}
+	.hero-img2 {
+		padding: 0px;
+	}
+}
+div.sectionone-row {
+    margin-top: -60px;
+    margin-left: 30px;
+    width: 100vw;
+    overflow-x: scroll;
+}
+.col-md-4.scroller-tees {
+	width: 455px;
+}
+img.tees-pic {
+    width: 436px;
+    height: 200px;
+    border-radius: 4px;
+    z-index: 0;
+    position: absolute;
+    border-bottom: solid black 1px;
+}
+.teestanks-text {
+		z-index: 5;
+	    position: relative;
+	    bottom: 0;
+	    background: linear-gradient(to bottom, transparent 0%, black 120%);
+	    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	    width: 435.53px;
+	    height: 200px;
+	    padding-top: 75px;
+	    padding-left: 150px;
+	    color: white;
+	    font-family: graphikmedium;
+	    font-size: 2	0px;
+	    line-height: 1;
+	    transition: .2s;
+		.tees-text {
+    		width: 40%;
+    		line-height: 1;
+   		 	padding-bottom: 10px;
+    		display: inline;
+		}
+	    .teestanks-text:hover {
+			background-color: rgba(255,255,255,.2);
+			transition: .2s ease;
+		}
+		.material-icons.tees-arrow {
+		    font-size: 15px;
+		    padding-left: 8px;
+			display: inline;
+		}
+	}
+button.email-women {
+    position: absolute;
+    top: 1050px;
+    left: 185px;
+    background-color: #202020;
+    padding: 17px 15px;
+    font-family: graphikregular;
+    color: white;
+    font-size: 14px;
+    border-radius: 3px;
+    box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+}
+button.email-women:hover {
+    transform: scale(1.05);
+    transition: .2s ease;
+}
+.vertical-scroller-women {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 1100px;
+
+}
+    .email-attention-women {
+    font-family: graphikmedium;
+    font-size: 30px;
+    color: #202020;
+    position: absolute;
+    top: 950px;
+    left: 150px;
+}
+	.stay-updated-women {
+    font-family: graphikmedium;
+    font-size: 10px;
+    color: gray;
+    position: absolute;
+    top: 1000px;
+    left: 170px;
+}
+.explore-women {
+    position: absolute;
+    top: 1500px;
+    left: 15px;
+    font-size: 30px;
+    font-family: graphikmedium;
+    color: #202020;
+}
+.explore-background-women {
+    position: absolute;
+    top: 1560px;
+    left: 15px;
+    height: 640px;
+    width: 100%;
+    opacity: .1;
+}
+.explore-image-women {
+    position: absolute;
+    top: 1580px;
+    height: 602.92px;
+    left: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.sidebar-women {
+	    color: #ADADAD;
+	    font-family: nittiblack;
+	    font-size: 12px;
+	    transform: rotate(270deg);
+	    border-top: solid #202020 3px;
+	    position: absolute;
+	    top: 1900px;
+	    background-color: white;
+	    left: -98px;
+	    padding: 10px 30px;
+	}
+	.explore-title-women {
+		position: absolute;
+		top: 1650px;
+		left: 1000px;
+		font-family: brownhillscript;
+		color: black;
+		font-size: 120px;
+		line-height: 110px;
+	    transform: rotate(-8deg);
+	}	
+.explore-info-women {
+    color: #202020;
+    font-size: 12px;
+    font-family: graphikmedium;
+    position: absolute;
+    top: 1950px;
+    left: 950px;
+    margin: 0px 40px;
+    text-align: center;
+}	
+button.lookbook-women {
+	position: absolute;
+	top: 2100px;
+	left: 1080px;
+    background-color: #202020;
+    padding: 20px 15px;
+    font-family: graphikregular;
+    color: white;
+    font-size: 14px;
+    border-radius: 3px;
+    box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.5);
+}
+button.lookbook-women:hover {
+    transform: scale(1.05);
+    transition: .2s ease;
+}
+.scrollable.items {
+    width: 136vw;
+}
+.scroll2-image-women {
+    width: 420px;
+    height: 285px;
+    z-index: 0;
+    position: absolute;
+    border-top: solid black 5px;
+}
+.social-women {
+    position: absolute;
+    top: 2900px;
+    left: 15px;
+    font-family: graphikmedium;
+    font-size: 30px;
+    color: #202020;
+}
+.email-address-women {
+    font-family: graphikmedium;
+    font-size: 10px;
+    color: gray;
+    position: absolute;
+    top: 1500px;
+    left: 120px;
+    padding: 20px 140px 20px 20px;
+    border: solid gray 1px;
+    border-radius: 3px;
+}
+button.email-women2 {
+    position: absolute;
+    top: 1500px;
+    left: 370px;
+    background-color: #202020;
+    padding: 17px 15px;
+    font-family: graphikregular;
+    color: white;
+    font-size: 14px;
+    border-radius: 3px;
+    box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+}
+.swiper-container.women-go-social.swiper-container-horizontal {
+    position: absolute;
+    top: 2950px;
+}
+.ambassador-women {
+    position: absolute;
+    top: 2700px;
+    font-family: graphikmedium;
+    font-size: 30px;
+    left: 37%;
+}
+.ambassador-info-women {
+    position: absolute;
+    top: 2745px;
+    left: 28%;
+    font-family: graphikregular;
+    color: gray;
+}
+.email-address-ambassador {
+    font-family: graphikmedium;
+    font-size: 10px;
+    color: gray;
+    position: absolute;
+    top: 2800px;
+    left: 36%;
+    padding: 20px 140px 20px 20px;
+    border: solid gray 1px;
+    border-radius: 3px;
+}
+button.email-women3 {
+    position: absolute;
+    top: 2800px;
+    left: 54%;
+    background-color: #202020;
+    padding: 17px 15px;
+    font-family: graphikregular;
+    color: white;
+    font-size: 14px;
+    border-radius: 3px;
+    box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+}
+.footer.women-footer {
+    top: 3400px;
+}

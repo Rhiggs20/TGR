@@ -1,5 +1,4 @@
 
-
 /* TABLE OF CONTENTS
 ##1 Fonts 
 ##2 Header
@@ -58,6 +57,10 @@ body {
     font-family: graphikextralight;
     src: url("/assets/fonts/Graphik-Extralight.otf");
 }
+@font-face {
+    font-family: graphiklight;
+    src: url("/assets/fonts/Graphik-Light.otf");
+}
 /* End Fonts */
 
 /* ##2 Header */
@@ -91,13 +94,19 @@ div.logo {
 	margin-left: 10px;
 	padding-top: 15px;
 }
-
+button.home {
+    border: none;
+    padding: 0px;
+    width: 131px;
+    height: 30px;
+    margin-left: 40px;
+    background: none;
+}
 .logo img {
-	width: 50%;
+	width: 100%;
 	padding: 10px;
 	padding-top: 0px;
 	padding-bottom: 18px;
-    margin-left: 50px;
 }
 .logo span {
 	color: black;
@@ -157,7 +166,22 @@ i.materialicons {
     left: 702px;
     color: red;
 }
-
+.navigation .dropbtn {
+    color: black;
+    padding: 0px 0px 0px 16px !important;
+    font-size: 20px !important;
+    border: none;
+    position: absolute;
+    top: -13px;
+}
+button.search {
+    border: none;
+    background: none;
+}
+button.shop-cart {
+    border: none;
+    background: none;
+}
 .cart h1 {
 	font-family: graphikblack;
 	font-size: 13px;
@@ -245,7 +269,7 @@ div.cart {
 
 /* End Header */
 
-/* ##3 Swiper */    /*
+/* ##3 Swiper */ /*   
 .swiper-container {
     width: 100%;
     height: 100%;
@@ -262,7 +286,7 @@ div.cart {
     font-family: graphikmedium;
     background: #fff;    
 }
-a {
+a.link {
 	color: red !important;
 	text-decoration: underline !important;
 }*/
@@ -397,12 +421,35 @@ div.section-one-row {
 	width: 305px !important;
 }
 .element4 {
-	height: 262px;
-	position: absolute;
+    height: 262px;
+    position: absolute;
+    border-bottom: solid black 2px;
+}
+.blog-text-header {
+    font-size: 39px;
+    line-height: 1;
+}
+.blog-text {
+    width: 390px;
+    height: 262px;
+    font-size: 10px;
+    z-index: 10;
+    color: white;
+    font-family: graphikmedium;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: linear-gradient(to bottom, transparent 0%, black 120%);
+    padding-top: 155px;
+    padding-left: 5px;
+}
+.blog-text:hover {
+    background-color: rgba(255,255,255,.2);
+    transition: .2s ease;
 }
 .col-md-4.scroller-element4 {
 	width: 335px;
 }
+
 .material-icons.element4-arrow {
 	position: relative;
 	font-size: 50px;
@@ -510,15 +557,15 @@ div.section-one-row {
     height: 354.4px;
 }
 .accessoriesimg:hover {
-    filter: blur(2px);
+    filter: blur(1px);
     transition: ease .1s;
 }
 .hat1ad:hover{
-    filter: blur(2px);
+    filter: blur(1px);
     transition: ease .1s;
 }
 .hat2ad:hover{
-    filter: blur(2px);
+    filter: blur(1px);
     transition: ease .1s;
 }
 .material-icons.accessories-add {
@@ -569,16 +616,15 @@ div.section-one-row {
     top: 1450px;
     left: 170px;
 }
-.email-address {
-    font-family: graphikmedium;
-    font-size: 10px;
-    color: gray;
+input[type="text"] {
     position: absolute;
     top: 1500px;
-    left: 120px;
-    padding: 20px 140px 20px 20px;
-    border: solid gray 1px;
-    border-radius: 3px;
+    left: 150px;
+    font-family: graphikregular;
+    border: solid gray 2px;
+    border-radius: 4px;
+    padding: 16px 50px 16px 10px;
+    color: gray;
 }
 button.email {
     position: absolute;
@@ -1065,7 +1111,42 @@ button.pro1:hover {
     text-align: right;
 }
 /* End Section 6 // End Page */
-
+   .swiper-container {
+      width: 100%;
+      height: 550px;
+      top: 1920px;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    .social-topper {
+        position: absolute;
+        top: 20px;
+    }
+    .swiper-button-next {
+        background-image: url("/assets/images/skip-track.png") !important;
+    }
+    .swiper-button-prev {
+        background-image: url("/assets/images/backward-arrow.png") !important;
+    }
+    .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets {
+    display: none;
+}
 .posts-container {
     position: absolute;
     top: 2741px;
@@ -1073,6 +1154,7 @@ button.pro1:hover {
 .social-profile {
     border-radius: 100px;
     height: 30px;
+    width: 30px;
     margin-left: 10px;
 }
 .social-profile:hover {
@@ -1089,12 +1171,13 @@ button.pro1:hover {
     display: inline;
     margin-left: 5px;
     color: #ADADAD;
+    font-size: 15px;
 }
 .social-date {
     font-family: nittiblack;
     font-size: 12px;
     color: #ADADAD;
-    margin-left: 70px;
+    margin-left: -75px;
     margin-top: -8px;
 }
 .social-picture {
@@ -1108,4 +1191,79 @@ button.pro1:hover {
 }
 .col-sm-4.socialpost {
     width: 340px;
+}
+
+/* Device Width Under 1024px */
+@media only screen and (max-width: 1024px) {
+    img.logo {
+        width: 60%;
+    }
+    .hero-image {
+        width: 500px;
+    }
+    .shades {
+        left: 560px;
+    }
+    .header-description {
+        left: 540px;
+    }
+    button.header-button {
+        left: 570px;
+    }
+    .scrollable {
+        width: 258vw;
+    }
+    .col-md-6.water-ad {
+        width: 400px;
+    }
+    .vertical-scroller-area {
+        width: 55vw;
+    }
+    .explore {
+        top: 1650px;
+    }
+    .explore-background {
+        top: 1710px;
+    }
+    .explore-image {
+        top: 1730px;
+    }
+    .explore-title {
+        display: none;
+    }
+    .explore-info {
+        display: none;
+    }
+    button.lookbook {
+        left: 750px;
+        top: 2250px;
+        border: none;
+    }
+    .meetathletes {
+        top: 2380px;
+    }
+    .scrollarea {
+        top: 2450px;
+    }
+    .col-md-2 {
+        margin-right: 100px;
+    }
+    .social {
+        top: 2770px;
+    }
+    .swiper-container {
+        top: 2020px;
+    }
+    .footer {
+        top: 3300px;
+    }
+    .address, .address2 {
+        font-size: 20px;
+    }
+    .days-of-week {
+        left: 212px;
+    }
+    .days-of-week-two {
+        left: 19px;
+    }
 }

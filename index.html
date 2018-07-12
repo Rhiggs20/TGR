@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.2/css/swiper.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.css"> 
 
 	<title>Teton Shop Summer</title>
 
@@ -21,14 +21,12 @@
         <div class="row">
         	<div class="navigation">
 	        	<div class="dropdown">
-		       		<button onclick="myFunction()" class="dropbtn">
-		       			<i class="material-icons">&#xe5c3;</i>
-		       		</button>
+		       		<button onclick="myFunction()" class="dropbtn material-icons">&#xe5c3;</button>
 		       		<div class="dropdown-content" id="myDropdown">
 		       			<div class="close-dropdown"><i class="material-icons dropdown">&#xe5cd;</i></div>
 		       			<img alt="logo" src="assets/images/logo.png" class="dropdown-logo">
 		       			<div class="dropdown-search"><span class="glyphicon glyphicon-search"></span></div>
-		       			<a href="#" class="teton-link">tetongravity.com<i class="material-icons link-arrow">&#xe5c8;</i></a>
+		       			<a href="index.html" class="teton-link">tetongravity.com<i class="material-icons link-arrow">&#xe5c8;</i></a>
 		       			<div class="dropdown-area1">
 		       				<div class="dropdown-headers1">
 				       			<a href="#">Films</a>
@@ -48,7 +46,7 @@
 			       			<a href="#" class="sub-categories">Graphic Tees</a>
 			       			<a href="#" class="sub-categories">Hoodies & Flannels</a>
 			       			<a href="#" class="sub-categories">Preformance Wear</a>
-			       			<a href="#">Women</a>
+			       			<a href="women.html">Women</a>
 			       			<a href="#" class="sub-categories">Tees & Tanks</a>
 			       			<a href="#" class="sub-categories">Hoodies</a>
 			       			<a href="#" class="sub-categories">Shorts</a>
@@ -63,7 +61,7 @@
 			       			<a href="#" class="sub-categories">Gift Cards</a>
 			       		</div>
 			       		<div class="dropdown-area4">
-			       			<a href="#">Headwear</a>
+			       			<a href="headwear.html">Headwear</a>
 			       			<a href="#" class="sub-categories">Hats/Caps</a>
 			       			<a href="#" class="sub-categories">Beanies</a>
 			       			<a href="#" class="sub-categories">Buffs</a>
@@ -74,6 +72,15 @@
 			       			</div>
 			       			<a href="#" class="sale">Sale</a>
 			       		</div>
+			       		<!--
+			       		<div class="swiper-container drop">
+			       			<div class="swiper-wrapper drop">
+			       				<div class="swiper-slide drop">enjoy <a>free shipping</a> on orders over $50</div>
+			       				<div class="swiper-slide drop"> TGR apparel delivered every other month <a>find out more</a></div>
+			       				<div class="swiper-slide drop">enjoy <a>free shipping</a> on orders over $50</div>
+			       				<div class="swiper-slide drop"> TGR apparel delivered every other month <a>find out more</a></div>
+			       			</div>
+			       		</div>-->
 			       		<img src="assets/images/a-biker.jpg" alt="Your Profile" class="login-hero">
 			       		<div class="login-hero-overlay"></div>
 			       		<img src="assets/images/a-biker2.jpg" alt="Your Profile" class="login-profile">
@@ -89,17 +96,17 @@
 	       		</div>
 	       	</div>
        		<div class="col-2">
-    			<img alt="logo" src="assets/images/logo.png">
+    			<button class="home" href="#"><img alt="logo" src="assets/images/logo.png"></button>
     		</div>
 	    	<div class="col-3">
-	   			<span class="glyphicon glyphicon-search"></span>
+	   			<button class="search"><span class="glyphicon glyphicon-search"></span></button>
 	   		</div>
 	   	</div>
 	<div class="hero-image"></div>
 	<div class="shades">Shades</br>for Summer</div>
 	<div class="header-description">Spread the stoke and live the dream as a</br>part of the TGR Ambassador program.</div>
 	<button class="header-button">Shop Preformance Wear<i class="material-icons header-wear-arrow">&#xe5c8;</i></button>
-	<div class="shopping-cart"><span class="glyphicon"></span></div>
+	<div class="shopping-cart"><button class="shop-cart" href="#"><span class="glyphicon"></span></button></div>
 	<img src="assets/images/videoreplace-other.jpg" class="hero-image-two" alt="Shades">
 	</div>
 <!--End Header-->
@@ -128,8 +135,8 @@
 			</div>
 			<div class="col-md-4 scroller-element4">
 				<img src="assets/images/IMG_8978.jpg" alt="hat" class="element4">
-				<div class="element1-text">
-					<div class="adventure-text">TGR Blog: Part 1</br>Shadow Mountain</div>
+				<div class="blog-text">
+					<div class="blog-text-header">TGR Blog: Part 1</br>Shadow Mountain</div>
 					Shadow Mountain- at the base of the Tetons is home to our first adventure. See the Whole Story here.
 					<i class="material-icons element1-arrow">&#xe5c8;</i>
 				</div>
@@ -157,6 +164,11 @@
 			</div>
 			<div class="col-md-4 scroller-element4">
 				<img src="assets/images/IMG_8978.jpg" alt="Video" class="element4">
+				<div class="blog-text">
+					<div class="blog-text-header">TGR Blog: Part 1</br>Shadow Mountain</div>
+					Shadow Mountain- at the base of the Tetons is home to our first adventure. See the Whole Story here.
+					<i class="material-icons element1-arrow">&#xe5c8;</i>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -225,7 +237,7 @@
 				</div>
 				<div class="email-attention">Be the first to know.</div>
 				<div class="stay-updated">Stay updated with the latest ticket & merch sales.</div>
-				<div class="email-address">Email Address</div>
+				<input type="text" name="emailAddress" value="Email Address"> 
 				<button class="email">Subscribe<i class="material-icons lookbook-arrow">&#xe5c8;</i></button>
 
 			</div>
@@ -340,41 +352,96 @@
 		<p class="social-nav1">Become an Ambassador</p>
 		<p class="social-nav2">#WearTheDream</p>
 		<p class="social-nav3">@TGRShop</p>
-	</div>
-	<div class="posts-container">
-		<div class="col-sm-4 socialpost">
-			<img src="assets/images/instagram-color.png" alt="Instagram" class="instagramincolor">
-			<img src="assets/images/tim-profile.jpg" alt="Tim Durtschi" class="social-profile">
-			<div class="social-name">Tim Durtschi</div>
-			<div class="social-posted">posted a photo</div>
-			<div class="social-date">02.16.2018</div>
+	</div><!-- Swiper -->
+  	<div class="swiper-container">
+	    <div class="swiper-wrapper">
+	      <div class="swiper-slide">
+	      	<div class="social-topper">
+		      	<img src="assets/images/instagram-color.png" alt="Instagram" class="instagramincolor">
+				<img src="assets/images/tim-profile.jpg" alt="Social Profile" class="social-profile">
+				<div class="social-name">Tim Durtschi</div>
+				<div class="social-posted">posted a photo</div>
+				<div class="social-date">02.16.2018</div>
+			</div>
 			<img src="assets/images/tim-photo.png" alt="Social post" class="social-picture">
-		</div>
-		<div class="col-sm-4 socialpost">
-			<img src="assets/images/facebook-color.png" alt="Facebook" class="facebookincolor">
-			<img src="assets/images/jeremy-profile.jpg" alt="Jeremy Jones" class="social-profile">
-			<div class="social-name">Jeremy Jones</div>
-			<div class="social-posted">posted a photo</div>
-			<div class="social-date">02.04.2018</div>
-			<img src="assets/images/jeremy-post.jpg" alt="Jeremy's Post" class="social-picture">
-		</div>
-		<div class="col-sm-4 socialpost">
-			<img src="assets/images/facebook-color.png" alt="Facebook" class="facebookincolor">
-			<img src="assets/images/johnny-profile.jpg" alt="Johnny Collinson" class="social-profile">
-			<div class="social-name">Johnny Collinson</div>
-			<div class="social-posted">posted a photo</div>
-			<div class="social-date">02.06.2018</div>
-			<img src="assets/images/johnny-post.jpg" alt="Johnny's Post" class="social-picture">
-		</div>
-		<div class="col-sm-4 socialpost">
-			<img src="assets/images/instagram-color.png" alt="Instagram" class="instagramincolor">
-			<img src="assets/images/angel-profile.jpg" alt="Angel Collinson" class="social-profile">
-			<div class="social-name">Angel Collinson</div>
-			<div class="social-posted">posted a photo</div>
-			<div class="social-date">01.14.2018</div>
-			<img src="assets/images/angel-picture.jpg" alt="Angel's Post" class="social-picture">
-		</div>
-	</div>
+	      </div>
+	      <div class="swiper-slide">
+	      	<div class="social-topper">
+		      	<img src="assets/images/facebook-color.png" alt="Facebook" class="facebookincolor">
+				<img src="assets/images/jeremy-profile.jpg" alt="Social Profile" class="social-profile">
+				<div class="social-name">Jeremy Jones</div>
+				<div class="social-posted">posted a photo</div>
+				<div class="social-date">02.04.2018</div>
+			</div>
+			<img src="assets/images/jeremy-post.jpg" alt="Social Post" class="social-picture">
+	      </div>
+	      <div class="swiper-slide">
+	      	<div class="social-topper">
+		      	<img src="assets/images/facebook-color.png" alt="Facebook" class="facebookincolor">
+				<img src="assets/images/johnny-profile.jpg" alt="Social Profile" class="social-profile">
+				<div class="social-name">Johnny Collinson</div>
+				<div class="social-posted">posted a photo</div>
+				<div class="social-date">02.06.2018</div>
+			</div>
+			<img src="assets/images/johnny-post.jpg" alt="Social Post" class="social-picture">
+	      </div>
+	      <div class="swiper-slide">
+	      	<div class="social-topper">
+		      	<img src="assets/images/instagram-color.png" alt="Instagram" class="instagramincolor">
+				<img src="assets/images/angel-profile.jpg" alt="Social Profile" class="social-profile">
+				<div class="social-name">Angel Collinson</div>
+				<div class="social-posted">posted a photo</div>
+				<div class="social-date">01.14.2018</div>
+			</div>
+			<img src="assets/images/angel-picture.jpg" alt="Social Post" class="social-picture">
+	      </div>
+	      <div class="swiper-slide">
+	      	<div class="social-topper">
+		      	<img src="assets/images/instagram-color.png" alt="Instagram" class="instagramincolor">
+				<img src="assets/images/casey-callahan-642297-unsplash.jpg" alt="Social Profile" class="social-profile">
+				<div class="social-name">Kayla Krane</div>
+				<div class="social-posted">posted a photo</div>
+				<div class="social-date">01.14.2018</div>
+			</div>
+			<img src="assets/images/Screen Shot 2018-02-23 at 3_resized.png" alt="Social Post" class="social-picture">
+	      </div>
+	      <div class="swiper-slide">
+	      	<div class="social-topper">
+		      	<img src="assets/images/instagram-color.png" alt="Instagram" class="instagramincolor">
+				<img src="assets/images/738A0554.JPG" alt="Social Profile" class="social-profile">
+				<div class="social-name">Dane Tudor</div>
+				<div class="social-posted">posted a photo</div>
+				<div class="social-date">01.14.2018</div>
+			</div>
+			<img src="assets/images/738A0508.JPG" alt="Social Post" class="social-picture">
+	      </div>
+	      <div class="swiper-slide">
+	      	<div class="social-topper">
+		      	<img src="assets/images/instagram-color.png" alt="Instagram" class="instagramincolor">
+				<img src="assets/images/videoreplace copy.jpg" alt="Social Profile" class="social-profile">
+				<div class="social-name">Dan McMan</div>
+				<div class="social-posted">posted a photo</div>
+				<div class="social-date">01.14.2018</div>
+			</div>
+			<img src="assets/images/Screen Shot 2018-02-23 at 3.11.12 PM.png" alt="Social Post" class="social-picture">
+	      </div>
+	      <div class="swiper-slide">
+	      	<div class="social-topper">
+		      	<img src="assets/images/instagram-color.png" alt="Instagram" class="instagramincolor">
+				<img src="assets/images/angel-profile.jpg" alt="Social Profile" class="social-profile">
+				<div class="social-name">Elena Hight</div>
+				<div class="social-posted">posted a photo</div>
+				<div class="social-date">01.14.2018</div>
+			</div>
+			<img src="assets/images/@nickkalisz_DSC06789 2.jpg" alt="Social Post" class="social-picture">
+	      </div>
+    	</div>
+	    <!-- Add Pagination -->
+	    <div class="swiper-pagination"></div>
+	    <!-- Add Arrows -->
+	    <div class="swiper-button-next"></div>
+	    <div class="swiper-button-prev"></div>
+  	</div>
 <!--End Section Five-->
 
 <!--Footer-->
@@ -401,7 +468,7 @@
 
 <!--JQuery-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.2/js/swiper.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.js"></script>
 	<script title="text/javascript" src="assets/js/main.js"></script>
 <!--End JQuery-->
 
