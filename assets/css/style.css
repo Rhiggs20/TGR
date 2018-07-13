@@ -2238,7 +2238,11 @@ button.email-women3 {
   font-family: circularstdbold;
   src: url("/assets/fonts/CircularStd-Bold.ttf");
 }
-/* line 5, ../scss/_headwear.scss */
+@font-face {
+  font-family: compacta;
+  src: url("/assets/fonts/CompactaBT-Roman.ttf");
+}
+/* line 9, ../scss/_headwear.scss */
 .top-navigation {
   display: -webkit-box;
   display: -moz-box;
@@ -2252,44 +2256,44 @@ button.email-women3 {
   margin: 15px auto auto 15px;
   height: 30px;
 }
-/* line 17, ../scss/_headwear.scss */
+/* line 21, ../scss/_headwear.scss */
 .top-navigation .top-nav-square {
   flex-basis: 3%;
 }
-/* line 20, ../scss/_headwear.scss */
+/* line 24, ../scss/_headwear.scss */
 .top-navigation .top-nav-logo {
   flex-basis: 10%;
 }
-/* line 23, ../scss/_headwear.scss */
+/* line 27, ../scss/_headwear.scss */
 .top-navigation .top-nav-search {
   flex-basis: 83%;
 }
-/* line 26, ../scss/_headwear.scss */
+/* line 30, ../scss/_headwear.scss */
 .top-navigation .top-nav-cart {
   flex-basis: 3%;
   align-self: flex-end;
 }
-/* line 30, ../scss/_headwear.scss */
+/* line 34, ../scss/_headwear.scss */
 .top-navigation img.logo-resizer {
   width: 120px;
 }
-/* line 33, ../scss/_headwear.scss */
+/* line 37, ../scss/_headwear.scss */
 .top-navigation .material-icons.top-dropdown {
   color: black;
 }
-/* line 36, ../scss/_headwear.scss */
+/* line 40, ../scss/_headwear.scss */
 .top-navigation span.glyphicon.glyphicon-search {
   font-size: 18px;
   margin-top: 4px;
   color: black;
 }
-/* line 41, ../scss/_headwear.scss */
+/* line 45, ../scss/_headwear.scss */
 .top-navigation .glyphicon.top-cart {
   margin-right: 10px;
   color: black;
 }
 
-/* line 46, ../scss/_headwear.scss */
+/* line 50, ../scss/_headwear.scss */
 .hero-area {
   display: -webkit-box;
   display: -moz-box;
@@ -2303,23 +2307,23 @@ button.email-women3 {
   text-align: center;
   margin-top: 20px;
 }
-/* line 58, ../scss/_headwear.scss */
+/* line 62, ../scss/_headwear.scss */
 .hero-area .hero-img1-area {
   flex-basis: 25%;
 }
-/* line 61, ../scss/_headwear.scss */
+/* line 65, ../scss/_headwear.scss */
 .hero-area .hero-img2-area {
   flex-basis: 25%;
 }
-/* line 64, ../scss/_headwear.scss */
+/* line 68, ../scss/_headwear.scss */
 .hero-area .title-container {
   flex-basis: 25%;
 }
-/* line 67, ../scss/_headwear.scss */
+/* line 71, ../scss/_headwear.scss */
 .hero-area .hero-img3-area {
   flex-basis: 25%;
 }
-/* line 70, ../scss/_headwear.scss */
+/* line 74, ../scss/_headwear.scss */
 .hero-area .hero-title {
   font-family: circularstdbold;
   font-size: 35px;
@@ -2327,14 +2331,14 @@ button.email-women3 {
   color: black;
   margin-top: 50px;
 }
-/* line 77, ../scss/_headwear.scss */
+/* line 81, ../scss/_headwear.scss */
 .hero-area .hero-subtitle {
   font-family: graphikmedium;
   font-size: 12px;
   margin: 35px 45px 0px 45px;
   line-height: 22px;
 }
-/* line 83, ../scss/_headwear.scss */
+/* line 87, ../scss/_headwear.scss */
 .hero-area button.hero-button {
   border: solid black .0397cm;
   border-radius: 3px;
@@ -2342,14 +2346,14 @@ button.email-women3 {
   font-family: graphikregular;
   margin-top: 30px;
 }
-/* line 89, ../scss/_headwear.scss */
+/* line 93, ../scss/_headwear.scss */
 .hero-area button.hero-button i.material-icons.hero-button-arrow {
   font-size: 12px;
   margin-left: 10px;
 }
 
-/* line 95, ../scss/_headwear.scss */
-.filter-area {
+/* line 99, ../scss/_headwear.scss */
+.filter-header-area {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -2361,106 +2365,394 @@ button.email-women3 {
   margin: 80px 50px 20px 50px;
   align-items: flex-end;
 }
-/* line 106, ../scss/_headwear.scss */
-.filter-area .filter-title {
+/* line 110, ../scss/_headwear.scss */
+.filter-header-area .filter-title {
   font-family: graphikmedium;
   font-size: 25px;
   color: #2A2A2A;
 }
-/* line 111, ../scss/_headwear.scss */
-.filter-area .filter-style {
+/* line 115, ../scss/_headwear.scss */
+.filter-header-area .filter-style {
   font-family: graphikmedium;
   font-size: 15px;
   color: #2A2A2A;
 }
-/* line 116, ../scss/_headwear.scss */
-.filter-area .filter-color {
+/* line 120, ../scss/_headwear.scss */
+.filter-header-area .filter-color {
   font-family: graphikmedium;
   font-size: 15px;
   color: #2A2A2A;
 }
-/* line 121, ../scss/_headwear.scss */
-.filter-area .format-toggle {
+/* line 125, ../scss/_headwear.scss */
+.filter-header-area .format-toggle {
   font-family: graphikmedium;
   font-size: 12px;
   color: #2A2A2A;
 }
-/* line 126, ../scss/_headwear.scss */
-.filter-area .filter-hat {
+/* line 130, ../scss/_headwear.scss */
+.filter-header-area .filter-hat {
   margin: 0px 10px 0px 10px;
 }
-/* line 129, ../scss/_headwear.scss */
-.filter-area button.color-swatch {
+/* line 133, ../scss/_headwear.scss */
+.filter-header-area .hat-opacity {
+  opacity: .2 !important;
+}
+/* line 136, ../scss/_headwear.scss */
+.filter-header-area .no-hat-opacity {
+  opacity: 1 !important;
+}
+/* line 139, ../scss/_headwear.scss */
+.filter-header-area button.color-swatch {
   border-radius: 25px;
   padding: 9px;
   margin: 0px 6px 0px 6px;
+  border: none;
 }
-/* line 134, ../scss/_headwear.scss */
-.filter-area .swatch1 {
-  background-color: #ffc107;
+/* line 145, ../scss/_headwear.scss */
+.filter-header-area .swatch1 {
+  background-color: #F0CCA5;
 }
-/* line 137, ../scss/_headwear.scss */
-.filter-area .swatch2 {
-  background-color: #2196f3;
+/* line 148, ../scss/_headwear.scss */
+.filter-header-area .swatch2 {
+  background-color: #BCD7E0;
 }
-/* line 140, ../scss/_headwear.scss */
-.filter-area .swatch3 {
-  background-color: #f44336;
+/* line 151, ../scss/_headwear.scss */
+.filter-header-area .swatch3 {
+  background-color: #CD0000;
 }
-/* line 143, ../scss/_headwear.scss */
-.filter-area .swatch4 {
-  background-color: #00a651;
+/* line 154, ../scss/_headwear.scss */
+.filter-header-area .swatch4 {
+  background-color: #BFDBD4;
 }
-/* line 146, ../scss/_headwear.scss */
-.filter-area .swatch5 {
-  background-color: #191919;
+/* line 157, ../scss/_headwear.scss */
+.filter-header-area .swatch5 {
+  background-color: #000000;
 }
-/* line 149, ../scss/_headwear.scss */
-.filter-area .swatch6 {
+/* line 160, ../scss/_headwear.scss */
+.filter-header-area .swatch6 {
   background-color: #fff;
+  border: solid 2px lightgray !important;
+}
+/* line 164, ../scss/_headwear.scss */
+.filter-header-area li.toggle-button {
+  display: inline;
+}
+/* line 167, ../scss/_headwear.scss */
+.filter-header-area ul.product {
+  display: inline;
+  padding: 2px 8px;
+  border-radius: 2px;
+  background-color: black;
+  margin: 0px 0px 0px 5px;
+}
+/* line 174, ../scss/_headwear.scss */
+.filter-header-area ul.look {
+  display: inline;
+  padding: 2px 8px;
+  background-color: lightgray;
+  margin: 0px 5px 0px 0px;
+  border-radius: 2px;
+}
+/* line 181, ../scss/_headwear.scss */
+.filter-header-area .clicked {
+  background-color: lightgray !important;
+}
+/* line 184, ../scss/_headwear.scss */
+.filter-header-area .unclicked {
+  background-color: black !important;
+}
+
+/* line 188, ../scss/_headwear.scss */
+.small-screen-filter-title {
+  display: none !important;
+}
+
+/* line 191, ../scss/_headwear.scss */
+.filter-area {
+  height: 570px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.35) 0%, transparent 100%);
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/* line 201, ../scss/_headwear.scss */
+.filter-area .filter-area-vertical-scroller {
+  flex-basis: 47.5%;
+  margin-left: 40px;
+  margin-top: 40px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 570px;
+}
+/* line 208, ../scss/_headwear.scss */
+.filter-area .filter-area-vertical-scroller .vertical-scroll {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 2900px;
+  width: 100%;
+}
+/* line 214, ../scss/_headwear.scss */
+.filter-area .filter-area-vertical-scroller .card {
+  display: inline-block;
+  background-color: white;
+  height: 270px;
+  margin: 0px 10px 20px 10px;
+  border-bottom: solid black 3px;
+  border-radius: 2px;
+  width: 300px;
+}
+/* line 222, ../scss/_headwear.scss */
+.filter-area .filter-area-vertical-scroller .card .card-image {
+  text-align: center;
+}
+/* line 225, ../scss/_headwear.scss */
+.filter-area .filter-area-vertical-scroller .card .card-image-source {
+  background: none;
+}
+/* line 228, ../scss/_headwear.scss */
+.filter-area .filter-area-vertical-scroller .card .card-image:hover {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.35) 0%, transparent 100%);
+  filter: blur(1px);
+  transition: .2s ease;
+}
+/* line 233, ../scss/_headwear.scss */
+.filter-area .filter-area-vertical-scroller .card .card-description {
+  color: #b9b9b9;
+  font-family: nittiblack;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin: 20px 0px 0px 30px;
+}
+/* line 240, ../scss/_headwear.scss */
+.filter-area .filter-area-vertical-scroller .card .card-name {
+  margin: 0px 0px 0px 30px;
+  font-family: graphikmedium;
+  font-size: 16px;
+  display: inline;
+}
+/* line 246, ../scss/_headwear.scss */
+.filter-area .filter-area-vertical-scroller .card .card-price {
+  display: inline;
+  margin-left: 10px;
+  color: lightgray;
+  font-family: graphikregular;
+  font-size: 13px;
+}
+/* line 255, ../scss/_headwear.scss */
+.filter-area .filter-preview {
+  flex-basis: 48%;
+  background-color: white;
+  margin-top: 40px;
+  height: 570px;
+  border-top: solid black 4px;
+  border-radius: 4px;
+}
+/* line 263, ../scss/_headwear.scss */
+.filter-area .card {
+  flex-basis: 25%;
+}
+
+/* line 267, ../scss/_headwear.scss */
+.blog-title {
+  margin: 100px 0px 20px 20px;
+  font-family: graphikmedium;
+  font-size: 25px;
+  color: #2A2A2A;
+}
+
+/* line 273, ../scss/_headwear.scss */
+.scrollable2-headwear {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 120vw;
+  height: 300px;
+}
+
+/* line 279, ../scss/_headwear.scss */
+.scrollarea-headwear {
+  width: 100vw;
+  margin-left: 5px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+/* line 284, ../scss/_headwear.scss */
+.scrollarea-headwear .blog-post {
+  width: 40vw !important;
+}
+/* line 286, ../scss/_headwear.scss */
+.scrollarea-headwear .blog-post .blogpost-img {
+  width: 520px;
+  z-index: 0;
+  position: absolute;
+  border-radius: 3px;
+}
+/* line 292, ../scss/_headwear.scss */
+.scrollarea-headwear .blog-post .blogpost-background {
+  position: relative;
+  z-index: 1;
+  height: 305px;
+  width: 520px;
+  background: linear-gradient(to bottom, transparent 0%, black 170%);
+}
+/* line 299, ../scss/_headwear.scss */
+.scrollarea-headwear .blog-post .onRoad {
+  position: absolute;
+  top: 150px;
+  left: 30px;
+  color: white;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-family: compacta;
+  font-size: 14px;
+  z-index: 1;
+}
+/* line 310, ../scss/_headwear.scss */
+.scrollarea-headwear .blog-post .blog-author {
+  position: absolute;
+  top: 150px;
+  color: white;
+  left: 100px;
+  text-transform: uppercase;
+  font-size: 12px;
+  z-index: 1;
+  font-family: nittiblack;
+}
+/* line 320, ../scss/_headwear.scss */
+.scrollarea-headwear .blog-post .blog-date {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  top: 150px;
+  left: 200px;
+  font-family: nittiblack;
+  font-size: 12px;
+}
+/* line 329, ../scss/_headwear.scss */
+.scrollarea-headwear .blog-post .blog-description {
+  position: absolute;
+  font-family: graphikregular;
+  color: white;
+  z-index: 1;
+  top: 240px;
+  left: 30px;
+  line-height: 15px;
+  font-size: 10px;
+}
+/* line 339, ../scss/_headwear.scss */
+.scrollarea-headwear .blog-post .blog-subtitle {
+  z-index: 2;
+  position: absolute;
+  left: 30px;
+  top: 175px;
+  font-size: 30px;
+  line-height: 30px;
+  font-family: graphikmedium;
+  color: white;
 }
 
 /*MEDIA QUERY*/
+@media only screen and (max-width: 1355px) {
+  /* line 357, ../scss/_headwear.scss */
+  .filter-area .filter-area-vertical-scroller .vertical-scroll {
+    height: 5800px !important;
+  }
+}
 @media only screen and (max-width: 1065px) {
-  /* line 156, ../scss/_headwear.scss */
+  /* line 362, ../scss/_headwear.scss */
   .hero-img1 {
     display: none;
   }
 
-  /* line 159, ../scss/_headwear.scss */
+  /* line 365, ../scss/_headwear.scss */
   .hero-img2 {
     text-align: center;
   }
 
-  /* line 162, ../scss/_headwear.scss */
+  /* line 368, ../scss/_headwear.scss */
   .hero-img3 {
     display: none;
   }
 
-  /* line 165, ../scss/_headwear.scss */
+  /* line 371, ../scss/_headwear.scss */
   .title-container {
     flex-basis: 35% !important;
   }
 }
+@media only screen and (max-width: 940px) {
+  /* line 376, ../scss/_headwear.scss */
+  .filter-header-area {
+    margin: 50px 0px 20px 0px;
+  }
+
+  /* line 379, ../scss/_headwear.scss */
+  .filter-title {
+    display: none;
+  }
+
+  /* line 382, ../scss/_headwear.scss */
+  .small-screen-filter-title {
+    display: block !important;
+    font-family: graphikmedium;
+    font-size: 25px;
+    color: #2A2A2A;
+    text-align: center;
+    margin: 30px 0px 10px 0px;
+  }
+}
+@media only screen and (max-width: 840px) {
+  /* line 392, ../scss/_headwear.scss */
+  .filter-title {
+    display: none;
+  }
+
+  /* line 395, ../scss/_headwear.scss */
+  .small-screen-filter-title {
+    display: block;
+    font-family: graphikmedium;
+    font-size: 25px;
+    color: #2A2A2A;
+    text-align: center;
+    margin: 30px 0px 10px 0px;
+  }
+
+  /* line 403, ../scss/_headwear.scss */
+  .filter-header-area .filter-hat {
+    margin: 0px 0px 0px 0px;
+  }
+}
 @media only screen and (max-width: 657px) {
-  /* line 170, ../scss/_headwear.scss */
+  /* line 408, ../scss/_headwear.scss */
   .title-container {
     flex-basis: 30%;
     margin-left: 30px;
   }
 
-  /* line 174, ../scss/_headwear.scss */
+  /* line 412, ../scss/_headwear.scss */
   .hero-img1-area {
     flex-basis: 0%;
   }
 
-  /* line 177, ../scss/_headwear.scss */
+  /* line 415, ../scss/_headwear.scss */
   .hero-img3-area {
     flex-basis: 0%;
   }
+
+  /* line 418, ../scss/_headwear.scss */
+  .filter-area .filter-preview {
+    display: none;
+  }
+
+  /* line 421, ../scss/_headwear.scss */
+  .filter-area .filter-area-vertical-scroller {
+    flex-basis: 100% !important;
+  }
 }
 @media only screen and (max-width: 500px) {
-  /* line 182, ../scss/_headwear.scss */
+  /* line 426, ../scss/_headwear.scss */
   .hero-img2 {
     text-align: center;
     width: 100vw;

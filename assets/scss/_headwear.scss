@@ -2,6 +2,10 @@
     font-family: circularstdbold;
     src: url('/assets/fonts/CircularStd-Bold.ttf');
 }
+@font-face {
+	font-family: compacta;
+	src: url('/assets/fonts/CompactaBT-Roman.ttf');
+}
 .top-navigation {
 	display: -webkit-box;
     display: -moz-box;
@@ -92,7 +96,7 @@
 		}
 	}
 }
-.filter-area {
+.filter-header-area {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -126,32 +130,234 @@
 	.filter-hat {
 		margin: 0px 10px 0px 10px;
 	}
+	.hat-opacity {
+		opacity: .2 !important;
+	}
+	.no-hat-opacity {
+		opacity: 1 !important;
+	}
 	button.color-swatch {
 	    border-radius: 25px;
 	    padding: 9px;
 	    margin: 0px 6px 0px 6px;
+	    border: none;
 	}
 	.swatch1 {
-		background-color: #ffc107;
+		background-color: #F0CCA5;
 	}
 	.swatch2 {
-		background-color: #2196f3;
+		background-color: #BCD7E0;
 	}
 	.swatch3 {
-		background-color: #f44336;
+		background-color: #CD0000;
 	}
 	.swatch4 {
-		background-color: #00a651;
+		background-color: #BFDBD4;
 	}
 	.swatch5 {
-		background-color: #191919;
+		background-color: #000000;
 	}
 	.swatch6 {
 		background-color: #fff;
+		border: solid 2px lightgray !important;
 	}
+	li.toggle-button {
+	    display: inline;
+	}
+	ul.product {
+	    display: inline;
+	    padding: 2px 8px;
+	    border-radius: 2px;
+	    background-color: black;
+	    margin: 0px 0px 0px 5px;
+	}
+	ul.look {
+	    display: inline;
+	    padding: 2px 8px;
+	    background-color: lightgray;
+	    margin: 0px 5px 0px 0px;
+	    border-radius: 2px;
+	}
+	.clicked {
+		background-color: lightgray !important;
+	}
+	.unclicked {
+		background-color: black !important;
+	}	
+}
+.small-screen-filter-title {
+	display: none !important;
+}
+.filter-area {
+	height: 570px;
+	background: linear-gradient(to bottom, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0) 100%);
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .filter-area-vertical-scroller {
+    	flex-basis: 47.5%;
+    	margin-left: 40px;
+    	margin-top: 40px;
+    	overflow-x: hidden;
+  		overflow-y: scroll;
+  		height: 570px;
+  		.vertical-scroll {
+  			overflow-x: hidden;
+  			overflow-y: hidden;
+  			height: 2900px;
+  		    width: 100%;
+  		}
+  		.card {
+		    display: inline-block;
+		    background-color: white;
+		    height: 270px;
+		    margin: 0px 10px 20px 10px;
+		    border-bottom: solid black 3px;
+   			border-radius: 2px;
+   			width: 300px;
+		    .card-image {
+			    text-align: center;
+			}
+			.card-image-source {
+				background: none;
+			}
+			.card-image:hover {
+				background: linear-gradient(to top, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0) 100%);
+				filter: blur(1px);
+				transition: .2s ease;
+			}
+			.card-description {
+			    color: #b9b9b9;
+			    font-family: nittiblack;
+			    text-transform: uppercase;
+			    font-size: 12px;
+			    margin: 20px 0px 0px 30px;
+			}
+			.card-name {
+			    margin: 0px 0px 0px 30px;
+			    font-family: graphikmedium;
+			    font-size: 16px;
+			    display: inline;
+			}
+			.card-price {
+			    display: inline;
+			    margin-left: 10px;
+			    color: lightgray;
+			    font-family: graphikregular;
+			    font-size: 13px;
+			}
+  		}
+    }
+    .filter-preview {
+    	flex-basis: 48%;
+    	background-color: white;
+    	margin-top: 40px;
+    	height: 570px;
+    	border-top: solid black 4px;
+    	border-radius: 4px;
+    }
+    .card {
+    	flex-basis: 25%;
+    }
+}
+.blog-title {
+    margin: 100px 0px 20px 20px;
+    font-family: graphikmedium;
+    font-size: 25px;
+    color: #2A2A2A;
+}
+.scrollable2-headwear {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 120vw;
+    height: 300px;
+}
+.scrollarea-headwear {
+    width: 100vw;
+    margin-left: 5px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    .blog-post {
+    	width: 40vw !important;
+    	.blogpost-img {
+		    width: 520px;
+		    z-index: 0;
+		    position: absolute;
+		    border-radius: 3px;
+		}
+		.blogpost-background {
+		    position: relative;
+		    z-index: 1;
+		    height: 305px;
+		    width: 520px;
+		    background: linear-gradient(to bottom, transparent 0%, black 170%);
+		}
+		.onRoad {	
+		    position: absolute;
+		    top: 150px;
+		    left: 30px;
+		    color: white;
+		    text-decoration: underline;
+		    text-transform: uppercase;
+		    font-family: compacta;
+		    font-size: 14px;
+		    z-index: 1;
+		}
+		.blog-author {
+		    position: absolute;
+		    top: 150px;
+		    color: white;
+		    left: 100px;
+		    text-transform: uppercase;
+		    font-size: 12px;
+		    z-index: 1;
+		    font-family: nittiblack;
+		}
+		.blog-date {
+		    position: absolute;
+		    z-index: 1;
+		    color: white;
+		    top: 150px;
+		    left: 200px;
+		    font-family: nittiblack;
+		    font-size: 12px;
+		}
+		.blog-description {
+		    position: absolute;
+		    font-family: graphikregular;
+		    color: white;
+		    z-index: 1;
+		    top: 240px;
+		    left: 30px;
+		    line-height: 15px;
+		    font-size: 10px;
+		}
+		.blog-subtitle {
+		    z-index: 2;
+		    position: absolute;
+		    left: 30px;
+		    top: 175px;
+		    font-size: 30px;
+		    line-height: 30px;
+		    font-family: graphikmedium;
+		    color: white;
+		}
+    }
 }
 
+
+
+
 /*MEDIA QUERY*/
+@media only screen and (max-width: 1355px) {
+	.filter-area .filter-area-vertical-scroller .vertical-scroll {
+	    height: 5800px !important;
+	}
+}
 @media only screen and (max-width: 1065px) {
     .hero-img1 {
         display: none;
@@ -166,6 +372,38 @@
     	flex-basis: 35% !important;
     }
 }
+@media only screen and (max-width: 940px) {
+	.filter-header-area {
+		margin: 50px 0px 20px 0px;
+	}
+	.filter-title {
+		display: none;
+	}
+	.small-screen-filter-title {
+		display: block !important;
+		font-family: graphikmedium;
+	    font-size: 25px;
+	    color: #2A2A2A;
+	    text-align: center;
+	    margin: 30px 0px 10px 0px;
+	}
+}
+@media only screen and (max-width: 840px) {
+	.filter-title {
+		display: none;
+	}
+	.small-screen-filter-title {
+		display: block;
+		font-family: graphikmedium;
+	    font-size: 25px;
+	    color: #2A2A2A;
+	    text-align: center;
+	    margin: 30px 0px 10px 0px;
+	}
+	.filter-header-area .filter-hat {
+	    margin: 0px 0px 0px 0px;
+	}
+}
 @media only screen and (max-width: 657px) {
 	.title-container {
     	flex-basis: 30%;
@@ -176,6 +414,12 @@
     }
     .hero-img3-area {
     	flex-basis: 0%;
+    }
+    .filter-area .filter-preview {
+    	display: none;
+    }
+    .filter-area .filter-area-vertical-scroller {
+    	flex-basis: 100% !important;
     }
 }
 @media only screen and (max-width: 500px) {

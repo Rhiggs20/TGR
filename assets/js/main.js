@@ -81,27 +81,27 @@ $(document).ready(function(){
            });
 
         });
-       function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
 
 // Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
 
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
       }
     }
   }
-}
-$(document).ready(function(){  /* DOM ready callback */
+  $(document).ready(function(){  /* DOM ready callback */
 
-});
+  });
 
     var swiper = new Swiper('.swiper-container', {
       slidesPerView: 4,
@@ -118,3 +118,33 @@ $(document).ready(function(){  /* DOM ready callback */
         prevEl: '.swiper-button-prev',
       },
     });
+//Toggle Filter Section in Headwear page
+    $('.product').click(function(){
+      $(this).toggleClass('clicked');
+      $('.look').toggleClass('unclicked');
+    });
+    $('.look').click(function(){
+      $(this).toggleClass('unclicked');
+      $('.product').toggleClass('clicked');
+    });
+//Choose Hat Selection ????WHY THE F ARENT YOU WORKING
+  $('.caps').click(function(){
+    $(this).data('no-hat-opacity',true)
+  });
+  if ($('.caps').data('no-hat-opacity')) {
+    $(this).toggleClass('no-hat-opacity')
+  } else {
+    $(this).toggleClass('no-hat-opacity')
+    $('.winter-hats').toggleClass('hat-opacity')
+    $('hat-gear').toggleClass('hat-opacity')
+  }
+  $('.winter-hats').click(function(){
+    $(this).data('no-hat-opacity',true)
+  });
+  if ($('.winter-hats').data('no-hat-opacity')){
+    $(this).toggleClass('no-hat-opacity')
+  } else {
+    $(this).toggleClass('no-hat-opacity')
+    $('.caps').toggleClass('hat-opacity')
+    $('hat-gear').toggleClass('hat-opacity')
+  }
