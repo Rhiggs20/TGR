@@ -18,14 +18,14 @@ $(document).ready(function(){
               clickable: true,
           },
         });*/
-
-           $(".gallery-image").click(function(){
-              var source = $(this).attr("src");
-              $("#main-gallery-image").attr('src', source);
-              $(".gallery-image").removeClass("gallery-image-highlight"); 
-              $(this).addClass( "gallery-image-highlight");
-      });
-
+//Gallery opacity 
+  $(".gallery-image").click(function(){
+    var source = $(this).attr("src");
+    $("#main-gallery-image").attr('src', source);
+    $(".gallery-image").removeClass("gallery-image-highlight"); 
+    $(this).addClass( "gallery-image-highlight");
+  });
+//Gallery switch out content
            $(".gallery-arrow").click(function(){
               var images = jQuery(".gallery-image");
 
@@ -60,7 +60,7 @@ $(document).ready(function(){
                   break;
                 }
               }
-           });
+            });
 
            $(".black").click(function() {
               var images = jQuery(".gallery-image");
@@ -118,33 +118,33 @@ $(document).ready(function(){
         prevEl: '.swiper-button-prev',
       },
     });
-//Toggle Filter Section in Headwear page
-    $('.product').click(function(){
-      $(this).toggleClass('clicked');
-      $('.look').toggleClass('unclicked');
-    });
-    $('.look').click(function(){
-      $(this).toggleClass('unclicked');
-      $('.product').toggleClass('clicked');
-    });
-//Choose Hat Selection ????WHY THE F ARENT YOU WORKING
-  $('.caps').click(function(){
-    $(this).data('no-hat-opacity',true)
+
+// GALLERY PREVIEW //
+
+//Choose Hat Selection 
+$(document).ready(function(){ 
+  $(".filter-hat").click(function() {
+    var source = $(this).attr("src");
+    $(".filter-hat").addClass("hat-opacity");
+    $(this).removeClass("hat-opacity");
   });
-  if ($('.caps').data('no-hat-opacity')) {
-    $(this).toggleClass('no-hat-opacity')
-  } else {
-    $(this).toggleClass('no-hat-opacity')
-    $('.winter-hats').toggleClass('hat-opacity')
-    $('hat-gear').toggleClass('hat-opacity')
-  }
-  $('.winter-hats').click(function(){
-    $(this).data('no-hat-opacity',true)
+});
+//Toggle Product/Look slider
+$(document).ready(function() {
+  $(".format-toggle-product").click(function() {
+    $('.product').toggleClass('clicked');
+    $('.look').toggleClass('unclicked');
   });
-  if ($('.winter-hats').data('no-hat-opacity')){
-    $(this).toggleClass('no-hat-opacity')
-  } else {
-    $(this).toggleClass('no-hat-opacity')
-    $('.caps').toggleClass('hat-opacity')
-    $('hat-gear').toggleClass('hat-opacity')
-  }
+  $(".format-toggle-look").click(function() {
+    $('.look').toggleClass('unclicked');
+    $('.product').toggleClass('clicked');
+  });
+});
+//Opacity on gallery boxes
+$(document).ready(function() {
+  $(".preview-box").click(function() {
+    var source = $(this).attr("src");
+    $(".preview-box").addClass("opacity");
+    $(this).removeClass("opacity");
+  });
+});
