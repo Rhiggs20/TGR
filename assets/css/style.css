@@ -2258,72 +2258,118 @@ button.email-women3 {
   display: none;
   position: absolute;
   background: #fff;
-  top: -10px;
-  left: -5px;
+  top: -15px;
+  left: -15px;
   width: 100vw;
-  height: 390px;
+  height: 420px;
   z-index: 1;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-/* line 28, ../scss/_headwear.scss */
+/* line 29, ../scss/_headwear.scss */
 .dP-content .top-menu {
   display: flex;
 }
-/* line 30, ../scss/_headwear.scss */
+/* line 31, ../scss/_headwear.scss */
 .dP-content .top-menu .logo-menu {
   width: auto;
   height: 20px;
   margin: 0px 10px;
 }
-/* line 35, ../scss/_headwear.scss */
+/* line 36, ../scss/_headwear.scss */
 .dP-content .top-menu .menu-search {
   font-size: 14px;
   margin-top: 4px;
   color: black;
 }
-/* line 41, ../scss/_headwear.scss */
+/* line 42, ../scss/_headwear.scss */
+.dP-content a.menu-link {
+  flex-basis: 46%;
+  text-align: right;
+  color: #2A2A2A;
+  font-family: graphikblack;
+}
+/* line 48, ../scss/_headwear.scss */
+.dP-content a.menu-link:hover {
+  text-decoration: none;
+  text-shadow: 2px 2px 2px rgba(150, 150, 150, 0.84);
+  transition: ease;
+}
+/* line 53, ../scss/_headwear.scss */
+.dP-content i.menu-arrow {
+  font-size: 10px;
+  margin-left: 10px;
+}
+/* line 57, ../scss/_headwear.scss */
 .dP-content .menu-sections {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  margin-top: 50px;
+  margin-top: 30px;
 }
-/* line 46, ../scss/_headwear.scss */
+/* line 62, ../scss/_headwear.scss */
 .dP-content .menu-sections .menu-links {
   flex-basis: 17.5%;
 }
-/* line 48, ../scss/_headwear.scss */
+/* line 64, ../scss/_headwear.scss */
 .dP-content .menu-sections .menu-links .linkList {
   list-style-type: none;
 }
-/* line 51, ../scss/_headwear.scss */
+/* line 67, ../scss/_headwear.scss */
 .dP-content .menu-sections .menu-links .header-link {
   font-family: graphikblack;
   color: #2A2A2A;
 }
-/* line 55, ../scss/_headwear.scss */
+/* line 71, ../scss/_headwear.scss */
 .dP-content .menu-sections .menu-links .subheader-link {
   font-family: graphiksemibold;
   font-size: 13px;
   color: #b9b9b9;
 }
-/* line 60, ../scss/_headwear.scss */
+/* line 76, ../scss/_headwear.scss */
 .dP-content .menu-sections .menu-links li {
   margin: 15px 0px;
 }
-/* line 63, ../scss/_headwear.scss */
+/* line 79, ../scss/_headwear.scss */
 .dP-content .menu-sections .menu-links li.li-margin1 {
   margin-top: 50px;
 }
-/* line 66, ../scss/_headwear.scss */
+/* line 82, ../scss/_headwear.scss */
 .dP-content .menu-sections .menu-links li.li-margin2 {
   margin-top: 90px;
 }
-/* line 69, ../scss/_headwear.scss */
+/* line 85, ../scss/_headwear.scss */
 .dP-content .menu-sections .menu-links .special {
   color: red;
 }
+/* line 88, ../scss/_headwear.scss */
+.dP-content .menu-sections .menu-links a.link:hover {
+  text-decoration: none;
+}
+/* line 91, ../scss/_headwear.scss */
+.dP-content .menu-sections .menu-links li:hover {
+  background-color: #E6E6E6;
+  transition: .1s ease;
+}
+/* line 96, ../scss/_headwear.scss */
+.dP-content .menu-sections .your-menu {
+  flex-basis: 30%;
+}
+/* line 98, ../scss/_headwear.scss */
+.dP-content .menu-sections .your-menu .your-hero {
+  width: auto;
+  height: 420px;
+  margin-top: -54px;
+  border-right: solid #f44336 50px;
+}
+/* line 104, ../scss/_headwear.scss */
+.dP-content .menu-sections .your-menu .your-overlay {
+  background-color: black;
+  opacity: .3;
+  height: 420px;
+  width: auto;
+}
 
-/* line 76, ../scss/_headwear.scss */
+/* line 114, ../scss/_headwear.scss */
 button.dP-btn.material-icons {
   background: none;
   border: none;
@@ -2331,7 +2377,7 @@ button.dP-btn.material-icons {
   font-size: 24px;
 }
 
-/* line 82, ../scss/_headwear.scss */
+/* line 120, ../scss/_headwear.scss */
 .top-navigation {
   display: -webkit-box;
   display: -moz-box;
@@ -2345,46 +2391,46 @@ button.dP-btn.material-icons {
   margin: 15px auto auto 15px;
   height: 30px;
 }
-/* line 94, ../scss/_headwear.scss */
+/* line 132, ../scss/_headwear.scss */
 .top-navigation .top-nav-square {
   flex-basis: 3%;
   background: none;
   border: none;
 }
-/* line 99, ../scss/_headwear.scss */
+/* line 137, ../scss/_headwear.scss */
 .top-navigation .top-nav-logo {
   flex-basis: 10%;
 }
-/* line 102, ../scss/_headwear.scss */
+/* line 140, ../scss/_headwear.scss */
 .top-navigation .top-nav-search {
   flex-basis: 83%;
 }
-/* line 105, ../scss/_headwear.scss */
+/* line 143, ../scss/_headwear.scss */
 .top-navigation .top-nav-cart {
   flex-basis: 3%;
   align-self: flex-end;
 }
-/* line 109, ../scss/_headwear.scss */
+/* line 147, ../scss/_headwear.scss */
 .top-navigation img.logo-resizer {
   width: 120px;
 }
-/* line 112, ../scss/_headwear.scss */
+/* line 150, ../scss/_headwear.scss */
 .top-navigation .material-icons.top-dropdown {
   color: black;
 }
-/* line 115, ../scss/_headwear.scss */
+/* line 153, ../scss/_headwear.scss */
 .top-navigation span.glyphicon.glyphicon-search {
   font-size: 18px;
   margin-top: 4px;
   color: black;
 }
-/* line 120, ../scss/_headwear.scss */
+/* line 158, ../scss/_headwear.scss */
 .top-navigation .glyphicon.top-cart {
   margin-right: 10px;
   color: black;
 }
 
-/* line 125, ../scss/_headwear.scss */
+/* line 163, ../scss/_headwear.scss */
 .hero-area {
   display: -webkit-box;
   display: -moz-box;
@@ -2398,23 +2444,23 @@ button.dP-btn.material-icons {
   text-align: center;
   margin-top: 20px;
 }
-/* line 137, ../scss/_headwear.scss */
+/* line 175, ../scss/_headwear.scss */
 .hero-area .hero-img1-area {
   flex-basis: 25%;
 }
-/* line 140, ../scss/_headwear.scss */
+/* line 178, ../scss/_headwear.scss */
 .hero-area .hero-img2-area {
   flex-basis: 25%;
 }
-/* line 143, ../scss/_headwear.scss */
+/* line 181, ../scss/_headwear.scss */
 .hero-area .title-container {
   flex-basis: 25%;
 }
-/* line 146, ../scss/_headwear.scss */
+/* line 184, ../scss/_headwear.scss */
 .hero-area .hero-img3-area {
   flex-basis: 25%;
 }
-/* line 149, ../scss/_headwear.scss */
+/* line 187, ../scss/_headwear.scss */
 .hero-area .hero-title {
   font-family: circularstdbold;
   font-size: 35px;
@@ -2422,14 +2468,14 @@ button.dP-btn.material-icons {
   color: black;
   margin-top: 50px;
 }
-/* line 156, ../scss/_headwear.scss */
+/* line 194, ../scss/_headwear.scss */
 .hero-area .hero-subtitle {
   font-family: graphikmedium;
   font-size: 12px;
   margin: 35px 45px 0px 45px;
   line-height: 22px;
 }
-/* line 162, ../scss/_headwear.scss */
+/* line 200, ../scss/_headwear.scss */
 .hero-area button.hero-button {
   border: solid black .0397cm;
   border-radius: 3px;
@@ -2437,18 +2483,18 @@ button.dP-btn.material-icons {
   font-family: graphikregular;
   margin-top: 30px;
 }
-/* line 168, ../scss/_headwear.scss */
+/* line 206, ../scss/_headwear.scss */
 .hero-area button.hero-button i.material-icons.hero-button-arrow {
   font-size: 12px;
   margin-left: 10px;
 }
-/* line 173, ../scss/_headwear.scss */
+/* line 211, ../scss/_headwear.scss */
 .hero-area button.hero-button:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: ease;
 }
 
-/* line 178, ../scss/_headwear.scss */
+/* line 216, ../scss/_headwear.scss */
 .filter-header-area {
   display: -webkit-box;
   display: -moz-box;
@@ -2461,90 +2507,90 @@ button.dP-btn.material-icons {
   margin: 80px 50px 20px 50px;
   align-items: flex-end;
 }
-/* line 189, ../scss/_headwear.scss */
+/* line 227, ../scss/_headwear.scss */
 .filter-header-area .filter-title {
   font-family: graphikmedium;
   font-size: 25px;
   color: #2A2A2A;
 }
-/* line 194, ../scss/_headwear.scss */
+/* line 232, ../scss/_headwear.scss */
 .filter-header-area .filter-style {
   font-family: graphikmedium;
   font-size: 15px;
   color: #2A2A2A;
 }
-/* line 199, ../scss/_headwear.scss */
+/* line 237, ../scss/_headwear.scss */
 .filter-header-area .filter-color {
   font-family: graphikmedium;
   font-size: 15px;
   color: #2A2A2A;
 }
-/* line 204, ../scss/_headwear.scss */
+/* line 242, ../scss/_headwear.scss */
 .filter-header-area .format-toggle-product, .filter-header-area .format-toggle-look {
   font-family: graphikmedium;
   font-size: 12px;
   color: #2A2A2A;
   border: none;
 }
-/* line 210, ../scss/_headwear.scss */
+/* line 248, ../scss/_headwear.scss */
 .filter-header-area .format-toggle:hover, .filter-header-area .format-toggle-look:hover {
   transform: scale(1.1);
   transition: ease;
 }
-/* line 214, ../scss/_headwear.scss */
+/* line 252, ../scss/_headwear.scss */
 .filter-header-area .filter-hat {
   margin: 0px 10px 0px 10px;
 }
-/* line 217, ../scss/_headwear.scss */
+/* line 255, ../scss/_headwear.scss */
 .filter-header-area .hat-opacity {
   opacity: .2 !important;
 }
-/* line 220, ../scss/_headwear.scss */
+/* line 258, ../scss/_headwear.scss */
 .filter-header-area .no-hat-opacity {
   opacity: 1 !important;
 }
-/* line 223, ../scss/_headwear.scss */
+/* line 261, ../scss/_headwear.scss */
 .filter-header-area button.color-swatch {
   border-radius: 25px;
   padding: 9px;
   margin: 0px 6px 0px 6px;
   border: none;
 }
-/* line 229, ../scss/_headwear.scss */
+/* line 267, ../scss/_headwear.scss */
 .filter-header-area button.color-swatch:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: ease;
 }
-/* line 233, ../scss/_headwear.scss */
+/* line 271, ../scss/_headwear.scss */
 .filter-header-area .swatch1 {
   background-color: #F0CCA5;
 }
-/* line 236, ../scss/_headwear.scss */
+/* line 274, ../scss/_headwear.scss */
 .filter-header-area .swatch2 {
   background-color: #BCD7E0;
 }
-/* line 239, ../scss/_headwear.scss */
+/* line 277, ../scss/_headwear.scss */
 .filter-header-area .swatch3 {
   background-color: #CD0000;
 }
-/* line 242, ../scss/_headwear.scss */
+/* line 280, ../scss/_headwear.scss */
 .filter-header-area .swatch4 {
   background-color: #BFDBD4;
 }
-/* line 245, ../scss/_headwear.scss */
+/* line 283, ../scss/_headwear.scss */
 .filter-header-area .swatch5 {
   background-color: #000000;
 }
-/* line 248, ../scss/_headwear.scss */
+/* line 286, ../scss/_headwear.scss */
 .filter-header-area .swatch6 {
   background-color: #fff;
   border: solid 2px lightgray !important;
 }
-/* line 252, ../scss/_headwear.scss */
+/* line 290, ../scss/_headwear.scss */
 .filter-header-area li.toggle-button {
   display: inline;
 }
-/* line 255, ../scss/_headwear.scss */
+/* line 293, ../scss/_headwear.scss */
 .filter-header-area ul.product {
   display: inline;
   padding: 2px 8px;
@@ -2552,7 +2598,7 @@ button.dP-btn.material-icons {
   background-color: black;
   margin: 0px 0px 0px 5px;
 }
-/* line 262, ../scss/_headwear.scss */
+/* line 300, ../scss/_headwear.scss */
 .filter-header-area ul.look {
   display: inline;
   padding: 2px 8px;
@@ -2560,21 +2606,21 @@ button.dP-btn.material-icons {
   margin: 0px 5px 0px 0px;
   border-radius: 2px;
 }
-/* line 269, ../scss/_headwear.scss */
+/* line 307, ../scss/_headwear.scss */
 .filter-header-area .clicked {
   background-color: lightgray !important;
 }
-/* line 272, ../scss/_headwear.scss */
+/* line 310, ../scss/_headwear.scss */
 .filter-header-area .unclicked {
   background-color: black !important;
 }
 
-/* line 276, ../scss/_headwear.scss */
+/* line 314, ../scss/_headwear.scss */
 .small-screen-filter-title {
   display: none !important;
 }
 
-/* line 279, ../scss/_headwear.scss */
+/* line 317, ../scss/_headwear.scss */
 .filter-area {
   height: 570px;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.35) 0%, transparent 100%);
@@ -2586,7 +2632,7 @@ button.dP-btn.material-icons {
   flex-direction: row;
   justify-content: space-between;
 }
-/* line 289, ../scss/_headwear.scss */
+/* line 327, ../scss/_headwear.scss */
 .filter-area .filter-area-vertical-scroller {
   flex-basis: 47.5%;
   margin-left: 40px;
@@ -2595,14 +2641,14 @@ button.dP-btn.material-icons {
   overflow-y: scroll;
   height: 570px;
 }
-/* line 296, ../scss/_headwear.scss */
+/* line 334, ../scss/_headwear.scss */
 .filter-area .filter-area-vertical-scroller .vertical-scroll {
   overflow-x: hidden;
   overflow-y: hidden;
   height: 2900px;
   width: 100%;
 }
-/* line 302, ../scss/_headwear.scss */
+/* line 340, ../scss/_headwear.scss */
 .filter-area .filter-area-vertical-scroller .card {
   display: inline-block;
   background-color: white;
@@ -2612,21 +2658,21 @@ button.dP-btn.material-icons {
   border-radius: 2px;
   width: 300px;
 }
-/* line 310, ../scss/_headwear.scss */
+/* line 348, ../scss/_headwear.scss */
 .filter-area .filter-area-vertical-scroller .card .card-image {
   text-align: center;
 }
-/* line 313, ../scss/_headwear.scss */
+/* line 351, ../scss/_headwear.scss */
 .filter-area .filter-area-vertical-scroller .card .card-image-source {
   background: none;
 }
-/* line 316, ../scss/_headwear.scss */
+/* line 354, ../scss/_headwear.scss */
 .filter-area .filter-area-vertical-scroller .card .card-image:hover {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.35) 0%, transparent 100%);
   filter: blur(1px);
   transition: .2s ease;
 }
-/* line 321, ../scss/_headwear.scss */
+/* line 359, ../scss/_headwear.scss */
 .filter-area .filter-area-vertical-scroller .card .card-description {
   color: #b9b9b9;
   font-family: nittiblack;
@@ -2634,14 +2680,14 @@ button.dP-btn.material-icons {
   font-size: 12px;
   margin: 20px 0px 0px 30px;
 }
-/* line 328, ../scss/_headwear.scss */
+/* line 366, ../scss/_headwear.scss */
 .filter-area .filter-area-vertical-scroller .card .card-name {
   margin: 0px 0px 0px 30px;
   font-family: graphikmedium;
   font-size: 16px;
   display: inline;
 }
-/* line 334, ../scss/_headwear.scss */
+/* line 372, ../scss/_headwear.scss */
 .filter-area .filter-area-vertical-scroller .card .card-price {
   display: inline;
   margin-left: 10px;
@@ -2649,7 +2695,7 @@ button.dP-btn.material-icons {
   font-family: graphikregular;
   font-size: 13px;
 }
-/* line 343, ../scss/_headwear.scss */
+/* line 381, ../scss/_headwear.scss */
 .filter-area .filter-preview {
   flex-basis: 48%;
   background-color: white;
@@ -2659,14 +2705,14 @@ button.dP-btn.material-icons {
   border-radius: 4px;
   padding-left: 100px;
 }
-/* line 351, ../scss/_headwear.scss */
+/* line 389, ../scss/_headwear.scss */
 .filter-area .filter-preview .preview-information {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   margin-right: 20px;
 }
-/* line 356, ../scss/_headwear.scss */
+/* line 394, ../scss/_headwear.scss */
 .filter-area .filter-preview .preview-information .preview-box {
   display: flex;
   justify-content: center;
@@ -2678,71 +2724,71 @@ button.dP-btn.material-icons {
   border-radius: 2px;
   margin: 0px 5px;
 }
-/* line 366, ../scss/_headwear.scss */
+/* line 404, ../scss/_headwear.scss */
 .filter-area .filter-preview .preview-information .preview-box img.info {
   height: 40px;
   width: auto;
 }
-/* line 370, ../scss/_headwear.scss */
+/* line 408, ../scss/_headwear.scss */
 .filter-area .filter-preview .preview-information .preview-box img.boxed-img {
   height: 45px;
 }
-/* line 373, ../scss/_headwear.scss */
+/* line 411, ../scss/_headwear.scss */
 .filter-area .filter-preview .preview-information .preview-box img.boxed-lifestyle {
   height: 60px;
   width: 70px;
   margin-top: -8px;
 }
-/* line 380, ../scss/_headwear.scss */
+/* line 418, ../scss/_headwear.scss */
 .filter-area .filter-preview .preview-body {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   height: 375px;
 }
-/* line 385, ../scss/_headwear.scss */
+/* line 423, ../scss/_headwear.scss */
 .filter-area .filter-preview .preview-body .hat-details {
   flex-basis: 50%;
 }
-/* line 389, ../scss/_headwear.scss */
+/* line 427, ../scss/_headwear.scss */
 .filter-area .filter-preview .details-title {
   font-family: graphiksemibold;
   font-size: 40px;
   color: #2A2A2A;
   margin: 3vw 12vw 3vw 9vw;
 }
-/* line 395, ../scss/_headwear.scss */
+/* line 433, ../scss/_headwear.scss */
 .filter-area .filter-preview .details-fit {
   color: #2A2A2A;
   font-family: graphiksemibold;
   font-size: 20px;
 }
-/* line 400, ../scss/_headwear.scss */
+/* line 438, ../scss/_headwear.scss */
 .filter-area .filter-preview .fit-para {
   color: #b9b9b9;
   font-size: 12px;
   font-family: circularstdbold;
   margin-right: 12vw;
 }
-/* line 406, ../scss/_headwear.scss */
+/* line 444, ../scss/_headwear.scss */
 .filter-area .filter-preview .details-materials {
   color: #2A2A2A;
   font-family: graphiksemibold;
   font-size: 20px;
   margin-top: 2vw;
 }
-/* line 412, ../scss/_headwear.scss */
+/* line 450, ../scss/_headwear.scss */
 .filter-area .filter-preview .materials-para {
   color: #b9b9b9;
   font-size: 12px;
   font-family: circularstdbold;
   margin-right: 12vw;
 }
-/* line 419, ../scss/_headwear.scss */
+/* line 457, ../scss/_headwear.scss */
 .filter-area .card {
   flex-basis: 25%;
 }
-/* line 422, ../scss/_headwear.scss */
+/* line 460, ../scss/_headwear.scss */
 .filter-area button.right-arrow {
   height: 20px;
   background: none;
@@ -2750,16 +2796,16 @@ button.dP-btn.material-icons {
   margin-top: 220px;
   margin-right: 40px;
 }
-/* line 429, ../scss/_headwear.scss */
+/* line 467, ../scss/_headwear.scss */
 .filter-area i.material-icons.preview-arrow {
   font-size: 20px;
 }
-/* line 432, ../scss/_headwear.scss */
+/* line 470, ../scss/_headwear.scss */
 .filter-area button.right-arrow:hover {
   transform: scale(1.1);
   transition: ease;
 }
-/* line 436, ../scss/_headwear.scss */
+/* line 474, ../scss/_headwear.scss */
 .filter-area .preview-footer {
   display: flex;
   flex-direction: row;
@@ -2770,7 +2816,7 @@ button.dP-btn.material-icons {
   height: 80px;
   margin-top: 42px;
 }
-/* line 445, ../scss/_headwear.scss */
+/* line 483, ../scss/_headwear.scss */
 .filter-area .preview-footer button.preview-color {
   padding: 15px;
   border-radius: 30px;
@@ -2778,35 +2824,35 @@ button.dP-btn.material-icons {
   border: none;
   margin: 0px 10px;
 }
-/* line 452, ../scss/_headwear.scss */
+/* line 490, ../scss/_headwear.scss */
 .filter-area .preview-footer button.preview-color:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: ease;
 }
-/* line 456, ../scss/_headwear.scss */
+/* line 494, ../scss/_headwear.scss */
 .filter-area .preview-footer .color-holder {
   align-self: center;
 }
-/* line 458, ../scss/_headwear.scss */
+/* line 496, ../scss/_headwear.scss */
 .filter-area .preview-footer .color-holder .black {
   background-color: black;
 }
-/* line 461, ../scss/_headwear.scss */
+/* line 499, ../scss/_headwear.scss */
 .filter-area .preview-footer .color-holder .green {
   background-color: #598527;
 }
-/* line 465, ../scss/_headwear.scss */
+/* line 503, ../scss/_headwear.scss */
 .filter-area .preview-footer .preview-quantity {
   font-family: graphiksemibold;
   font-size: 15px;
   align-self: center;
 }
-/* line 470, ../scss/_headwear.scss */
+/* line 508, ../scss/_headwear.scss */
 .filter-area .preview-footer .quantity-holder {
   align-self: center;
   flex-basis: 20%;
 }
-/* line 473, ../scss/_headwear.scss */
+/* line 511, ../scss/_headwear.scss */
 .filter-area .preview-footer .quantity-holder button.preview-remove {
   align-self: center;
   display: inline;
@@ -2814,17 +2860,17 @@ button.dP-btn.material-icons {
   margin: 0px 5px;
   background: none;
 }
-/* line 480, ../scss/_headwear.scss */
+/* line 518, ../scss/_headwear.scss */
 .filter-area .preview-footer .quantity-holder i.material-icons.preview-remove {
   font-size: 12px;
   align-self: center;
 }
-/* line 484, ../scss/_headwear.scss */
+/* line 522, ../scss/_headwear.scss */
 .filter-area .preview-footer .quantity-holder button.preview-remove:hover {
   transform: scale(1.5);
   transition: ease;
 }
-/* line 488, ../scss/_headwear.scss */
+/* line 526, ../scss/_headwear.scss */
 .filter-area .preview-footer .quantity-holder input.quantity {
   width: 8%;
   border: none;
@@ -2832,7 +2878,7 @@ button.dP-btn.material-icons {
   text-align: center;
   font-size: 15px;
 }
-/* line 496, ../scss/_headwear.scss */
+/* line 534, ../scss/_headwear.scss */
 .filter-area .preview-footer button.done {
   width: 180px;
   height: 60px;
@@ -2843,19 +2889,19 @@ button.dP-btn.material-icons {
   color: #fff;
   border: none;
 }
-/* line 506, ../scss/_headwear.scss */
+/* line 544, ../scss/_headwear.scss */
 .filter-area .preview-footer button.done:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: ease;
 }
 
-/* line 512, ../scss/_headwear.scss */
+/* line 550, ../scss/_headwear.scss */
 .opacity {
   opacity: .2;
   border-bottom: none !important;
 }
 
-/* line 516, ../scss/_headwear.scss */
+/* line 554, ../scss/_headwear.scss */
 .blog-title {
   margin: 100px 0px 20px 20px;
   font-family: graphikmedium;
@@ -2863,7 +2909,7 @@ button.dP-btn.material-icons {
   color: #2A2A2A;
 }
 
-/* line 522, ../scss/_headwear.scss */
+/* line 560, ../scss/_headwear.scss */
 .scrollable2-headwear {
   overflow-x: scroll;
   overflow-y: hidden;
@@ -2871,25 +2917,25 @@ button.dP-btn.material-icons {
   height: 300px;
 }
 
-/* line 528, ../scss/_headwear.scss */
+/* line 566, ../scss/_headwear.scss */
 .scrollarea-headwear {
   width: 100vw;
   margin-left: 5px;
   overflow-x: scroll;
   overflow-y: hidden;
 }
-/* line 533, ../scss/_headwear.scss */
+/* line 571, ../scss/_headwear.scss */
 .scrollarea-headwear .blog-post {
   width: 40vw !important;
 }
-/* line 535, ../scss/_headwear.scss */
+/* line 573, ../scss/_headwear.scss */
 .scrollarea-headwear .blog-post .blogpost-img {
   width: 520px;
   z-index: 0;
   position: absolute;
   border-radius: 3px;
 }
-/* line 541, ../scss/_headwear.scss */
+/* line 579, ../scss/_headwear.scss */
 .scrollarea-headwear .blog-post .blogpost-background {
   position: relative;
   z-index: 1;
@@ -2897,7 +2943,7 @@ button.dP-btn.material-icons {
   width: 520px;
   background: linear-gradient(to bottom, transparent 0%, black 170%);
 }
-/* line 548, ../scss/_headwear.scss */
+/* line 586, ../scss/_headwear.scss */
 .scrollarea-headwear .blog-post .onRoad {
   position: absolute;
   top: 150px;
@@ -2909,7 +2955,7 @@ button.dP-btn.material-icons {
   font-size: 14px;
   z-index: 1;
 }
-/* line 559, ../scss/_headwear.scss */
+/* line 597, ../scss/_headwear.scss */
 .scrollarea-headwear .blog-post .blog-author {
   position: absolute;
   top: 150px;
@@ -2920,7 +2966,7 @@ button.dP-btn.material-icons {
   z-index: 1;
   font-family: nittiblack;
 }
-/* line 569, ../scss/_headwear.scss */
+/* line 607, ../scss/_headwear.scss */
 .scrollarea-headwear .blog-post .blog-date {
   position: absolute;
   z-index: 1;
@@ -2930,7 +2976,7 @@ button.dP-btn.material-icons {
   font-family: nittiblack;
   font-size: 12px;
 }
-/* line 578, ../scss/_headwear.scss */
+/* line 616, ../scss/_headwear.scss */
 .scrollarea-headwear .blog-post .blog-description {
   position: absolute;
   font-family: graphikregular;
@@ -2941,7 +2987,7 @@ button.dP-btn.material-icons {
   line-height: 15px;
   font-size: 10px;
 }
-/* line 588, ../scss/_headwear.scss */
+/* line 626, ../scss/_headwear.scss */
 .scrollarea-headwear .blog-post .blog-subtitle {
   z-index: 2;
   position: absolute;
@@ -2953,7 +2999,7 @@ button.dP-btn.material-icons {
   color: white;
 }
 
-/* line 600, ../scss/_headwear.scss */
+/* line 638, ../scss/_headwear.scss */
 .social-headwear {
   position: relative;
   font-family: graphikmedium;
@@ -2963,26 +3009,26 @@ button.dP-btn.material-icons {
   margin-left: 20px;
 }
 
-/* line 608, ../scss/_headwear.scss */
+/* line 646, ../scss/_headwear.scss */
 .swiper-headwear {
   top: 0px;
 }
 
-/* line 611, ../scss/_headwear.scss */
+/* line 649, ../scss/_headwear.scss */
 .swiper-button-next {
   top: 1850px;
   right: 10px;
   position: absolute;
 }
 
-/* line 616, ../scss/_headwear.scss */
+/* line 654, ../scss/_headwear.scss */
 .swiper-button-prev {
   top: 1850px;
   left: 10px;
   position: absolute;
 }
 
-/* line 622, ../scss/_headwear.scss */
+/* line 660, ../scss/_headwear.scss */
 .email-section .e-header {
   text-align: center;
   font-family: graphiksemibold;
@@ -2990,7 +3036,7 @@ button.dP-btn.material-icons {
   color: #202020;
   margin-top: 50px;
 }
-/* line 629, ../scss/_headwear.scss */
+/* line 667, ../scss/_headwear.scss */
 .email-section .e-subheader {
   text-align: center;
   color: #ADADAD;
@@ -2998,12 +3044,12 @@ button.dP-btn.material-icons {
   margin-top: 20px;
   font-family: graphikmedium;
 }
-/* line 636, ../scss/_headwear.scss */
+/* line 674, ../scss/_headwear.scss */
 .email-section .e-subscribe {
   text-align: center;
   margin-top: 20px;
 }
-/* line 639, ../scss/_headwear.scss */
+/* line 677, ../scss/_headwear.scss */
 .email-section .e-subscribe .e-text {
   border-radius: 5px;
   border: solid #aaaaaa 2px;
@@ -3012,7 +3058,7 @@ button.dP-btn.material-icons {
   color: #ADADAD;
   padding: 20px 120px 20px 20px;
 }
-/* line 647, ../scss/_headwear.scss */
+/* line 685, ../scss/_headwear.scss */
 .email-section .e-subscribe .e-button {
   border-radius: 3px;
   border: none;
@@ -3022,25 +3068,25 @@ button.dP-btn.material-icons {
   margin-left: 5px;
   color: #fff;
 }
-/* line 655, ../scss/_headwear.scss */
+/* line 693, ../scss/_headwear.scss */
 .email-section .e-subscribe .e-button .e-arrow {
   font-size: 12px;
   padding-left: 10px;
 }
-/* line 660, ../scss/_headwear.scss */
+/* line 698, ../scss/_headwear.scss */
 .email-section .e-subscribe .e-button:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: ease;
 }
 
-/* line 666, ../scss/_headwear.scss */
+/* line 704, ../scss/_headwear.scss */
 .footer-headwear {
   width: 100vw;
   height: 200px;
   background-color: #1A1A1A;
 }
 
-/* line 671, ../scss/_headwear.scss */
+/* line 709, ../scss/_headwear.scss */
 .headwear-footer {
   display: flex;
   flex-direction: row;
@@ -3051,28 +3097,28 @@ button.dP-btn.material-icons {
   background-color: #1A1A1A;
   padding-top: 65px;
 }
-/* line 680, ../scss/_headwear.scss */
+/* line 718, ../scss/_headwear.scss */
 .headwear-footer .phone-number-footer {
   color: white;
   font-family: graphikregular;
   font-size: 13px;
 }
-/* line 685, ../scss/_headwear.scss */
+/* line 723, ../scss/_headwear.scss */
 .headwear-footer img.headwear-footer-logo {
   width: auto;
   height: 50px;
 }
-/* line 689, ../scss/_headwear.scss */
+/* line 727, ../scss/_headwear.scss */
 .headwear-footer img.social-in-footer {
   width: auto;
   height: 15px;
   margin: 0px 11px 0px 11px;
 }
-/* line 694, ../scss/_headwear.scss */
+/* line 732, ../scss/_headwear.scss */
 .headwear-footer .address-footer {
   font-size: 20px;
 }
-/* line 697, ../scss/_headwear.scss */
+/* line 735, ../scss/_headwear.scss */
 .headwear-footer .days-footer {
   color: white;
   font-family: nittiblack;
@@ -3080,7 +3126,7 @@ button.dP-btn.material-icons {
   font-size: 10px;
   margin-top: 28px;
 }
-/* line 704, ../scss/_headwear.scss */
+/* line 742, ../scss/_headwear.scss */
 .headwear-footer .hours-footer {
   color: white;
   font-family: nittiblack;
@@ -3088,81 +3134,81 @@ button.dP-btn.material-icons {
   text-transform: uppercase;
   margin-top: 28px;
 }
-/* line 711, ../scss/_headwear.scss */
+/* line 749, ../scss/_headwear.scss */
 .headwear-footer .right-side {
   text-align: right;
 }
-/* line 714, ../scss/_headwear.scss */
+/* line 752, ../scss/_headwear.scss */
 .headwear-footer .images-footer {
   flex-basis: 20%;
   text-align: center;
 }
 
-/* line 719, ../scss/_headwear.scss */
+/* line 757, ../scss/_headwear.scss */
 .images-footer2 {
   display: none;
 }
 
 /***** MEDIA QUERIES *****/
 @media only screen and (max-width: 1355px) {
-  /* line 724, ../scss/_headwear.scss */
+  /* line 762, ../scss/_headwear.scss */
   .filter-area .filter-area-vertical-scroller .vertical-scroll {
     height: 5800px !important;
   }
 
-  /* line 727, ../scss/_headwear.scss */
+  /* line 765, ../scss/_headwear.scss */
   .col-md-2.scroll2-element3.blog-post {
     width: 50vw !important;
   }
 
-  /* line 730, ../scss/_headwear.scss */
+  /* line 768, ../scss/_headwear.scss */
   .scrollable2-headwear {
     width: 150vw;
   }
 }
 @media only screen and (max-width: 1065px) {
-  /* line 735, ../scss/_headwear.scss */
+  /* line 773, ../scss/_headwear.scss */
   .hero-img1 {
     display: none;
   }
 
-  /* line 738, ../scss/_headwear.scss */
+  /* line 776, ../scss/_headwear.scss */
   .hero-img2 {
     text-align: center;
   }
 
-  /* line 741, ../scss/_headwear.scss */
+  /* line 779, ../scss/_headwear.scss */
   .hero-img3 {
     display: none;
   }
 
-  /* line 744, ../scss/_headwear.scss */
+  /* line 782, ../scss/_headwear.scss */
   .title-container {
     flex-basis: 35% !important;
   }
 
-  /* line 747, ../scss/_headwear.scss */
+  /* line 785, ../scss/_headwear.scss */
   .col-md-2.scroll2-element3.blog-post {
     width: 55vw !important;
   }
 
-  /* line 750, ../scss/_headwear.scss */
+  /* line 788, ../scss/_headwear.scss */
   .scrollable2-headwear {
     width: 165vw;
   }
 }
 @media only screen and (max-width: 940px) {
-  /* line 755, ../scss/_headwear.scss */
+  /* line 793, ../scss/_headwear.scss */
   .filter-header-area {
     margin: 50px 0px 20px 0px;
   }
 
-  /* line 758, ../scss/_headwear.scss */
+  /* line 796, ../scss/_headwear.scss */
   .filter-title {
     display: none;
   }
 
-  /* line 761, ../scss/_headwear.scss */
+  /* line 799, ../scss/_headwear.scss */
   .small-screen-filter-title {
     display: block !important;
     font-family: graphikmedium;
@@ -3173,12 +3219,12 @@ button.dP-btn.material-icons {
   }
 }
 @media only screen and (max-width: 840px) {
-  /* line 771, ../scss/_headwear.scss */
+  /* line 809, ../scss/_headwear.scss */
   .filter-title {
     display: none;
   }
 
-  /* line 774, ../scss/_headwear.scss */
+  /* line 812, ../scss/_headwear.scss */
   .small-screen-filter-title {
     display: block;
     font-family: graphikmedium;
@@ -3188,18 +3234,18 @@ button.dP-btn.material-icons {
     margin: 30px 0px 10px 0px;
   }
 
-  /* line 782, ../scss/_headwear.scss */
+  /* line 820, ../scss/_headwear.scss */
   .filter-header-area .filter-hat {
     margin: 0px 0px 0px 0px;
   }
 }
 @media only screen and (max-width: 800px) {
-  /* line 787, ../scss/_headwear.scss */
+  /* line 825, ../scss/_headwear.scss */
   .images-footer {
     display: none;
   }
 
-  /* line 790, ../scss/_headwear.scss */
+  /* line 828, ../scss/_headwear.scss */
   .images-footer2 {
     background-color: #1A1A1A;
     display: flex !important;
@@ -3207,78 +3253,78 @@ button.dP-btn.material-icons {
     justify-content: center;
     height: 100px;
   }
-  /* line 796, ../scss/_headwear.scss */
+  /* line 834, ../scss/_headwear.scss */
   .images-footer2 .headwear-footer-logo {
     width: 120px;
     height: auto;
     align-self: center;
   }
 
-  /* line 802, ../scss/_headwear.scss */
+  /* line 840, ../scss/_headwear.scss */
   .headwear-footer {
     height: 100px;
     padding-top: 20px;
   }
 
-  /* line 806, ../scss/_headwear.scss */
+  /* line 844, ../scss/_headwear.scss */
   .social-area-footer {
     align-self: center;
   }
 
-  /* line 809, ../scss/_headwear.scss */
+  /* line 847, ../scss/_headwear.scss */
   .social-in-footer {
     margin: 0px 6px;
   }
 
-  /* line 812, ../scss/_headwear.scss */
+  /* line 850, ../scss/_headwear.scss */
   .days-footer {
     font-size: 8px !important;
   }
 
-  /* line 815, ../scss/_headwear.scss */
+  /* line 853, ../scss/_headwear.scss */
   .hours-footer {
     font-size: 8px !important;
   }
 
-  /* line 818, ../scss/_headwear.scss */
+  /* line 856, ../scss/_headwear.scss */
   .end {
     display: none;
   }
 
-  /* line 821, ../scss/_headwear.scss */
+  /* line 859, ../scss/_headwear.scss */
   .address-footer {
     font-size: 15px !important;
   }
 }
 @media only screen and (max-width: 657px) {
-  /* line 826, ../scss/_headwear.scss */
+  /* line 864, ../scss/_headwear.scss */
   .title-container {
     flex-basis: 30%;
     margin-left: 30px;
   }
 
-  /* line 830, ../scss/_headwear.scss */
+  /* line 868, ../scss/_headwear.scss */
   .hero-img1-area {
     flex-basis: 0%;
   }
 
-  /* line 833, ../scss/_headwear.scss */
+  /* line 871, ../scss/_headwear.scss */
   .hero-img3-area {
     flex-basis: 0%;
   }
 
-  /* line 836, ../scss/_headwear.scss */
+  /* line 874, ../scss/_headwear.scss */
   .filter-area .filter-preview {
     display: none;
   }
 
-  /* line 839, ../scss/_headwear.scss */
+  /* line 877, ../scss/_headwear.scss */
   .filter-area .filter-area-vertical-scroller {
     flex-basis: 100% !important;
   }
 }
 @media only screen and (max-width: 500px) {
-  /* line 844, ../scss/_headwear.scss */
+  /* line 882, ../scss/_headwear.scss */
   .hero-img2 {
     text-align: center;
     width: 100vw;
