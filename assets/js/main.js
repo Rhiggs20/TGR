@@ -26,7 +26,7 @@ $(document).ready(function(){
     $(this).addClass( "gallery-image-highlight");
   });
 //Gallery switch out content
-           $(".gallery-arrow").click(function(){
+          $(".gallery-arrow").click(function(){
               var images = jQuery(".gallery-image");
 
               for (var i=0; i < images.length; i++) {
@@ -64,22 +64,18 @@ $(document).ready(function(){
 
            $(".black").click(function() {
               var images = jQuery(".gallery-image");
-                $(images[0]).click();
-              
+                $(images[0]).click(); 
            });
 
            $(".red").click(function() {
               var images = jQuery(".gallery-image");
                 $(images[1]).click();
-              
            });
 
            $(".blue").click(function() {
               var images = jQuery(".gallery-image");
-                $(images[2]).click();
-              
+                $(images[2]).click(); 
            });
-
         });
       function myFunction() {
         document.getElementById("myDropdown").classList.toggle("show");
@@ -99,7 +95,7 @@ $(document).ready(function(){
       }
     }
   }
-  $(document).ready(function(){  /* DOM ready callback */
+  $(document).ready(function(x){  /* DOM ready callback */
 
   });
 
@@ -118,7 +114,18 @@ $(document).ready(function(){
         prevEl: '.swiper-button-prev',
       },
     });
-
+//Change # of swiper slides at screen width
+$(window).resize(function(){
+  var ww = $(window).width()
+  if (ww>1280) swiper.params.slidesPerView = 4;
+  if (ww>800 && ww<=1280) swiper.params.slidesPerView = 3;
+  if (ww>800 && ww<=1280) swiper.params.slidesPerGroup = 3;
+  if (ww>640 && ww<=960) swiper.params.slidesPerView = 2;
+  if (ww> 640 && ww<=960) swiper.params.slidesPerGroup = 2;
+  if (ww<=640) swiper.params.slidesPerView = 1;
+  if (ww<=640) swiper.params.slidesPerGroup = 1;
+})
+$(window).trigger('resize')
 // GALLERY PREVIEW //
 
 //Choose Hat Selection 
@@ -148,3 +155,36 @@ $(document).ready(function() {
     $(this).removeClass("opacity");
   });
 });
+//Quantity Incrementation and Decrementation
+$(".preview-remove").on("click", function() {
+  var $button = $(this);
+  var oldValue = $button.parent().find("input").val();
+  if ($button.text() == "add") {
+    var newVal = parseFloat(oldValue) + 1;
+  } else {
+   // Don't allow decrementing below zero
+    if (oldValue > 0) {
+      var newVal = parseFloat(oldValue) - 1;
+    } else {
+      newVal = 0;
+    }
+  }
+  $button.parent().find("input").val(newVal);
+});
+//My New & Improved Dropdown
+function myThing() {
+  document.getElementById("mydP").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dP-btn')) {
+    var dropdowns = document.getElementsByClassName("dP-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}

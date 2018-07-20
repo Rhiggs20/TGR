@@ -13,8 +13,73 @@
 <body>
 <!--Header-->
 	<div class="top-navigation">
-		<div class="top-nav-square">
-			<i class="material-icons top-dropdown">&#xe5c3;</i>
+		<!--My Dropdown new & improved-->
+		<div class="dP">
+			<button onclick="myThing()" class="dP-btn material-icons">&#xe5c3;</button>
+			<div id="mydP" class="dP-content">
+				<div class="menu-menus">
+					<div class="top-menu">
+						<i class="material-icons dropdown">&#xe5cd;</i>
+						<img alt="logo" src="assets/images/logo.png" class="logo-menu">
+						<span class="glyphicon glyphicon-search menu-search"></span>
+						<a href="index.html" class="menu-link">tetongravity.com<i class="material-icons menu-arrow">&#xe5c8;</i></a>
+					</div>
+					<div class="menu-sections">
+						<div class="menu-links">
+						    <ul class="linkList">
+						    	<li><a href="#films" class="link header-link">Films</a></li>
+						    	<li><a href="#team" class="link header-link">Team</a></li>
+						    	<li><a href="#lookbook" class="link header-link">Lookbook</a></li>
+						    	<li class="li-margin2"><a href="#contact" class="link header-link">Contact</a></li>
+						    	<li class="li-margin"><a href="#locations" class="link subheader-link">Locations</a></li>
+						    	<li><a href="#shipping" class="link subheader-link">Shipping & Returns</a></li>
+						    	<li><a href="#service" class="link subheader-link">Customer Service</a></li>
+						    	<li><a href="#faq" class="link subheader-link">FAQ</a></li>
+							</ul>
+						</div>
+						<div class="menu-links">
+							<ul class="linkList">
+								<li><a href="#men" class="link header-link">Men</a></li>
+								<li class="li-margin"><a href="#tees" class="link subheader-link">Graphic Tees</a></li>
+								<li><a href="#flannels" class="link subheader-link">Hoodies & Flannels</a></li>
+								<li><a href="#preformance" class="link subheader-link">Preformance Wear</a></li>
+								<li class="li-margin1"><a href="#women" class="link header-link">Women</a></li>
+								<li></li>
+								<li><a href="#tanks" class="link subheader-link">Tees & Tanks</a></li>
+								<li><a href="#hoodies" class="link subheader-link">Hoodies</a></li>
+								<li><a href="#shorts" class="link subheader-link">Shorts</a></li>
+								<li><a href="#preformance" class="link subheader-link">Preformance Wear</a></li>
+							</ul> 
+						</div>
+						<div class="menu-links">
+						    <ul class="linkList">
+						    	<li><a href="#accessories" class="link header-link">Accesories</a></li>
+						    	<li class="li-margin"><a href="#stickers" class="link subheader-link">Stickers</a></li>
+						    	<li><a href="#beverage" class="link subheader-link">Beverage</a></li>
+						    	<li><a href="#socks" class="link subheader-link">Socks</a></li>
+						    	<li><a href="#books" class="link subheader-link">Books</a></li>
+						    	<li><a href="#gifts" class="link subheader-link">Gift Cards</a></li>
+						    </ul>
+						</div>
+						<div class="menu-links">
+						    <ul class="linkList">
+						    	<li><a href="#headwear" class="link header-link">Headwear</a></li>
+						    	<li class="li-margin"><a href="#hats" class="link subheader-link">Hats/Caps</a></li>
+						    	<li><a href="#beanies" class="link subheader-link">Beanies</a></li>
+						    	<li><a href="#buffs" class="link subheader-link">Buffs</a></li>
+						    	<li class="li-margin1"><a href="#eyewear" class="link header-link">Eyewear</a></li>
+						    	<li class="li-margin"><a href="#goggles" class="link subheader-link">Goggles</a></li>
+						    	<li><a href="#sunglasses" class="link subheader-link">Sunglasses</a></li>
+						    	<li class="li-margin1"><a href="#sale" class="link subheader-link special">Sale</a></li>
+						    </ul>    
+						</div>
+						<div class="login-menu">
+						</div>
+					</div>
+				</div>
+				<div class="menu-profile">
+				</div>
+		    </div>
 		</div>
 		<div class="top-nav-logo">
 			<img alt="logo" src="assets/images/logo.png" class="logo-resizer">
@@ -380,27 +445,33 @@
 		<div class="filter-preview">
 			<div class="preview-information">
 				<div class="preview-box">
-					<img src="assets/images/info.png" alt="Info" class="info">
+					<img src="assets/images/info.png" alt="Info" class="info preview-image">
 				</div>
 				<div class="preview-box opacity">
-					<img src="assets/images/hats/4.png" alt="Image Preview" class="boxed-img">
+					<img src="assets/images/hats/4.png" alt="Image Preview" class="boxed-img preview-image">
 				</div>
 				<div class="preview-box opacity">
-					<img src="assets/images/IMG_4411_2.jpg" alt="Image Preview" class="boxed-lifstyle">
+					<img src="assets/images/IMG_4411_2.jpg" alt="Image Preview" class="boxed-lifestyle preview-image">
 				</div>
 			</div>
-			<div class="hat-details">
-				<div class="details-title">Hat Name
-				</div>
-				<div class="details-fit">Fit
-					<div class="fit-para">Spread the stoke and live the dream as a part of the TGR Ambassador program. Spread the stoke and live the dream as a part of the TGR Ambassador program. Spread the stoke and live the dream as a part of the TGR Ambassador program. Spread the stoke and live the dream as a part of the TGR Ambassador program.
+			
+				<img src="assets/images/info.png" alt="Info" id="main-preview">
+				<!--<div class="preview-body">
+				<div class="hat-details">
+					<div class="details-title">Hat Name
+					</div>
+					<div class="details-fit">Fit
+						<div class="fit-para">Spread the stoke and live the dream as a part of the TGR Ambassador program. Spread the stoke and live the dream as a part of the TGR Ambassador program. Spread the stoke and live the dream as a part of the TGR Ambassador program. Spread the stoke and live the dream as a part of the TGR Ambassador program.
+						</div>
+					</div>
+					<div class="details-materials">Materials
+						<div class="materials-para">Spread the stoke and live the dream as a part of the TGR Ambassador program. Spread the stoke and live the dream as a part of the TGR Ambassador program. Spread the stoke and live the dream as a part of the TGR Ambassador program.
+						</div>
 					</div>
 				</div>
-				<div class="details-materials">Materials
-					<div class="materials-para">Spread the stoke and live the dream as a part of the TGR Ambassador program. Spread the stoke and live the dream as a part of the TGR Ambassador program. Spread the stoke and live the dream as a part of the TGR Ambassador program.
-					</div>
-				</div>
-			</div>
+			</div>-->
+				<button class="right-arrow"><i class="material-icons preview-arrow">arrow_forward</i></button>
+			
 			<div class="preview-footer">
 				<div class="color-holder">
 					<button class="preview-color black"></button>
@@ -409,7 +480,7 @@
 					<div class="preview-quantity">Quantity</div>
 				<div class="quantity-holder">
 					<button class="preview-remove"><i class="material-icons preview-remove">remove</i></button>
-
+					<input type="text" name="quantity" value="1" class="quantity">
 					<button class="preview-remove"><i class="material-icons preview-remove">add</i></button>
 				</div>
 					<button class="done">Done!</button>
@@ -455,6 +526,16 @@
 		</div>
 	</div>
 <!--End On the Blog-->
+<!--Email Tag-->
+	<div class="email-section">
+		<div class="e-header">Get Featured on Social</div>
+		<div class="e-subheader">Love your TGR gear? Want to win prizes for your epic adventures? Send us your handle & Get Featured!</div>
+		<div class="e-subscribe">
+			<input type="text" value="@YourHandle" class="e-text">
+			<button class="e-button">Request<i class="material-icons e-arrow">&#xe5c8;</i></button>
+		</div>
+	</div>
+<!--End Email Tag-->
 <!--Section Five-->
 	<div class="social-headwear">Go Social
 		<p class="social-nav1">Become an Ambassador</p>
@@ -583,28 +664,6 @@
 		</div>
 	</div>
 
-<!--End Footer-->
-<!--Footer-->
-<!--
-	<div class="footer-headwear">
-		<div class="col-md-4">
-			<div class="phone-number">(307)734-8192</div>
-			<div class="address">45 W Broadway St.</br>Jackson, WY 83001</div>
-			<div class="days-of-week">weekdays&nbsp;&nbsp;9am - 6pm</br>saturday&nbsp;&nbsp;12pm - 6pm</br>sunday&nbsp;&nbsp;&nbsp; closed</div>
-		</div>
-		<div class="col-md-4">
-			<img src="assets/images/logowhite.png" alt="Footer Logo" class="footer-logo">
-			<img src="assets/images/instagram.png" alt="Instagram" class="instagram">
-			<img src="assets/images/facebook-logo.png" alt="Facebook" class="facebook">
-			<img src="assets/images/vimeo-logo.png" alt="Vimeo" class="vimeo">
-			<img src="assets/images/twitter-logo-silhouette.png" alt="Twitter" class="twitter">
-		</div>
-		<div class="col-md-4">
-			<div class="phone-number two">(307)734-8192</div>
-			<div class="address2">1260 West St.</br>Wilson, WY 83001</div>
-			<div class="days-of-week-two">weekdays&nbsp;&nbsp;9am - 6pm</br>saturday&nbsp;&nbsp;12pm - 6pm</br>sunday&nbsp;&nbsp;&nbsp; closed</div>
-		</div>
-	</div> -->
 <!--End Footer-->
 <!--JQuery-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
