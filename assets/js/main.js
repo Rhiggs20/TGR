@@ -188,3 +188,11 @@ window.onclick = function(event) {
     }
   }
 }
+//Switch out main content area in Filter area 
+var $filters = $('#byProduct, #byLook').hide();
+$('#byProduct').show();
+$('.switchFilters').click(function() {
+  var href = $(this).attr('href');
+  $filters.hide();
+  $(href).show();
+});

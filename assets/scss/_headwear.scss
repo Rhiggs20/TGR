@@ -95,6 +95,7 @@ i.menu-arrow {
 	    }
 	.your-menu {
 		flex-basis: 30%;
+		position: relative;
 		.your-hero {
 			width: auto;
 			height: 420px;
@@ -103,9 +104,90 @@ i.menu-arrow {
 		}
 		.your-overlay {
 			background-color: black;
-			opacity: .3;
-			height: 420px;
-			width: auto;
+		    opacity: .8;
+		    height: 420px;
+		    width: 487px;
+		    position: absolute;
+		    bottom: 4px;
+		}
+		img.your-picture {
+			height: 150px;
+		    width: 150px;
+		    position: absolute;
+		    top: 0px;
+		    left: 150px;
+		    border-radius: 100px;
+		}
+		.your-name {
+			color: #fff;
+		    font-family: graphiksemibold;
+		    font-size: 40px;
+		    position: absolute;
+		    bottom: 150px;
+		    left: 135px;
+		}
+		.ship-address {
+			position: absolute;
+		    color: #fff;
+		    font-family: nittiblack;
+		    text-transform: uppercase;
+		    bottom: 115px;
+		    left: 155px;
+		}
+		.your-address {
+			position: absolute;
+		    color: #fff;
+		    font-family: graphikmedium;
+		    bottom: 90px;
+		    left: 165px;
+		}
+		.your-address2 {
+			position: absolute;
+		    color: #fff;
+		    font-family: graphikmedium;
+		    bottom: 65px;
+		    left: 175px;
+		}
+		button.edit-yours {
+		    position: absolute;
+		    background: none;
+		    border: solid white 1px;
+		    border-radius: 2px;
+		    color: #fff;
+		    padding: 5px 10px;
+		    font-family: graphikregular;
+		    font-size: 12px;
+		    bottom: 20px;
+    		left: 30px;
+		}
+		.not-you {
+		    position: absolute;
+		    color: #fff;
+		    font-family: graphikregular;
+		    font-size: 12px;
+		    bottom: 26px;
+    		left: 180px;	
+		}
+		button.sign-in {
+		    position: absolute;
+		    background: none;
+		    border: none;
+		    font-family: graphikmedium;
+		    font-size: 15px;
+		    color: #fff;   
+		    bottom: 22px;
+		    right: 240px;
+		}
+		span.glyphicon.your-cart {
+		    color: #fff;
+		    position: absolute;
+		    top: 325px;
+		    left: 350px;
+		    font-size: 20px;
+		}
+		button.no-style {
+			border: none;
+			background: none;
 		}
 	}    
     }
@@ -337,6 +419,12 @@ button.dP-btn.material-icons {
   			height: 2900px;
   		    width: 100%;
   		}
+  		.vertical-scroll2 {
+  			overflow-x: hidden;
+		    overflow-y: hidden;
+		    height: 1300px;
+		    width: 100%;
+  		}
   		.card {
 		    display: inline-block;
 		    background-color: white;
@@ -348,11 +436,24 @@ button.dP-btn.material-icons {
 		    .card-image {
 			    text-align: center;
 			}
+			.card-image2 {
+			    text-align: center;
+    			position: relative;
+			}
 			.card-image-source {
 				background: none;
 			}
+			.image-source {
+				background: none;
+				height: 270px;
+				width: 300px;
+			}
 			.card-image:hover {
 				background: linear-gradient(to top, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0) 100%);
+				filter: blur(1px);
+				transition: .2s ease;
+			}
+			.card-image2:hover {
 				filter: blur(1px);
 				transition: .2s ease;
 			}
@@ -377,6 +478,40 @@ button.dP-btn.material-icons {
 			    font-size: 13px;
 			}
   		}
+  		.big-card {
+  			.big-image-source {
+				width: 625px;
+			    height: auto;
+			    margin-left: 10px;
+			    margin-bottom: 20px;
+			}
+			.big-card-image {
+				position: relative;
+				text-align: center;
+			}
+  		}
+  		.big-card:hover {
+  			filter: blur(1px);
+  			transition: ease;
+  		}
+  		.card-words {
+			position: absolute;
+		    z-index: 1;
+		    bottom: 15px;
+		    left: 30px;
+		    color: #fff;
+		    font-family: graphiksemibold;
+		    font-size: 15px;
+		}
+		.big-words {
+			position: absolute;
+		    z-index: 1;
+		    bottom: 30px;
+		    left: 30px;
+		    color: #fff;
+		    font-family: graphiksemibold;
+		    font-size: 15px;
+		}
     }
     .filter-preview {
     	flex-basis: 48%;
@@ -421,8 +556,11 @@ button.dP-btn.material-icons {
 			justify-content: flex-end;
 		    height: 375px;
 			.hat-details {
-				flex-basis: 50%;
+				//flex-basis: 50%;
 			}
+		}
+		img#main-preview {
+		    display: none;
 		}
 		.details-title {
 		    font-family: graphiksemibold;
@@ -458,6 +596,7 @@ button.dP-btn.material-icons {
     	flex-basis: 25%;
     }
     button.right-arrow {
+    	display: none;
 	    height: 20px;
 	    background: none;
 	    border: none;
@@ -524,7 +663,7 @@ button.dP-btn.material-icons {
 				transition: ease;
 			}
 			input.quantity {
-			    width: 8%;
+			    width: 15%;
 			    border: none;
 			    background: none;
 			    text-align: center;
@@ -765,9 +904,6 @@ button.dP-btn.material-icons {
 	.col-md-2.scroll2-element3.blog-post {
 		width: 50vw !important;
 	}
-	.scrollable2-headwear {
-		width: 150vw;
-	}
 }
 @media only screen and (max-width: 1065px) {
     .hero-img1 {
@@ -784,6 +920,7 @@ button.dP-btn.material-icons {
     }
     .col-md-2.scroll2-element3.blog-post {
 		width: 55vw !important;
+		margin-right: 0px;
 	}
 	.scrollable2-headwear {
 		width: 165vw;
@@ -883,5 +1020,10 @@ button.dP-btn.material-icons {
 	    text-align: center;
 	    width: 100vw;
 	    height: 350px;
+	}
+}
+@media only screen and (max-width: 453px) {
+	input.e-text {
+		margin-bottom: 10px;
 	}
 }
