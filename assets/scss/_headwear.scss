@@ -256,15 +256,24 @@ button.dP-btn.material-icons {
     margin-top: 20px;
     .hero-img1-area {
     	flex-basis: 25%;
+    	.hero-img1 {
+    		border-radius: 3px;
+    	}
     }
     .hero-img2-area {
     	flex-basis: 25%;
+    	.hero-img2 {
+    		border-radius: 3px;
+    	}
     }
     .title-container {
     	flex-basis: 25%;
     }
     .hero-img3-area {
     	flex-basis: 25%;
+    	.hero-img3 {
+    		border-radius: 3px;
+    	}
     }
     .hero-title {
     	font-family: circularstdbold;
