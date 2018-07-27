@@ -64,6 +64,55 @@ body {
 /* End Fonts */
 
 /* ##2 Header */
+.hero-area {
+    display: flex;
+    flex-direction:row;
+    .hero-area-left {
+        flex-basis: 55%;
+    }
+    .hero-img-one {
+        height: 300px;
+        width: 100%;
+    }
+    .hero-description {
+        flex-basis: 30%;
+        .hero-shades {
+            color: #5C2B0A;
+            font-family: graphikmedium;
+            font-size: 35px;
+            text-align: center;
+        }
+        .hero-details {
+            text-align: center;
+            color: #5C2B0A;
+            font-family: graphikmedium;
+        }
+        button.hero-button {
+            background-color: white;
+            border: solid 1px;
+            border-radius: 2px;
+            padding: 10px 10px;
+            font-family: graphikregular;
+            color: #5C2B0A;
+        }
+        button.hero-button:hover {
+            transition: ease .2s;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+        .hero-index-arrow {
+            font-size: 12px;
+            margin-left: 5px;
+        }
+    }
+    .hero-area-right {
+         flex-basis: 15%;
+         .hero-img-two {
+            height: 300px;
+            width: 100%;
+         }
+    }
+
+}
 .hero-image {
 	background-image: url("/assets/images/videoreplace.jpg"); 
 	height: 400px;
@@ -110,38 +159,6 @@ button.home {
 }
 .logo span {
 	color: black;
-}
-.shades {
-    position: absolute;
-    top: 100px;
-    left: 800px;
-    color: #5C2B0A;
-    font-family: graphikmedium;
-    font-size: 40px;
-    text-align: center;
-}
-.header-description {
-    position: absolute;
-    top: 240px;
-    left: 790px;
-    text-align: center;
-    color: #5C2B0A;
-    font-family: graphikmedium;
-}
-button.header-button {
-    position: absolute;
-    top: 330px;
-    left: 820px;
-    background-color: white;
-    border: solid 1px;
-    border-radius: 2px;
-    padding: 10px 10px;
-    font-family: graphikregular;
-    color: #5C2B0A;
-}
-button.header-button:hover {
-    transition: ease .2s;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 i.material-icons.header-wear-arrow {
     font-size: 12px;
@@ -468,26 +485,64 @@ div.section-one-row {
     font-family: graphiksemibold;
     font-size: 31px;
     color: #202020;
-    padding: 20px 0px 40px 15px;
+    padding: 20px 0px 0px 15px;
     display: block;
 }
 .section2-row {
     padding-left: 15px;
+    display: flex;
+    justify-content: space-between;
 }
-.vertical-scroller-area {
-	width: 43vw;
-	margin-left: 5px;
-	overflow-x: hidden;
-	overflow-y: scroll;
-    position: absolute;
-    height: 665px;
+.no-background {
+    background: none !important;
 }
-.vertical-scroller {
-    overflow-x: hidden;
-    overflow-y: hidden;
-    height: 1500px;
+.index-card {
+    display: inline-block;
+    background-color: white;
+    height: 420px;
+    margin: 0px 10px 20px 10px;
+    border-bottom: solid black 3px;
+    border-radius: 2px;
+    width: 300px;
+}
+.index-card-image {
+       text-align: center;
+}
+.index-card-image:hover {
+    background: linear-gradient(to top, rgba(0,0,0,0.35) 0%,rgba(0,0,0,0) 100%);
+    filter: blur(1px);
+    transition: .2s ease;
 }
 
+.index-card-image-source {
+    height: 350px;
+    width: 300px;
+}
+.card-description {
+    color: #b9b9b9;
+    font-family: nittiblack;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 20px 0px 0px 30px;
+}
+.card-name {
+    margin: 0px 0px 0px 30px;
+    font-family: graphikmedium;
+    font-size: 16px;
+    display: inline;
+}
+.card-price {
+    display: inline;
+    margin-left: 10px;
+    color: lightgray;
+    font-family: graphikregular;
+    font-size: 13px;
+}
+.bottle {
+    height: 385px;
+    width: auto;
+    margin-left: 100px;
+}
 /* Header Ad */
 
 .col-md-3.mostwanted-ad1 {
@@ -604,32 +659,25 @@ div.section-one-row {
     font-family: graphikmedium;
     font-size: 30px;
     color: #202020;
-    position: absolute;
-    top: 1400px;
-    left: 150px;
+    text-align: center;
+    margin-top: 20px;
 }
 .stay-updated {
     font-family: graphikmedium;
     font-size: 10px;
     color: gray;
-    position: absolute;
-    top: 1450px;
-    left: 170px;
+    text-align: center;
 }
 input.email-inScroll {
-    position: absolute;
-    top: 1500px;
-    left: 150px;
     font-family: graphikregular;
     border: solid gray 2px;
     border-radius: 4px;
     padding: 16px 50px 16px 10px;
     color: gray;
+    margin-left: 155px;
+    margin-top: 20px;
 }
 button.email {
-    position: absolute;
-    top: 1500px;
-    left: 370px;
     background-color: #202020;
     padding: 17px 15px;
     font-family: graphikregular;
@@ -637,6 +685,7 @@ button.email {
     font-size: 14px;
     border-radius: 3px;
     box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.5);
+    text-align: center;
 }
 .email:hover {
 	transition: ease .2s;
@@ -677,15 +726,17 @@ button.email {
     text-align: center;
     padding-bottom: 40px;
 }
-.col-md-6.water-ad {
+.water-ad {
 	margin-left: 45px;
     padding-right: 0px;
     padding-left: 0px;
     text-align: center;
     border-top: solid black 6px;
-    position: absolute;
+    //position: absolute;
+    flex-basis: 45%;
     right: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 700px;
 }
 .largeAd-bottom-container {
 	background-color: #E7E7E7;
@@ -787,13 +838,11 @@ button.cart:hover {
     margin-left: 15px;
     padding: 0px;
 }
-
 /* ##5 Section 3 */
-
 .explore {
-    position: absolute;
-    top: 1550px;
-    left: 15px;
+    margin-top: 60px;
+    margin-left: 20px;
+    margin-bottom: 20px;
     font-size: 30px;
     font-family: graphikmedium;
     color: #202020;
@@ -814,21 +863,31 @@ button.cart:hover {
     margin: 20px;
 }
 .explore-image {
-    position: absolute;
-    top: 1630px;
     height: 602.92px;
-    left: 30px;
+    margin-left: 30px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: absolute;
+    top: 20px;
+    left: -5px;
+    z-index: 1;
 }
 .explore-background {
-    position: absolute;
-    top: 1610px;
-    left: 15px;
+    margin-left: 15px;
     height: 640px;
     width: 100%;
     opacity: .1;
+    position: absolute;
+    top: 0px;  
+    z-index: 0;
 }
-
+.explore-area {
+    position: relative;
+    background-image: url("../images/bikerbackground copy.JPG");
+    width: 98vw;
+    margin-left: 20px;
+    height: 640px;
+    max-width: 1366px;
+}
 /* ##6 Sidebar */
 .sidebar {
     color: #ADADAD;
@@ -837,10 +896,11 @@ button.cart:hover {
     transform: rotate(270deg);
     border-top: solid #202020 3px;
     position: absolute;
-    top: 1950px;
+    top: 300px;
     background-color: white;
-    left: -98px;
+    left: -115px;
     padding: 10px 30px;
+    z-index: 2;
 }
 .sidebar-title {
     color: #202020;
@@ -858,7 +918,7 @@ button.cart:hover {
 
 .explore-title {
 	position: absolute;
-	top: 1700px;
+	top: 100px;
 	left: 1000px;
 	font-family: brownhillscript;
 	color: black;
@@ -879,15 +939,15 @@ button.cart:hover {
     font-size: 12px;
     font-family: graphikmedium;
     position: absolute;
-    top: 2000px;
+    top: 400px;
     left: 950px;
     margin: 0px 40px;
     text-align: center;
 }
 button.lookbook {
 	position: absolute;
-	top: 2150px;
-	left: 1080px;
+	top: 520px;
+	left: 1060px;
     background-color: #202020;
     padding: 20px 15px;
     font-family: graphikregular;
@@ -909,9 +969,8 @@ button.lookbook:hover {
 
 /* ##8 Section 4 */
 .meetathletes {
-	position: absolute;
-    top: 2280px;
-    left: 20px;
+	margin-top: 20px;
+    margin-left: 20px;
     font-size: 30px;
     font-family: graphikmedium;
     color: #202020;
@@ -923,8 +982,7 @@ button.lookbook:hover {
 	margin-left: 5px;
 	overflow-x: scroll;
 	overflow-y: hidden;
-    top: 2350px;
-    position: absolute;
+    margin-top: 20px;
 }
 .scrollable2 {
     overflow-x: scroll;
@@ -993,9 +1051,8 @@ button.pro1:hover {
 /* ##16 Section 5 */
 
 .social {
-    position: absolute;
-    top: 2670px;
-    left: 15px;
+    margin-top: 20px;
+    margin-left: 20px;
     font-family: graphikmedium;
     font-size: 30px;
     color: #202020;
@@ -1114,7 +1171,6 @@ button.pro1:hover {
    .swiper-container {
       width: 100%;
       height: 550px;
-      top: 1920px;
     }
     .swiper-slide {
       text-align: center;
@@ -1192,78 +1248,14 @@ button.pro1:hover {
 .col-sm-4.socialpost {
     width: 340px;
 }
-
-/* Device Width Under 1024px */
-@media only screen and (max-width: 1024px) {
-    img.logo {
-        width: 60%;
+@media only screen and (min-width: 1366px) {
+    body {
+        margin: auto !important;
+        max-width: 1366px;
     }
-    .hero-image {
-        width: 500px;
-    }
-    .shades {
-        left: 560px;
-    }
-    .header-description {
-        left: 540px;
-    }
-    button.header-button {
-        left: 570px;
-    }
-    .scrollable {
-        width: 258vw;
-    }
-    .col-md-6.water-ad {
-        width: 400px;
-    }
-    .vertical-scroller-area {
-        width: 55vw;
-    }
-    .explore {
-        top: 1650px;
-    }
-    .explore-background {
-        top: 1710px;
-    }
-    .explore-image {
-        top: 1730px;
-    }
-    .explore-title {
-        display: none;
-    }
-    .explore-info {
-        display: none;
-    }
-    button.lookbook {
-        left: 750px;
-        top: 2250px;
-        border: none;
-    }
-    .meetathletes {
-        top: 2380px;
-    }
-    .scrollarea {
-        top: 2450px;
-    }
+}
+@media only screen and (min-width: 2200px) {
     .col-md-2 {
-        margin-right: 100px;
-    }
-    .social {
-        top: 2770px;
-    }
-    .swiper-container {
-        top: 2020px;
-    }
-    .footer {
-        top: 3300px;
-    }
-    .address, .address2 {
-        font-size: 20px;
-    }
-    .days-of-week {
-        left: 212px;
-    }
-    .days-of-week-two {
-        left: 19px;
+        width: 10% !important;
     }
 }

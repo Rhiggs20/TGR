@@ -2,55 +2,61 @@
 	background-image: url("/assets/images/women-header.jpg");
 	height: 450px;
 	width: 100vw;
-	img.women-hero-overlay {
-    height: 300px;
-    width: 100%;
-    margin-top: -20px;
-    margin-left: 0px;
-    border-radius: 4px;
-    padding: 0px;
-	}
-	.row.womens-hero {
-		width: 100vw;
-	}
-	.navigation .dropbtn {
-		background: none;
-	}
-	.way-up {
-    color: white;
-    font-family: graphikmedium;
-    font-size: 45px;
-    text-align: center;
-    line-height: 45px;
-    margin-top: 60px;
-	}
-	.women-hero-description {
-    color: white;
-    margin-top: 20px;
-    font-family: graphiklight;
-    text-align: center;
-	}
-	button.women-hero-button {
-    font-family: graphiklight;
-    color: white;
-    border: solid white 1.3px;
-    border-radius: 2px;
-    background: none;
-    margin: 20px 0px 0px 80px;
-    padding: 5px 15px;
-	}
-	button.women-hero-button:hover {
-		transition: .2s ease;
-		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-	}
-	img.hero-img-2 {
-    width: 100%;
-    padding: 0px;
-    border-radius: 4px;
-	}
-	.hero-img2 {
-		padding: 0px;
-	}
+    margin-top: -15px;
+    max-width: 1366px;
+}
+.wo-hero {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    .wo-img-left{
+        flex-basis: 25%;
+        .wo-img-1 {
+            height: 300px;
+        }
+    }
+    .wo-description {
+        flex-basis: 25%;
+        .wo-title {
+            color: white;
+            font-family: graphikmedium;
+            font-size: 45px;
+            text-align: center;
+            line-height: 45px;
+            margin-top: 60px;
+        }
+        .wo-details {
+            color: white;
+            margin-top: 20px;
+            font-family: graphiklight;
+            text-align: center;
+        }
+        .wo-button {
+            font-family: graphiklight;
+            color: white;
+            border: solid white 1.3px;
+            border-radius: 2px;
+            background: none;
+            padding: 5px 15px;
+            text-align: center;
+            margin: 20px 0px 0px 100px;
+        }
+        button.wo-button:hover {
+            transition: .2s ease;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+        .wo-hero-arrow {
+            font-size: 12px;
+            margin-left: 5px;
+        }
+    }
+    .wo-img-right{
+        flex-basis: 50%;
+        .wo-img-2 {
+            height: 300px;
+            width: 100%;
+        }
+    }
 }
 div.sectionone-row {
     margin-top: -60px;
@@ -220,9 +226,7 @@ button.lookbook-women:hover {
     border-top: solid black 5px;
 }
 .social-women {
-    position: absolute;
-    top: 2900px;
-    left: 15px;
+    margin: 20px 0px 0px 20px;
     font-family: graphikmedium;
     font-size: 30px;
     color: #202020;
@@ -250,47 +254,47 @@ button.email-women2 {
     border-radius: 3px;
     box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
 }
-.swiper-container.women-go-social.swiper-container-horizontal {
-    position: absolute;
-    top: 2950px;
-}
 .ambassador-women {
-    position: absolute;
-    top: 2700px;
     font-family: graphikmedium;
     font-size: 30px;
-    left: 37%;
+    margin-top: 80px;
+    text-align: center;
 }
 .ambassador-info-women {
-    position: absolute;
-    top: 2745px;
-    left: 28%;
+    text-align: center;
     font-family: graphikregular;
     color: gray;
 }
-.email-address-ambassador {
-    font-family: graphikmedium;
-    font-size: 10px;
-    color: gray;
-    position: absolute;
-    top: 2800px;
-    left: 36%;
-    padding: 20px 140px 20px 20px;
-    border: solid gray 1px;
-    border-radius: 3px;
-}
-button.email-women3 {
-    position: absolute;
-    top: 2800px;
-    left: 54%;
-    background-color: #202020;
-    padding: 17px 15px;
-    font-family: graphikregular;
-    color: white;
-    font-size: 14px;
-    border-radius: 3px;
-    box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+.return-email {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+    .email-address-ambassador {
+        font-family: graphikmedium;
+        font-size: 10px;
+        color: gray;
+        padding: 20px 140px 20px 20px;
+        border: solid gray 1px;
+        border-radius: 3px;
+    }
+    button.email-women3 {
+        background-color: #202020;
+        padding: 17px 15px;
+        font-family: graphikregular;
+        color: white;
+        font-size: 14px;
+        border-radius: 3px;
+        box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+        margin-left: 5px;
+    }
 }
 .footer.women-footer {
     top: 3400px;
+}
+@media only screen and (min-width: 1366px) {
+    body {
+        margin: auto !important;
+        max-width: 1366px;
+    }
 }

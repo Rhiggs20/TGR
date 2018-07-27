@@ -15,102 +15,110 @@
 </head>
 
 <body>
-<!--Header-->
-	<div class="logo">
-        <div class="row">
-        	<div class="navigation">
-	        	<div class="dropdown">
-		       		<button onclick="myFunction()" class="dropbtn material-icons">&#xe5c3;</button>
-		       		<div class="dropdown-content" id="myDropdown">
-		       			<div class="close-dropdown"><i class="material-icons dropdown">&#xe5cd;</i></div>
-		       			<img alt="logo" src="assets/images/logo.png" class="dropdown-logo">
-		       			<div class="dropdown-search"><span class="glyphicon glyphicon-search"></span></div>
-		       			<a href="index.html" class="teton-link">tetongravity.com<i class="material-icons link-arrow">&#xe5c8;</i></a>
-		       			<div class="dropdown-area1">
-		       				<div class="dropdown-headers1">
-				       			<a href="#">Films</a>
-				       			<a href="#">Team</a>
-				       			<a href="#">Lookbook</a>
-				       		</div>
-				       		<div class="dropdown-headers2">
-				       			<a href="#">Contact</a>
-				       			<a href="#" class="sub-categories">Locations</a>
-				       			<a href="#" class="sub-categories">Shipping & Returns</a>
-				       			<a href="#" class="sub-categories">Customer Service</a>
-								<a href="#" class="sub-categories">FAQ</a>
-							</div>
+	<!--Header-->
+	<div class="top-navigation">
+		<!--My Dropdown new & improved-->
+		<div class="dP">
+			<button onclick="myThing()" class="dP-btn material-icons">&#xe5c3;</button>
+			<div id="mydP" class="dP-content">
+				<div class="menu-menus">
+					<div class="top-menu">
+						<i class="material-icons dropdown">&#xe5cd;</i>
+						<img alt="logo" src="assets/images/logo.png" class="logo-menu">
+						<span class="glyphicon glyphicon-search menu-search"></span>
+						<a href="index.html" class="menu-link">tetongravity.com<i class="material-icons menu-arrow">&#xe5c8;</i></a>
+					</div>
+					<div class="menu-sections">
+						<div class="menu-links">
+						    <ul class="linkList">
+						    	<li><a href="#films" class="link header-link">Films</a></li>
+						    	<li><a href="#team" class="link header-link">Team</a></li>
+						    	<li><a href="#lookbook" class="link header-link">Lookbook</a></li>
+						    	<li class="li-margin2"><a href="#contact" class="link header-link">Contact</a></li>
+						    	<li class="li-margin"><a href="#locations" class="link subheader-link">Locations</a></li>
+						    	<li><a href="#shipping" class="link subheader-link">Shipping & Returns</a></li>
+						    	<li><a href="#service" class="link subheader-link">Customer Service</a></li>
+						    	<li><a href="#faq" class="link subheader-link">FAQ</a></li>
+							</ul>
 						</div>
-						<div class="dropdown-area2">
-			       			<a href="#">Men</a>
-			       			<a href="#" class="sub-categories">Graphic Tees</a>
-			       			<a href="#" class="sub-categories">Hoodies & Flannels</a>
-			       			<a href="#" class="sub-categories">Preformance Wear</a>
-			       			<a href="women.html">Women</a>
-			       			<a href="#" class="sub-categories">Tees & Tanks</a>
-			       			<a href="#" class="sub-categories">Hoodies</a>
-			       			<a href="#" class="sub-categories">Shorts</a>
-							<a href="#" class="sub-categories">Preformance Wear</a>
+						<div class="menu-links">
+							<ul class="linkList">
+								<li><a href="#men" class="link header-link">Men</a></li>
+								<li class="li-margin"><a href="#tees" class="link subheader-link">Graphic Tees</a></li>
+								<li><a href="#flannels" class="link subheader-link">Hoodies & Flannels</a></li>
+								<li><a href="#preformance" class="link subheader-link">Preformance Wear</a></li>
+								<li class="li-margin1"><a href="women.html" class="link header-link">Women</a></li>
+								<li></li>
+								<li><a href="#tanks" class="link subheader-link">Tees & Tanks</a></li>
+								<li><a href="#hoodies" class="link subheader-link">Hoodies</a></li>
+								<li><a href="#shorts" class="link subheader-link">Shorts</a></li>
+								<li><a href="#preformance" class="link subheader-link">Preformance Wear</a></li>
+							</ul> 
 						</div>
-						<div class="dropdown-area3">
-			       			<a href="#">Accessories</a>
-			       			<a href="#" class="sub-categories">Stickers</a>
-			       			<a href="#" class="sub-categories">Beverage</a>
-			       			<a href="#" class="sub-categories">Socks</a>
-			       			<a href="#" class="sub-categories">Books</a>
-			       			<a href="#" class="sub-categories">Gift Cards</a>
-			       		</div>
-			       		<div class="dropdown-area4">
-			       			<a href="headwear.html">Headwear</a>
-			       			<a href="#" class="sub-categories">Hats/Caps</a>
-			       			<a href="#" class="sub-categories">Beanies</a>
-			       			<a href="#" class="sub-categories">Buffs</a>
-			       			<div class="eyewear">
-				       			<a href="#">Eyewear</a>
-				       			<a href="#" class="sub-categories">Goggles</a>
-				       			<a href="#" class="sub-categories">Sunglasses</a>
-			       			</div>
-			       			<a href="#" class="sale">Sale</a>
-			       		</div>
-			       		<!--
-			       		<div class="swiper-container drop">
-			       			<div class="swiper-wrapper drop">
-			       				<div class="swiper-slide drop">enjoy <a>free shipping</a> on orders over $50</div>
-			       				<div class="swiper-slide drop"> TGR apparel delivered every other month <a>find out more</a></div>
-			       				<div class="swiper-slide drop">enjoy <a>free shipping</a> on orders over $50</div>
-			       				<div class="swiper-slide drop"> TGR apparel delivered every other month <a>find out more</a></div>
-			       			</div>
-			       		</div>-->
-			       		<img src="assets/images/a-biker.jpg" alt="Your Profile" class="login-hero">
-			       		<div class="login-hero-overlay"></div>
-			       		<img src="assets/images/a-biker2.jpg" alt="Your Profile" class="login-profile">
-			       		<div class="login-name">John Doe</div>
-			       		<div class="login-shipping">shipping address</div>
-			       		<div class="login-address">1234 Torotown St.</br>City,ST-12345</div>
-			       		<button class="edit-profile">Edit Profile</button>
-			       		<div class="not-you">Not you?</div>
-			       		<div class="not-you-sign">Sign In</div>
-			       		<button class="your-cart"><span class="glyphicon login-cart"></span></button>
-
-		       		</div>
-	       		</div>
-	       	</div>
-       		<div class="col-2">
-    			<button class="home" href="#"><img alt="logo" src="assets/images/logo.png"></button>
-    		</div>
-	    	<div class="col-3">
-	   			<button class="search"><span class="glyphicon glyphicon-search"></span></button>
-	   		</div>
-	   	</div>
-	<div class="hero-image"></div>
-	<div class="shades">Shades</br>for Summer</div>
-	<div class="header-description">Spread the stoke and live the dream as a</br>part of the TGR Ambassador program.</div>
-	<button class="header-button">Shop Preformance Wear<i class="material-icons header-wear-arrow">&#xe5c8;</i></button>
-	<div class="shopping-cart"><button class="shop-cart" href="#"><span class="glyphicon"></span></button></div>
-	<img src="assets/images/videoreplace-other.jpg" class="hero-image-two" alt="Shades">
+						<div class="menu-links">
+						    <ul class="linkList">
+						    	<li><a href="#accessories" class="link header-link">Accesories</a></li>
+						    	<li class="li-margin"><a href="#stickers" class="link subheader-link">Stickers</a></li>
+						    	<li><a href="#beverage" class="link subheader-link">Beverage</a></li>
+						    	<li><a href="#socks" class="link subheader-link">Socks</a></li>
+						    	<li><a href="#books" class="link subheader-link">Books</a></li>
+						    	<li><a href="#gifts" class="link subheader-link">Gift Cards</a></li>
+						    </ul>
+						</div>
+						<div class="menu-links">
+						    <ul class="linkList">
+						    	<li><a href="headwear.html" class="link header-link">Headwear</a></li>
+						    	<li class="li-margin"><a href="#hats" class="link subheader-link">Hats/Caps</a></li>
+						    	<li><a href="#beanies" class="link subheader-link">Beanies</a></li>
+						    	<li><a href="#buffs" class="link subheader-link">Buffs</a></li>
+						    	<li class="li-margin1"><a href="#eyewear" class="link header-link">Eyewear</a></li>
+						    	<li class="li-margin"><a href="#goggles" class="link subheader-link">Goggles</a></li>
+						    	<li><a href="#sunglasses" class="link subheader-link">Sunglasses</a></li>
+						    	<li class="li-margin1"><a href="#sale" class="link subheader-link special">Sale</a></li>
+						    </ul>    
+						</div>
+						<div class="your-menu">
+							<img src="assets/images/a-biker.jpg" alt="Your Profile" class="your-hero">
+							<div class="your-overlay"></div>
+							<img src="assets/images/hats/31.jpg" alt="Your Profile" class="your-picture">
+							<div class="your-name">John Doe</div>
+							<div class="ship-address">shipping address</div>
+							<div class="your-address">1234 Torotown St.</div>
+							<div class="your-address2">City, ST - 12345</div>
+							<button class="edit-yours">Edit Profile</button>
+							<div class="not-you">Not you?</div>
+							<button class="sign-in">Sign In</button>
+							<span class="glyphicon your-cart"></span>
+						</div>
+					</div>
+				</div>
+		    </div>
+		</div>
+		<div class="top-nav-logo">
+			<img alt="logo" src="assets/images/logo.png" class="logo-resizer">
+		</div>
+		<div class="top-nav-search">
+			<span class="glyphicon glyphicon-search top-search"></span>
+		</div>
+		<div class="top-nav-cart">
+			<span class="glyphicon top-cart"></span>
+		</div>
 	</div>
 <!--End Header-->
-<!--End Infinite Scroller-->
-
+<!--Hero Area-->
+	<div class="hero-area">
+		<div class="hero-area-left">
+			<img src="assets/images/videoreplace2.jpg" class="hero-img-one" alt="Shades">
+		</div>
+		<div class="hero-description">
+			<div class="hero-shades">Shades</br>for Summer</div>
+			<div class="hero-details">Spread the stoke and live the dream as a</br>part of the TGR Ambassador program.</div>
+			<button class="hero-button">Shop Preformance Wear<i class="material-icons hero-index-arrow">&#xe5c8;</i></button>
+		</div>
+		<div class="hero-area-right">
+			<img src="assets/images/videoreplace-other.jpg" class="hero-img-two" alt="Shades">
+		</div>
+	</div>
 <!--Section 1-->
 	<div class="section-one-row">
 		<div class="scrollable">
@@ -175,8 +183,135 @@
 
 <!--TGR Most Wanted Title-->
 	<div class="mostwanted">TGR Most Wanted</div>
-
-<!--Section Two-->
+<div class="filter-area no-background" id="byProduct">
+		<div class="filter-area-vertical-scroller">
+			<div class="vertical-scroll">
+				<!--Row 1-->
+					<div class="index-card">
+						<div class="index-card-image">
+							<img src="assets/images/IAN.jpg" alt="Hat" class="index-card-image-source">
+						</div>
+						<div class="card-description">
+							description
+						</div>
+						<div class="card-name">
+							Hat Name
+							<div class="card-price">
+								$20
+							</div>
+						</div>
+					</div>
+					<div class="index-card">
+						<div class="index-card-image">
+							<img src="assets/images/DSC00227.jpg" alt="Hat" class="index-card-image-source">
+						</div>
+						<div class="card-description">
+							description
+						</div>
+						<div class="card-name">
+							Classic Patch
+							<div class="card-price">
+								$30
+							</div>
+						</div>
+					</div>
+				<!--Row 2-->
+					<div class="index-card">
+						<div class="index-card-image">
+							<img src="assets/images/WP9A0791.jpg" alt="Hat" class="index-card-image-source">
+						</div>
+						<div class="card-description">
+							description
+						</div>
+						<div class="card-name">
+							Hat Name
+							<div class="card-price">
+								$20
+							</div>
+						</div>
+					</div>
+					<div class="index-card">
+						<div class="index-card-image">
+							<img src="assets/images/4045-BK-Lifestyleshot.jpg" alt="Hat" class="index-card-image-source">
+						</div>
+						<div class="card-description">
+							description
+						</div>
+						<div class="card-name">
+							Classic Patch
+							<div class="card-price">
+								$30
+							</div>
+						</div>
+					</div>
+					<!--Row 3-->
+					<div class="index-card">
+						<div class="index-card-image">
+							<img src="assets/images/ACCESSORIES.jpg" alt="Hat" class="index-card-image-source">
+						</div>
+						<div class="card-description">
+							description
+						</div>
+						<div class="card-name">
+							Hat Name
+							<div class="card-price">
+								$20
+							</div>
+						</div>
+					</div>
+					<div class="index-card">
+						<div class="index-card-image">
+							<img src="assets/images/738A0532.JPG" alt="Hat" class="index-card-image-source">
+						</div>
+						<div class="card-description">
+							description
+						</div>
+						<div class="card-name">
+							Classic Patch
+							<div class="card-price">
+								$30
+							</div>
+						</div>
+					</div>
+					<div class="email-attention">Be the first to know.</div>
+					<div class="stay-updated">Stay updated with the latest ticket & merch sales.</div>
+					<input type="text" name="emailAddress" value="Email Address" class="email-inScroll"> 
+					<button class="email">Subscribe<i class="material-icons lookbook-arrow">&#xe5c8;</i></button>
+				</div>
+			</div>
+			<!--Filter Preview-->
+		<div class="filter-preview">
+			<div class="preview-information">
+				<div class="preview-box">
+					<img src="assets/images/info.png" alt="Info" class="info preview-image">
+				</div>
+				<div class="preview-box opacity">
+					<img src="assets/images/hats/4.png" alt="Image Preview" class="boxed-img preview-image">
+				</div>
+				<div class="preview-box opacity">
+					<img src="assets/images/IMG_4411_2.jpg" alt="Image Preview" class="boxed-lifestyle preview-image">
+				</div>
+			</div>
+				<img src="assets/images/hydro-flask-stainless-steel-vacuum-insulated-water-bottle-32-oz-wide-mouth-flex-cap-cobalt.jpg" alt="HydroFlask" class="bottle">
+				<img src="assets/images/info.png" alt="Info" id="main-preview">
+				<button class="right-arrow"><i class="material-icons preview-arrow">arrow_forward</i></button>
+			<div class="preview-footer">
+				<div class="color-holder">
+					<button class="preview-color black"></button>
+					<button class="preview-color green"></button>
+				</div>
+					<div class="preview-quantity">Quantity</div>
+				<div class="quantity-holder">
+					<button class="preview-remove"><i class="material-icons preview-remove">remove</i></button>
+					<input type="text" name="quantity" value="1" class="quantity">
+					<button class="preview-remove"><i class="material-icons preview-remove">add</i></button>
+				</div>
+					<button class="done">Done!</button>
+			</div>
+		</div>	
+	</div>
+	<!--End Filter Area 2-->
+<!--Section Two
 	<div class="section2-row">
 		<div class="vertical-scroller-area">
 			<div class="vertical-scroller">
@@ -241,7 +376,7 @@
 
 			</div>
 		</div>
-		<div class="col-md-6 water-ad">
+		<div class="water-ad">
 			<div class="gallery">
 				<img src="assets/images/hydro-black.jpg" alt="Hydroflask" class="gallery-image">
 				<img src="assets/images/hydro-red.jpg" alt="Hydroflask" class="gallery-image">
@@ -264,28 +399,29 @@
 			</div>
 		</div>
 	</div>
-<!--End Section Two-->	
+End Section Two-->	
 
 <!--Section Three-->
 	<div class="explore">Explore
 		<p class="explore-nav1">TGR Shop Blog</p>
 		<p class="explore-nav2">Lookbooks</p>
 	</div>
-	<img src="assets/images/bikerbackground.JPG" alt="Background Image" class="explore-background">
-	<img src="assets/images/bikerimage.JPG" alt="Main Image" class="explore-image">
-	<div class="sidebar">Lookbook
-		<div class="sidebar-title">Summer Styles: Part 1
-			<div class="year">2018</div>
+	<div class="explore-area">
+		<!--<img src="assets/images/bikerbackground.JPG" alt="Background Image" class="explore-background">-->
+		<img src="assets/images/bikerimage.JPG" alt="Main Image" class="explore-image">
+		<div class="sidebar">Lookbook
+			<div class="sidebar-title">Summer Styles: Part 1
+				<div class="year">2018</div>
+			</div>
 		</div>
+		<div class="explore-title">Summer
+			<div class="explore-title2">Title</div>
+		</div>
+		<div class="explore-info">Spread the stoke and live the dream as a part of the TGR Ambassor program. Spread the stoke and live the dream as a part of the TGR Ambassor program. Spread the stoke and live the dream as a part of the TGR Ambassor program.</div>
+		<button class="lookbook">Shop Lookbook
+			<i class="material-icons lookbook-arrow">&#xe5c8;</i>
+		</button>
 	</div>
-	<div class="explore-title">Summer
-		<div class="explore-title2">Title</div>
-	</div>
-	<div class="explore-info">Spread the stoke and live the dream as a part of the TGR Ambassor program. Spread the stoke and live the dream as a part of the TGR Ambassor program. Spread the stoke and live the dream as a part of the TGR Ambassor program."</div>
-	<button class="lookbook">Shop Lookbook
-		<i class="material-icons lookbook-arrow">&#xe5c8;</i>
-	</button>
-
 <!--End Section Three-->
 
 <!--Section Four-->
@@ -441,29 +577,7 @@
 	    <div class="swiper-button-prev"></div>
   	</div>
 <!--End Section Five-->
-
 <!--Footer-->
-	<div class="footer">
-		<div class="col-md-4">
-			<div class="phone-number">(307)734-8192</div>
-			<div class="address">45 W Broadway St.</br>Jackson, WY 83001</div>
-			<div class="days-of-week">weekdays&nbsp;&nbsp;9am - 6pm</br>saturday&nbsp;&nbsp;12pm - 6pm</br>sunday&nbsp;&nbsp;&nbsp; closed</div>
-		</div>
-		<div class="col-md-4">
-			<img src="assets/images/logowhite.png" alt="Footer Logo" class="footer-logo">
-			<img src="assets/images/instagram.png" alt="Instagram" class="instagram">
-			<img src="assets/images/facebook-logo.png" alt="Facebook" class="facebook">
-			<img src="assets/images/vimeo-logo.png" alt="Vimeo" class="vimeo">
-			<img src="assets/images/twitter-logo-silhouette.png" alt="Twitter" class="twitter">
-		</div>
-		<div class="col-md-4">
-			<div class="phone-number two">(307)734-8192</div>
-			<div class="address2">1260 West St.</br>Wilson, WY 83001</div>
-			<div class="days-of-week-two">weekdays&nbsp;&nbsp;9am - 6pm</br>saturday&nbsp;&nbsp;12pm - 6pm</br>sunday&nbsp;&nbsp;&nbsp; closed</div>
-		</div>
-	</div>
-<!--End Footer-->
-<!--Footer
 	<div class="headwear-footer">
 		<div class="phone-number-footer">(307)734-8192
 			<div class="address-footer">45 W Broadway St.<br>Jackson, WY 83001</div>
@@ -494,7 +608,7 @@
 			<img src="assets/images/twitter-logo-silhouette.png" alt="Twitter" class="social-in-footer">
 		</div>
 	</div>
-End Footer-->
+<!--End Footer-->
 <!--JQuery-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.js"></script>
