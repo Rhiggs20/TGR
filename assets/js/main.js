@@ -206,3 +206,12 @@ $('.pickColor').click(function() {
   $colors.hide();
   $(href).show();
 });
+
+//Open Cart aka side nav 
+function openNav() {
+    document.getElementById("mySidenav").style.width = "450px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}

@@ -97,10 +97,58 @@
 			<span class="glyphicon glyphicon-search top-search"></span>
 		</div>
 		<div class="top-nav-cart">
-			<span class="glyphicon top-cart"></span>
+			<span class="glyphicon top-cart" onClick="openNav()"></span>
 		</div>
 	</div>
 <!--End Header-->
+<!--Cart Sidebar-->
+	<div id="mySidenav" class="sidenav">
+		<img src="assets/images/a-biker-cart.jpg" class="cart-hero">
+		<div class="checkout-overlay"></div>
+  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  		<div class="cart-header">My Cart</div>
+  		<div class="cart-scroll">
+  			<div class="cart-scroller">
+		  		<div class="checkout-item">
+		  			<img src="assets/images/hats/50.png" class="checkout-img">
+		  			<div class="item-type">headwear</div>
+		  			<div class="item-name">5-Panel Patch</div>
+		  			<div class="item-price">$20</div>
+		  		</div>
+		  		<div class="checkout-item">
+		  			<img src="assets/images/glide.png" class="checkout-img">
+		  			<div class="item-type">films</div>
+		  			<div class="item-name">Life of Glide DVD</div>
+		  			<div class="item-price">$10</div>
+		  		</div>
+		  		<div class="checkout-item">
+		  			<img src="assets/images/Layer 6 copy.png" class="checkout-img">
+		  			<div class="item-type">eyewear</div>
+		  			<div class="item-name">Purple Haze</div>
+		  			<div class="item-price">$30</div>
+		  		</div>
+		  		<div class="space"></div>
+		  		<div class="cart-header">Discount Code?</div>
+		  		<div class="discount-details">Please enter your ambassador number, or coupon code below.</div>
+		  		<input type="text" class="code" placeholder="Enter Code">
+		  		<button class="code-submit">Submit<i class="material-icons code-arrow">&#xe5c8;</i></button>
+		  		<div class="space"></div>
+		  		<div class="purchase">This purchase is a gift, please wrap gift.</div>
+		  		<div class="purchase">Sign me up for TGR Shop Sale notifications!</div>
+		  		<div class="space"></div>
+		  		<div class="cart-close">All orders are shipped within 48 hours of purchase.</div>
+		  	    <div class="cart-close">You will recieve a tracking number once your order has been shipped.</div>
+		  	    <div class="space"></div>
+		  	    <div class="cart-shipping">Shipping & Returns</div>
+		  	</div>
+		  </div>
+		 <div class="cart-footer">
+		 	<div class="cart-tax">Total w/Tax + Shipping</div>
+		 	<div class="cart-total">$32.50</div>
+		 	<button class="checkout">Checkout<i class="material-icons checkout-arrow">&#xe5c8;</i></button>
+		 </div>
+	</div>
+<!--End cart sidebar-->
 <!--Hero-->
 	<div class="hero-area">
 		<div class="hero-img1-area">

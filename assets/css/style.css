@@ -1642,15 +1642,224 @@ button.footer-cart:hover {
   background-color: grey;
 }
 
+/* line 1300, ../scss/_home.scss */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* line 1311, ../scss/_home.scss */
+.sidenav .cart-hero {
+  width: 450px;
+  height: 160px;
+}
+/* line 1315, ../scss/_home.scss */
+.sidenav .checkout-overlay {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: black;
+  opacity: .8;
+  height: 160px;
+  width: 450px;
+}
+/* line 1324, ../scss/_home.scss */
+.sidenav .cart-header {
+  font-family: graphiksemibold;
+  color: #232323;
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 10px;
+}
+/* line 1332, ../scss/_home.scss */
+.sidenav .cart-scroll {
+  overflow-y: scroll;
+  width: 450px;
+  height: 400px;
+}
+/* line 1337, ../scss/_home.scss */
+.sidenav .cart-scroller {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 1000px;
+}
+/* line 1342, ../scss/_home.scss */
+.sidenav .checkout-item {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-left: 10px;
+  width: 200px;
+  height: 250px;
+  border-bottom: solid black 2px;
+  border-radius: 2px;
+  display: inline-block;
+  margin-top: 10px;
+}
+/* line 1351, ../scss/_home.scss */
+.sidenav .checkout-item .item-type {
+  font-family: nittiblack;
+  font-size: 12px;
+  color: #b9b9b9;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+/* line 1358, ../scss/_home.scss */
+.sidenav .checkout-item .item-name {
+  color: #232323;
+  font-family: graphiksemibold;
+  display: inline;
+  margin-left: 10px;
+}
+/* line 1364, ../scss/_home.scss */
+.sidenav .checkout-item .item-price {
+  color: #b9b9b9;
+  font-family: graphikmedium;
+  font-size: 12px;
+  margin-left: 5px;
+  display: inline;
+}
+/* line 1371, ../scss/_home.scss */
+.sidenav .checkout-item .checkout-img {
+  width: 200px;
+  height: 200px;
+}
+/* line 1376, ../scss/_home.scss */
+.sidenav .discount-details {
+  display: block;
+  text-align: center;
+  color: #b9b9b9;
+  font-family: graphikmedium;
+}
+/* line 1382, ../scss/_home.scss */
+.sidenav .space {
+  padding: 20px;
+}
+/* line 1385, ../scss/_home.scss */
+.sidenav input.code {
+  color: #b9b9b9;
+  background: none;
+  border: solid 2px #b9b9b9;
+  border-radius: 3px;
+  padding: 10px 0px;
+  margin-left: 100px;
+  margin-bottom: 20px;
+}
+/* line 1394, ../scss/_home.scss */
+.sidenav button.code-submit {
+  background: #232323;
+  color: #fff;
+  border-radius: 3px;
+  margin-left: 10px;
+  padding: 10px 10px;
+}
+/* line 1401, ../scss/_home.scss */
+.sidenav i.code-arrow {
+  font-size: 12px;
+  margin-left: 5px;
+}
+/* line 1405, ../scss/_home.scss */
+.sidenav .purchase {
+  color: #b9b9b9;
+  font-family: graphikregular;
+  text-align: center;
+}
+/* line 1410, ../scss/_home.scss */
+.sidenav .cart-close {
+  font-family: graphikmedium;
+  color: #232323;
+  text-align: center;
+}
+/* line 1415, ../scss/_home.scss */
+.sidenav .cart-shipping {
+  color: #b9b9b9;
+  text-decoration: underline;
+  font-size: 12px;
+  text-align: center;
+}
+/* line 1421, ../scss/_home.scss */
+.sidenav .cart-footer {
+  background-color: #232323;
+  height: 50px;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+/* line 1427, ../scss/_home.scss */
+.sidenav .cart-footer .cart-tax {
+  display: inline;
+  font-family: graphiksemibold;
+  color: #fff;
+  align-self: center;
+  margin: 0px 20px;
+  font-size: 10px;
+}
+/* line 1435, ../scss/_home.scss */
+.sidenav .cart-footer .cart-total {
+  display: inline;
+  font-family: graphiksemibold;
+  color: #fff;
+  align-self: center;
+  font-size: 30px;
+  margin: 0px 20px;
+  position: relative;
+  bottom: -5px;
+}
+/* line 1445, ../scss/_home.scss */
+.sidenav .cart-footer .checkout {
+  background-color: #fff;
+  border: none;
+  padding: 10px 20px;
+  color: #232323;
+  font-family: graphiksemibold;
+  font-size: 10px;
+  margin: 0px 20px;
+}
+/* line 1453, ../scss/_home.scss */
+.sidenav .cart-footer .checkout .checkout-arrow {
+  font-size: 10px;
+  margin-left: 10px;
+}
+
+/* line 1461, ../scss/_home.scss */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* line 1470, ../scss/_home.scss */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* line 1474, ../scss/_home.scss */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 25px;
+  margin-left: 50px;
+}
+
 @media only screen and (min-width: 1366px) {
-  /* line 1301, ../scss/_home.scss */
+  /* line 1483, ../scss/_home.scss */
   body {
     margin: auto !important;
     max-width: 1366px;
   }
 }
 @media only screen and (min-width: 2200px) {
-  /* line 1307, ../scss/_home.scss */
+  /* line 1489, ../scss/_home.scss */
   .col-md-2 {
     width: 10% !important;
   }
