@@ -35,3 +35,7 @@ $('.switchFilters').click(function() {
           <div class="swiper-slide"> TGR apparel delivered every other month <a>find out more</a></div>
        </div>  
   </div>*/
+
+  //Next Up: On click switch out preview body content to what I want - may 
+  //end up adding to previously placed javascript or creating new 
+  //not sure yet but am bound to find out 

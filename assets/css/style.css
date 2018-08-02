@@ -1576,15 +1576,81 @@ button.pro1:hover {
   width: 340px;
 }
 
+/* line 1251, ../scss/_home.scss */
+button.footer-shop {
+  border: solid black 1px;
+  border-radius: 2px;
+  background: none;
+  padding: 0px 20px;
+  height: 60%;
+  margin-top: 15px;
+  box-shadow: inset 0px 0px 4px 0px #323232;
+}
+/* line 1259, ../scss/_home.scss */
+button.footer-shop i.material-icons.footer-arrow {
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+/* line 1264, ../scss/_home.scss */
+button.footer-shop:hover {
+  transition: ease;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* line 1269, ../scss/_home.scss */
+button.footer-cart {
+  background: none;
+  border: solid black 1px;
+  border-radius: 2px;
+  height: 60%;
+  margin-top: 15px;
+  padding: 0px 20px;
+  box-shadow: inset 0px 0px 4px 0px #323232;
+}
+/* line 1277, ../scss/_home.scss */
+button.footer-cart i.material-icons.footer-add {
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+/* line 1282, ../scss/_home.scss */
+button.footer-cart:hover {
+  transition: ease;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* line 1286, ../scss/_home.scss */
+.cH-home {
+  width: 20%;
+  height: 100%;
+}
+
+/* line 1290, ../scss/_home.scss */
+.size {
+  margin: 10px 10px 0px 0px !important;
+  padding: 13px !important;
+}
+
+/* line 1294, ../scss/_home.scss */
+.pink {
+  background-color: #ff00ff;
+}
+
+/* line 1297, ../scss/_home.scss */
+.grey {
+  background-color: grey;
+}
+
 @media only screen and (min-width: 1366px) {
-  /* line 1252, ../scss/_home.scss */
+  /* line 1301, ../scss/_home.scss */
   body {
     margin: auto !important;
     max-width: 1366px;
   }
 }
 @media only screen and (min-width: 2200px) {
-  /* line 1258, ../scss/_home.scss */
+  /* line 1307, ../scss/_home.scss */
   .col-md-2 {
     width: 10% !important;
   }

@@ -1248,6 +1248,55 @@ button.pro1:hover {
 .col-sm-4.socialpost {
     width: 340px;
 }
+button.footer-shop {
+    border: solid black 1px;
+    border-radius: 2px;
+    background: none;
+    padding: 0px 20px;
+    height: 60%;
+    margin-top: 15px;
+    box-shadow: inset 0px 0px 4px 0px rgba(50, 50, 50, 1);
+    i.material-icons.footer-arrow {
+        font-size: 15px;
+        margin-left: 10px;
+    }
+}
+button.footer-shop:hover {
+    transition: ease;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+button.footer-cart {
+    background: none;
+    border: solid black 1px;
+    border-radius: 2px;
+    height: 60%;
+    margin-top: 15px;
+    padding: 0px 20px;
+    box-shadow: inset 0px 0px 4px 0px rgba(50, 50, 50, 1);;
+    i.material-icons.footer-add {
+        font-size: 15px;
+        margin-left: 10px;
+    }
+}
+button.footer-cart:hover {
+    transition: ease;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.cH-home {
+    width: 20%;
+    height: 100%;
+}
+.size {
+    margin: 10px 10px 0px 0px !important;
+    padding: 13px !important;
+}
+.pink {
+    background-color: #ff00ff;
+}
+.grey {
+    background-color: grey;
+}
 @media only screen and (min-width: 1366px) {
     body {
         margin: auto !important;

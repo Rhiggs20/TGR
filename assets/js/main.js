@@ -171,6 +171,7 @@ $(".preview-remove").on("click", function() {
   }
   $button.parent().find("input").val(newVal);
 });
+
 //My New & Improved Dropdown
 function myThing() {
   document.getElementById("mydP").classList.toggle("show");
@@ -194,5 +195,14 @@ $('#byProduct').show();
 $('.switchFilters').click(function() {
   var href = $(this).attr('href');
   $filters.hide();
+  $(href).show();
+});
+
+//Switch out colors in scroller in byProduct Area
+var $colors = $('#pickBlack, #pickCream, #pickBlue, #pickRed, #pickGreen, #pickWhite').hide();
+$('#pickBlack').show();
+$('.pickColor').click(function() {
+  var href = $(this).attr('href');
+  $colors.hide();
   $(href).show();
 });
